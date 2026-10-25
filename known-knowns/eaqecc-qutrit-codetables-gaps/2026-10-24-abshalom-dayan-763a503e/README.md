@@ -78,10 +78,10 @@ July 2026) have length at most 25, and none of them, nor any code in this reposi
   construction (Proposition 1) turns a GF(9) code with a given Hermitian hull into the qutrit EA code, and whose
   propagation rules the table uses.
 - **Todd A. Brun, Igor Devetak, and Min-Hsiu Hsieh**, "Correcting quantum errors with entanglement", *Science* 314,
-  436-439 (2006), https://arxiv.org/abs/quant-ph/0608027.
+  436-439 (2006), https://arxiv.org/abs/quant-ph/0610092.
 - **Carlos Galindo, Fernando Hernando, Ryutaroh Matsumoto, and Diego Ruano**, "Entanglement-assisted quantum
   error-correcting codes over arbitrary finite fields", *Quantum Information Processing* 18, 116 (2019),
-  https://arxiv.org/abs/1804.01754.
+  https://arxiv.org/abs/1812.05312.
 - **Cunsheng Ding, Harald Niederreiter, and Chaoping Xing**, *IEEE Transactions on Information Theory* 46 (2000)
   2638-2642, the reference `codetables.de` gives for its `[33, 13, 16]_9` construction (Construction X with
   algebraic-geometry codes from a divisor of degree 3).
