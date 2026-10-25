@@ -44,8 +44,8 @@ Published codes that the table does not list: the plain one-point Hermitian EA c
 
 - **Markus Grassl**, maintainer of the online EAQECC bounds tables (https://eaqecc.codetables.de/ and https://eaqecc.codetables.de/qutrit.php) and `codetables.de` (https://codetables.de/), whose best known GF(9) codes of these lengths pointed to the Hermitian curve.
 - **Gaojun Luo, Martianus Frederic Ezerman, Markus Grassl, and San Ling**, "Constructing quantum error-correcting codes that require a variable amount of entanglement", *Quantum Information Processing* 23, 4 (2024), https://doi.org/10.1007/s11128-023-04211-x (preprint https://arxiv.org/abs/2207.05647), whose Hermitian construction (Proposition 1) turns a GF(9) code with a given Hermitian hull into the qutrit EA code.
-- **Todd A. Brun, Igor Devetak, and Min-Hsiu Hsieh**, "Correcting quantum errors with entanglement", *Science* 314, 436-439 (2006), https://arxiv.org/abs/quant-ph/0608027.
-- **Carlos Galindo, Fernando Hernando, Ryutaroh Matsumoto, and Diego Ruano**, "Entanglement-assisted quantum error-correcting codes over arbitrary finite fields", *Quantum Information Processing* 18, 116 (2019), https://arxiv.org/abs/1804.01754.
+- **Todd A. Brun, Igor Devetak, and Min-Hsiu Hsieh**, "Correcting quantum errors with entanglement", *Science* 314, 436-439 (2006), https://arxiv.org/abs/quant-ph/0610092.
+- **Carlos Galindo, Fernando Hernando, Ryutaroh Matsumoto, and Diego Ruano**, "Entanglement-assisted quantum error-correcting codes over arbitrary finite fields", *Quantum Information Processing* 18, 116 (2019), https://arxiv.org/abs/1812.05312.
 - **Christensen, Munuera, Pereira, and Ruano**, entanglement-assisted quantum codes from one-point Hermitian codes, https://arxiv.org/abs/2105.02166 (Advances in Mathematics of Communications 17(1), 2023): the length-27 family this code extends, and the comparison above.
 - **V. D. Goppa** (algebraic-geometry codes) and **Henning Stichtenoth** (Hermitian codes), whose distance bound gives `d >= 28 - m` for the extended code `E_m`.
 - Contributor credit: Abshalom Dayan, using the V3R1T4S kit (https://github.com/elder-plinius/V3R1T4S).
