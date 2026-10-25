@@ -7,7 +7,8 @@ Hermitian curve y^3 + y = x^4 over GF(9) (the 27 affine points plus a coordinate
 reach the best known distance 28 - m. An [n, kappa, d]_9 code with Hermitian hull dimension l gives an
 [[n, kappa - l, d; n - kappa - l]]_3 code (Luo, Ezerman, Grassl and Ling, arXiv:2207.05647, Prop. 1).
 
-E_14 is a [28,12,14]_9 code with hull 6, which gives [[28,6,14;10]]_3, a cell the table does not list. Multiplying
+E_14 is a [28,12,14]_9 code with hull 6, which gives [[28,6,14;10]]_3; at (28,6,10) the table reads d = 12, inherited from
+[[28,6,12-19;8]]_3 by its rule for unlisted c. Multiplying
 one affine column by w (an element of norm -1) lowers the hull to 5 and gives [[28,7,14;11]]_3, where the table
 lists d_lower = 13. An earlier run the same day found it while scanning the family against the table and kept it as a
 panel-ready candidate; this run rebuilt it byte for byte, wrote a new exact checker (the position-subset rank test in

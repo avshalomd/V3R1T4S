@@ -49,8 +49,8 @@ Munuera, Pereira, Ruano) imply, through the table's own propagation rules, at mo
 - Only cell `(n=28, k=7, c=11)` is claimed in this package (one cell per package). Cells that follow from it by the
   table's propagation rules (for example `[[29, 7, 14; 11]]_3` by lengthening) are not claimed here.
 - This is an improvement of the table cell, not a new technique: changing the Hermitian hull by scaling columns is
-  known, and the code is the hull-lowered member of `E_14`. The unscaled `E_14` gives `[[28, 6, 14; 10]]_3` (a cell
-  the table does not list), from which this code follows by the table's "increasing dimension" rule; the two are not
+  known, and the code is the hull-lowered member of `E_14`. The unscaled `E_14` gives `[[28, 6, 14; 10]]_3` (at that
+  cell the table reads d = 12, inherited from `[[28,6,12-19;8]]_3` by its rule for unlisted c), from which this code follows by the table's "increasing dimension" rule; the two are not
   independent results, and `[[28, 6, 14; 10]]_3` is not claimed here.
 - Catalytic setting: the table's own note says that in the catalytic setting `[[n,k,d;c]]` with `c >= k > 1` gives
   `[[n,k-1,d;c-1]]`, so the listed `[[28,8,14;12]]_3` would give these parameters catalytically. The table and this
@@ -72,10 +72,10 @@ Munuera, Pereira, Ruano) imply, through the table's own propagation rules, at mo
   construction (Proposition 1) turns a GF(9) code with a given Hermitian hull into the qutrit EA code, and whose
   propagation rules the table uses.
 - **Todd A. Brun, Igor Devetak, and Min-Hsiu Hsieh**, "Correcting quantum errors with entanglement", *Science* 314,
-  436-439 (2006), https://arxiv.org/abs/quant-ph/0608027.
+  436-439 (2006), https://arxiv.org/abs/quant-ph/0610092.
 - **Carlos Galindo, Fernando Hernando, Ryutaroh Matsumoto, and Diego Ruano**, "Entanglement-assisted quantum
   error-correcting codes over arbitrary finite fields", *Quantum Information Processing* 18, 116 (2019),
-  https://arxiv.org/abs/1804.01754.
+  https://arxiv.org/abs/1812.05312.
 - **Christensen, Munuera, Pereira, and Ruano**, entanglement-assisted quantum codes from one-point Hermitian codes,
   https://arxiv.org/abs/2105.02166 (Advances in Mathematics of Communications 17(1), 2023): the length-27 family
   this code extends, and the comparison above.
