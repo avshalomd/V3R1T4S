@@ -7,7 +7,7 @@ The circulant 3-colouring of K_182 in object/R_3_3_11.txt (sha256 622b79c6...127
 ```sh
 sh verify-it-yourself/run_checks.sh
 ```
-Expected last line: `PASS` (the line before it: `proves R(3,3,11) >= 183`). Python 3 standard library only; under a second on a laptop.
+Expected last three lines: `proves R(3,3,11) >= 183`, `PASS`, `PASS` (the checker and the script each print PASS). Python 3 standard library only; under a second on a laptop.
 
 ## Compared to
 | source | cell | value | URL | fetched (UTC) |
