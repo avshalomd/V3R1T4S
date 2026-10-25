@@ -7,7 +7,7 @@ The circulant 3-colouring of K_266 in object/R_3_3_14.txt (sha256 d46e9b16…34b
 ```sh
 sh verify-it-yourself/run_checks.sh
 ```
-Expected last line: `PASS` (the line before it: `proves R(3,3,14) >= 267`). Python 3 standard library only; about 4 seconds on a laptop.
+Expected last three lines: `proves R(3,3,14) >= 267`, `PASS`, `PASS` (the checker and the script each print PASS). Python 3 standard library only; about 4 seconds on a laptop.
 
 ## Compared to
 | source | cell | value | URL | fetched (UTC) |
