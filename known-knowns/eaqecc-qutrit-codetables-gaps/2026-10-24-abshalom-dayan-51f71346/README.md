@@ -74,10 +74,10 @@ a `[28,14,12]_9` code with Hermitian hull 5.
   construction (Proposition 1) turns a GF(9) code with a given Hermitian hull into the qutrit EA code, whose
   one-column extension (Proposition 10) raises a hull, and whose propagation rules the table uses.
 - **Todd A. Brun, Igor Devetak, and Min-Hsiu Hsieh**, "Correcting quantum errors with entanglement", *Science* 314,
-  436-439 (2006), https://arxiv.org/abs/quant-ph/0608027.
+  436-439 (2006), https://arxiv.org/abs/quant-ph/0610092.
 - **Carlos Galindo, Fernando Hernando, Ryutaroh Matsumoto, and Diego Ruano**, "Entanglement-assisted quantum
   error-correcting codes over arbitrary finite fields", *Quantum Information Processing* 18, 116 (2019),
-  https://arxiv.org/abs/1804.01754.
+  https://arxiv.org/abs/1812.05312.
 - **Christensen, Munuera, Pereira, and Ruano**, entanglement-assisted quantum codes from one-point Hermitian codes,
   https://arxiv.org/abs/2105.02166 (Advances in Mathematics of Communications 17(1), 2023): the length-27 family
   this code extends, and the comparison above.
