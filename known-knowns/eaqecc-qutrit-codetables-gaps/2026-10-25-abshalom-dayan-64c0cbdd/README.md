@@ -9,6 +9,9 @@ The gate re-read the page once more at 2026-10-25T00:49:54Z: same page hash, sam
 (`the-record-we-beat/README.md`). The object's full SHA-256 is
 `64c0cbddea11688f7cc06644d8751c2f62328aae74f7f149b89164a73dea0c78`.
 
+Path note: the object the sentence names as `claim/object/eaqecc_28_7_13_9.json` is `object/eaqecc_28_7_13_9.json`
+in this package (same sha256).
+
 The code comes from the extended one-point Hermitian code `E_15` on `y^3 + y = x^4` over GF(9) (the 27 affine
 points plus a coordinate for the point at infinity): a `[28, 13, 13]_9` code whose natural Hermitian hull (no column
 scaled) has dimension 6. That gives `[[28, 13 - 6, 13; 28 - 13 - 6]]_3 = [[28, 7, 13; 9]]_3`. The object holds the

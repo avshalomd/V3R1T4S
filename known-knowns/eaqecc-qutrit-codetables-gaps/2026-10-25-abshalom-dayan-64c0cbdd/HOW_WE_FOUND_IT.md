@@ -2,8 +2,11 @@
 
 contributor text, unverified
 
-The family is the one behind this workspace's earlier [[28,5,15;11]]_3, [[28,7,14;11]]_3, [[28,6,12;6]]_3 and
-[[28,9,11;7]]_3: the extended one-point codes E_m on the Hermitian curve y^3 + y = x^4 over GF(9) (the 27 affine
+The family is the one behind the earlier claims [[28,5,15;11]]_3
+(https://github.com/elder-plinius/V3R1T4S/pull/643), [[28,7,14;11]]_3
+(https://github.com/elder-plinius/V3R1T4S/pull/645), [[28,6,12;6]]_3
+(https://github.com/elder-plinius/V3R1T4S/pull/646) and [[28,9,11;7]]_3
+(https://github.com/elder-plinius/V3R1T4S/pull/651): the extended one-point codes E_m on the Hermitian curve y^3 + y = x^4 over GF(9) (the 27 affine
 points plus a coordinate for the point at infinity), which reach the Goppa distance 28 - m. An [n, kappa, d]_9 code
 with Hermitian hull dimension l gives an [[n, kappa - l, d; n - kappa - l]]_3 code (Luo, Ezerman, Grassl and Ling,
 arXiv:2207.05647, Prop. 1).
