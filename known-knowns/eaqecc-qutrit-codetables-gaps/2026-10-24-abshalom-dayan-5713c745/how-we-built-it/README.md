@@ -9,11 +9,12 @@ Commands from this folder (python3 standard library and cc), in the order the ob
        python3 deg3.py code 0 3 4 C2.code      # C(D_28, 3Q + 4P_inf) = [28,11], Goppa bound d >= 15
        python3 prep_x.py C1.code C2.code X16_q0_a4.xin    # byte-identical to the X16_q0_a4.xin here (sha256 c1c111c3...6332)
 
-2. The exact maximum Hermitian hull of every Construction X code of this pair (all 2^27 head sign patterns, every
+2. The maximum Hermitian hull of every Construction X code of this pair (all 2^27 head sign patterns, every
    [5,3,3] tail and every 3 x 3 gluing matrix; minimal-rank-completion bound, made exact by the rank classification of
-   Hermitian forms; about 4 minutes on one core):
+   Hermitian forms; about 4 minutes on one core). Unverified: this "exact maximum", here and in bound_X16_q0_a4.txt,
+   is contributor text that no skeptic or reviewer verified, as README.md says; the claim does not depend on it:
 
-       cc -O3 -o hullbound hullbound.c && ./hullbound bound < X16_q0_a4.xin    # bound_X16_q0_a4.txt: exact maximum 7
+       cc -O3 -o hullbound hullbound.c && ./hullbound bound < X16_q0_a4.xin    # bound_X16_q0_a4.txt: exact maximum 7 (unverified)
 
    Hull 7 is reached at exactly one head pattern (the "exact 7" line), +-+---+-+-++---+-+++----+-+- (a column marked
    - is multiplied by w, of norm -1).

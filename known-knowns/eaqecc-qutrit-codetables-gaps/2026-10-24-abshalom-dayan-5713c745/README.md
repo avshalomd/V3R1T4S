@@ -75,6 +75,17 @@ the newest qutrit EA codes the NOVELTY skeptic found (arXiv:2607.02170, July 202
 - Not peer reviewed; verified by a three-skeptic panel (`panel/`) and by the standalone checker in
   `verify-it-yourself/`.
 
+## Paths in the panel files
+
+The panel files in `panel/` are shipped unchanged from the contributor's run folder, so they use that folder's paths.
+In this package, `claim/` is the package root: `claim/object/eaqecc_33_7_15_12.json` is
+`object/eaqecc_33_7_15_12.json` (same sha256), `CLAIM.md` is `README.md`, `REPRODUCE.md` is `RUN_IT_YOURSELF.md`,
+`checkers/` is `verify-it-yourself/` and `rebuild/` is `how-we-built-it/`. Not included in this package:
+`claim/table/` (the fetched page; its URL, fetch times, sha256 and the listed row are in
+`the-record-we-beat/README.md`), `panel/claim.sha256`, `panel/main_session_notes.txt`, `self_break/`,
+`data/gate_fetch/` and the skeptics' work folders (`mine/`, `run/`, `author_run/`, `work-criterion/`, `fetched/`,
+`scripts/`). Run ids such as "run 2026-10-24-1953" name folders of that workspace, which are not included either.
+
 ## Credits
 
 - **Markus Grassl**, maintainer of the online EAQECC bounds tables (https://eaqecc.codetables.de/ and

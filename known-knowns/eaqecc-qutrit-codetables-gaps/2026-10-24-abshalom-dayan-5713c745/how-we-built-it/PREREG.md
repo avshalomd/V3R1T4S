@@ -1,5 +1,8 @@
 # PREREG (frozen 2026-10-24T19:57:51Z, before any checker of this run folder has been run on the object)
 
+[Bracketed notes were added when this plan was packaged; the plan text is otherwise as frozen. Paths in it are
+paths of the contributor's workspace.]
+
 null_test: not needed because the claim is one explicit stabilizer matrix checked by deterministic exact checkers against a table value (no search statistic, no "beats chance" claim)
 
 ## Criterion (verbatim, bank entry eaqecc-qutrit-codetables-gaps)
@@ -8,8 +11,8 @@ Success means an explicit EAQECC with parameters [[n,k,d;c]]_3, c >= 1, given by
 
 ## Object to be judged
 
-The Construction X lead of run 2026-10-24-1727's optimizer lens, objects/lead_33_7_15_12.json there (sha256
-5713c745e8e837dc41e1883a120488fb38dce3b4254292335ca98f99a1787256), built from data/X16_q0_a4.xin (sha256
+The Construction X lead of run 2026-10-24-1727's optimizer lens, objects/lead_33_7_15_12.json there [not shipped; the same bytes are object/eaqecc_33_7_15_12.json here] (sha256
+5713c745e8e837dc41e1883a120488fb38dce3b4254292335ca98f99a1787256), built from data/X16_q0_a4.xin [shipped as how-we-built-it/X16_q0_a4.xin] (sha256
 c1c111c37a876c2d6e8b885c378480754561d521d15f27ce92d3d33d7daa6332, copied unchanged into this run's data/) with
 C1 = C(D_28, 4Q + 4P_inf), C2 = C(D_28, 3Q + 4P_inf), Q = deg3.py place 0, tail points 3,9,0,1,5,
 M = 5,7,7,8,8,0,1,6,1, columns '-' in +-+---+-+-++---+-+++----+-+-+++++ times w. Claimed [[33,7,15;12]]_3 for the
@@ -33,7 +36,7 @@ cell per claim). The second lead, [[33,9,14;12]]_3 at (33,9,12), gets its own ru
       subsets, uncapped; at W = 15 it must find subsets with a vector outside the isotropic part; plus witness.py's
       witness.
   Third, cited: bz64 (Brouwer-Zimmermann over GF(9), n <= 64) on the GF(9) generator matrix.
-  Both checkers are re-tested before they judge the object (attempts/evaluator-first/tests/validate.sh): known positive
+  Both checkers are re-tested before they judge the object (attempts/evaluator-first/tests/validate.sh [not shipped]): known positive
   run 1640's E_17 object (d = 11, counts 1735, 1745, 1731 at W = 11), known negative a seeded object with a planted
   weight-3 word (W = 3 finds a subset; infoset m = 19 finds deficient subsets).
 
