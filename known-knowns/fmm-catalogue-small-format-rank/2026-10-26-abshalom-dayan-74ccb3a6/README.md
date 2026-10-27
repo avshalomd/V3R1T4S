@@ -100,6 +100,10 @@ The panel files are copied unchanged. Where they name claim/ files:
   known-knowns/faster-matrix-multiplication/2026-10-15-anonymous-c6d1e0ab-4b68518a/how-we-built-it/opus_step/) was
   filed in pull request #179, https://github.com/elder-plinius/V3R1T4S/pull/179. Our absorber re-implements that
   absorption.
+- The one-slice restriction with a direction pair (e, f) is the "generalised one-slice peel" of this repository's
+  first matrix multiplication records (known-knowns/faster-matrix-multiplication/HOW_WE_FOUND_IT.md and
+  how-we-built-it/peel.py), which credits the projection idea to A. I. Perminov, https://arxiv.org/abs/2606.02480,
+  and M. Kauers and I. Wood, https://arxiv.org/abs/2510.19787.
 - M. Kauers and J. Moosbauer, Flip Graphs for Matrix Multiplication, https://arxiv.org/abs/2212.01175: rank-lowering
   reductions, which the absorption step generalizes.
 - python-flint, https://github.com/flintlib/python-flint, and NumPy, https://github.com/numpy/numpy (used by the rebuild).
