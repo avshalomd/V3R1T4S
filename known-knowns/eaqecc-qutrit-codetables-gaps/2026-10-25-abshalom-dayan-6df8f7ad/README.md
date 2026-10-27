@@ -9,6 +9,16 @@ The gate re-read the page once more at 2026-10-25T00:13:20Z: same page hash, sam
 (`the-record-we-beat/README.md`). The object's full SHA-256 is
 `6df8f7ad262805a139a95fc294196094ee33b78b2fe9e1795c5bc0ba12421961`.
 
+Paths: the sentence is quoted from the panel files, which are shipped unchanged from the contributor's run folder
+and use that folder's paths. `claim/object/eaqecc_33_3_20_18.json` is `object/eaqecc_33_3_20_18.json` here (same sha256), and the
+panel's `claim/`, `CLAIM.md`, `REPRODUCE.md`, `checkers/` and `rebuild/` are this package's root, `README.md`,
+`RUN_IT_YOURSELF.md`, `verify-it-yourself/` and `how-we-built-it/`. The exhaustive enumeration of all 3^18 vectors
+that the sentence names was run by the panel's skeptics with their own enumerators (`enum.c` and `enum_n.c` in their
+`mine/` folders), which are not shipped; the shipped checks reach d = 20 by other exact methods (see "Check it yourself"). Other files the
+panel names (`claim/table/`, `panel/claim.sha256`, `self_break/`, `data/gate_fetch/` and the skeptics' work folders
+`mine/`, `author_run/`, `fetched/`, `scripts/`) are not included either; the table record is in
+`the-record-we-beat/README.md`.
+
 The code is a Construction X code over GF(9) from two algebraic-geometry codes of the Hermitian curve
 `y^3 + y = x^4` whose divisors are supported on a place `Q` of degree 3 and the point at infinity:
 `C(D_28, 4Q - P_inf)` `[28, 9, 17]_9` contains `C(D_28, 3Q - P_inf)` `[28, 6, 20]_9`, glued to a `[5, 3, 3]_9`

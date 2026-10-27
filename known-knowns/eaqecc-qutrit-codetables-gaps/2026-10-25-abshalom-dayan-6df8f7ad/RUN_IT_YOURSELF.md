@@ -64,6 +64,10 @@ What it does:
   d(C) >= min(20, 17 + 3) = 20. Each step (L1-L8) is printed; the proof is written out in HOW_WE_FOUND_IT.md.
 - verdict.py compares every computed value with the claim in the JSON.
 
+Two checker files name files that are not shipped and not needed: goppa_x.py refers to the run's NOTES.md for the
+proof steps (the proof is written out in HOW_WE_FOUND_IT.md), and check_eaqecc.py names enum_min.c, an exhaustive
+enumerator used only by its `verdict` mode, which these checks do not run.
+
 A third, independent exact check (a GF(3) position-subset rank test on S itself, which excludes the isotropic
 part inside the test and shares no code with the first two; about 2-3 CPU-minutes per part measured on a shared,
 loaded machine, 23:03:54Z to 23:14:41Z for all six parts run one at a time). For every set T of 19 positions it
