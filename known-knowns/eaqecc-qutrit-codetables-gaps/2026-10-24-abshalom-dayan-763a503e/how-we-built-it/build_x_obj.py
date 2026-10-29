@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Rebuild the claim object of run 2026-10-24-1727 deterministically: the Construction X code C = X(C1, C2, A) over
+"""Rebuild the claim object deterministically: the Construction X code C = X(C1, C2, A) over
 GF(9) with a sign pattern, then S = phi(C^perp_H) over GF(3) as a claim JSON (same conventions as every object of this
 workspace).
 C1 = C(D_28, 4Q + 3P_inf), C2 = C(D_28, 3Q + 3P_inf) from deg3.py (Q = degree-3 place number 0 of deg3.py's list;
 both generator matrices in reduced echelon form, as deg3.py writes them). Basis B of C1: the rows of C2, then each row
-of C1 that raises the rank (this is run 1640's prep_x.py). A = the [5,3,3]_9 Reed-Solomon code on the points PTS
+of C1 that raises the rank (this is an earlier run's prep_x.py, not shipped). A = the [5,3,3]_9 Reed-Solomon code on the points PTS
 (column (1, a, a^2) for a in GF(9), (0, 0, 1) for the point 9 = infinity). Rows of C: B[i] + 0^5 for i < 10, and
 B[i] + (M A)_(i-10) for i = 10, 11, 12. Columns marked "-" in EPS are multiplied by w (norm w^4 = -1).
-The parameters PTS, M, EPS are those printed by run 1640's constructor search (code/xsearch.c, seed 7, restart 16447).
+The parameters PTS, M, EPS are those printed by an earlier run's constructor search (code/xsearch.c, not shipped; seed 7, restart 16447).
 Usage: build_x_obj.py out.json d_claimed [out_G9.code]"""
 import sys, os, json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))

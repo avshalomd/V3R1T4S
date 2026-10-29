@@ -48,7 +48,7 @@ What it does:
 - verdict.py compares every computed value with the claim in the JSON.
 
 A second, independent exact check (a GF(3) position-subset rank test on S itself, which excludes the isotropic
-part inside the test and shares no code with the first; about 16 minutes with 3 cores). For every set T of 15
+part inside the test and shares no code with the first; about 5 to 6 minutes with 3 cores). For every set T of 15
 positions it compares, by exact GF(3) ranks, the dimension of the vectors of N supported inside T with that of the
 vectors of I supported inside T. They are equal for every T, so no vector of N outside I has symplectic weight
 <= 15: d >= 16.

@@ -7,6 +7,6 @@
   C1 = C(D_28, 4Q + 3P_inf) [28,13,13]_9 and C2 = C(D_28, 3Q + 3P_inf) [28,10,16]_9 (Q = place 0 of deg3.py's
   list) with a [5,3,3]_9 Reed-Solomon tail, the tail parameters and the column sign pattern written in the script.
   This object: `python3 build_x_obj.py out.json 16`, byte-identical to `object/eaqecc_33_8_16_15.json`.
-- `PREREG.md`: the frozen plan of the run that panelled this claim (run 2026-10-24-1727), written before any of its
+- `PREREG.md`: the frozen plan of the run that produced this claim, written before any of its
   checkers ran on the object. No null test: an explicit object checked by deterministic exact checkers against a
   table value.

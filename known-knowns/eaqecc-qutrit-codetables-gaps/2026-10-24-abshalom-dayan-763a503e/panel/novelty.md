@@ -78,9 +78,9 @@ I excluded the 124 "using teleportation" cells (#ffff00) as sources. They beat t
   - Fetched 2026-10-24T19:02:50Z; HTTP 200; sha256 4fb29f1e28aeb6a210f5e952ced51877d9fca9546f4a1c2dd9e1119cd3926c36.
   - "lower bound: 15 upper bound: 18".
 - Reading:
-  - A [33,κ,d]_9 code with Hermitian hull h gives [[33, κ-h, d; 33-κ-h]]_3. Reaching k = 8 with c <= 15 needs κ >= 13, and d >= 16 then needs the [33,13,16]_9 code with h >= 5, since [33,14] is only 15.
+  - A [33,κ,d]_9 code with Hermitian hull h gives [[33, κ-h, d; 33-κ-h]]_3. Reaching k = 8 with c <= 15 needs κ >= 13, and d >= 16 then needs the [33,13,16]_9 code with h >= 5, since the listed [33,14] codes reach only 15.
   - The table's own line from this classical code is [[33,11,16;18]] "from arXiv:2207.05647" (hull 2). Hull-decreasing then gives [[33,12,16;19]] and [[33,13,16;20]].
-  - At hull 3, 4 and 5 the table shows only 15: (33,10,17), (33,9,16) and (33,8,15).
+  - At hull 4 and 5 the table shows only 15: (33,9,16) and (33,8,15).
   - So the claim is a hull-dimension improvement of a known classical code. As EAQECC parameters, it is not listed anywhere I looked.
 
 ## Repo https://github.com/elder-plinius/V3R1T4S (one GET per query, all HTTP 200; full log in fetched/fetchlog.txt)
