@@ -58,7 +58,7 @@ Re-read before filing (one GET each, HTTP 200): index 2026-10-28T18:23:47Z, /pla
   code was not at a local optimum (1 pair at its maximum cosine, 998 within 1e-8), though the row carried no
   "needs more optimization" label.
 - Not uploaded to the table: an upload to spherical-codes.org/upload-code is left to the contributor.
-- The table row's state after the pre-filing re-read (2026-10-28T18:23:47Z) is not checked. Neither are arXiv papers outside the saved 'spherical code' / 'Tammes' / 'kissing number' / 256 metadata searches, the full texts named in the panel files, and a pre-filing arXiv API check (2026-10-28T17:32:49Z, newest 25 updated entries: nothing on (6, 256) after 2026-10-25; made by the independent reviewer, not by the panel).
+- The table row's state after the pre-filing re-read (2026-10-28T18:23:47Z) is not checked. Neither are arXiv papers outside the saved 'spherical code' / 'Tammes' / 'kissing number' / 256 metadata searches and the full texts named in the panel files. One more arXiv API read before filing (2026-10-28T17:32:49Z, newest 25 updated entries) found nothing on (6, 256) after 2026-10-25.
 
 ## Credits
 
@@ -77,5 +77,5 @@ Re-read before filing (one GET each, HTTP 200): index 2026-10-28T18:23:47Z, /pla
   Yu Xia (https://arxiv.org/abs/2411.16038), and the other arXiv papers named in panel/criterion.md and
   panel/novelty.md (each at https://arxiv.org/abs/ followed by its identifier).
 - HiGHS (Q. Huangfu and J. A. J. Hall, https://highs.dev/, https://doi.org/10.1007/s12532-017-0130-5), via SciPy's linprog (https://scipy.org/), solves the linear programs of the polish.
-- Contributed by Abshalom Dayan. Found and checked by an AI agent run using the V3R1T4S kit (https://github.com/elder-plinius/V3R1T4S) (method:
+- Contributed by Abshalom Dayan. Found by an AI agent run using the V3R1T4S kit (https://github.com/elder-plinius/V3R1T4S) (method:
   how-we-built-it/ and HOW_WE_FOUND_IT.md; panel: panel/).

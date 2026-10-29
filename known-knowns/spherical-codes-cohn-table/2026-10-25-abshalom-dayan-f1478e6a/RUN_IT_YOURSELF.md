@@ -28,8 +28,8 @@ object/code_6_256.txt.
 
 Named but not shipped: how-we-built-it/ and the-record-we-beat/ name run-workspace items that are not in this package and are not needed to check the claim:
 
-- run 2026-10-24-1639, which made the object (COMMANDS.md, PREREG.md, PREREG_seed_run.md);
-- its output runs/2026-10-24-1639/attempts/polish/out/deep/deep_6_256.txt and log deep_6_256.log (PREREG.md); the output is byte-identical to object/code_6_256.txt;
+- the run that made the object, named by its date and time (PREREG.md, PREREG_seed_run.md);
+- its output deep_6_256.txt under runs/ and log deep_6_256.log (PREREG.md); the output is byte-identical to object/code_6_256.txt;
 - data/queue_scout.out, attempts/claim-object/result/ and target.md (PREREG.md);
 - the run's checker/check_mp.py, checker/check_exact.py and checker/fetch_live.sh (PREREG.md, PREREG_seed_run.md);
 - COMMANDS.md's file names: 6_256.txt is the table's posted code at https://spherical-codes.org/data/6/256; slp_6_256.txt is step 1's output; code_6_256.txt is step 2's output, which is object/code_6_256.txt;

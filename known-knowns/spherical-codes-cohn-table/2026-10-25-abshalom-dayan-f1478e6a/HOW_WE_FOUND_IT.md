@@ -22,12 +22,11 @@ The object is a local refinement of that posted code, so the seed is Pavlos Moro
 "needs more optimization" label, so by the target's rule this is a record claim and not the partial win for
 labelled rows.
 
-Before the panel, an internal break-it review ran in a fresh context. It found the numbers right and the claim
-standing, plus wording and record points: a dimension regex that missed "dimensions 5, 6, and 7", paper statements
+Before the panel, an internal break-it pass ran in a fresh context. It raised wording and record points: a dimension regex that missed "dimensions 5, 6, and 7", paper statements
 resting on background knowledge that were not marked so, two kissing-number papers missing from a list, an earlier
 fetch line not copied into the claim, and an imprecise sentence about the polish's last trust radius. These were
 fixed and the table re-read as the very last step, at 2026-10-25T06:26:36Z. Then three skeptics, each in a fresh
-context on Opus 5.5 and one after another, checked the claim: REPRODUCE (its own checker, every pair exactly, no
+context on Opus 5.5 and one after another, worked through the claim: REPRODUCE (its own checker, every pair exactly, no
 network), NOVELTY (re-read the live table at 06:33:58Z, byte-identical to the claim read, plus its own arXiv
-searches and the repository's pull requests) and CRITERION (every conjunct of the criterion, no network). All three
-passed (panel/).
+searches and the repository's pull requests) and CRITERION (every conjunct of the criterion, no network). Their
+verdict files are in panel/.

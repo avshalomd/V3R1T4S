@@ -4,7 +4,7 @@ Input: the code posted for (6, 256) on the table by Pavlos Moros (2026), https:/
 (fetched 2026-10-24T17:37:11Z, HTTP 200, sha256 c5866a15cdabfe6f593fd878d690a9339d502f9720a7122f39d594a60b27992b,
 and again 2026-10-25T05:52:42Z with the same sha256; not included here, it is the table's file). Python 3.14.7 with
 requirements.txt; one core (`OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 OPENBLAS_NUM_THREADS=1`). Two steps, both in
-run 2026-10-24-1639; each line gives the program's own summary line.
+the run that made the object; each line gives the program's own summary line.
 
 ```sh
 # 1. exact-objective SLP with HiGHS (scipy.optimize.linprog, method="highs", which picks the HiGHS simplex or interior-point solver itself), 45 s budget (a sweep over 371 posted codes)
@@ -22,7 +22,7 @@ linearises the normalised inner products and minimises their common upper bound 
 (scipy.optimize.linprog); a step is kept only if the true maximum cosine drops, otherwise rad shrinks by 3. It
 stops when rad falls below 1e-15 or the time budget runs out. HiGHS timing changes the step count, so a rebuild
 lands near, not exactly on, object/code_6_256.txt; the saved file is the claim (its sha256 equals the step-2 output
-of run 2026-10-24-1639). Two wording notes on files kept as they were run: PREREG.md's "interior-point SLP polish" is this same program, and slp_polish.py's docstring says "25 significant digits" while its %.25e format writes 26 (as in object/code_6_256.txt).
+of the run that made the object). Two wording notes on files kept as they were run: PREREG.md's "interior-point SLP polish" is this same program, and slp_polish.py's docstring says "25 significant digits" while its %.25e format writes 26 (as in object/code_6_256.txt).
 
 PREREG_seed_run.md is the preregistration of the run that made both steps (frozen 2026-10-24T16:47:45Z), and
 PREREG.md that of this run, which froze the object unchanged and claimed it (frozen 2026-10-25T05:54:46Z).
