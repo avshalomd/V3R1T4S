@@ -12,8 +12,8 @@ a two-colour Ramsey lower bound above DS1; a multicolour cell above DS1 is parti
   triangle clauses and lazily added K5 clauses, exact final check). Colour 3 is the source's K7-free colour,
   unchanged. 251 + 1 = 252 > 241 (DS1's R(3,5,7) entry comes from a general construction, item 6.2.g).
 - What failed: one-vertex extension of the object (SAT; stopped undecided after 27 minutes); K3 + K5 circulant splits
-  of the (7,10) graph on 291 and of a 404-vertex (7,11) circulant that this workspace found on 2026-10-24 (it
+  of the (7,10) graph on 291 and of a 404-vertex (7,11) circulant that an earlier run found on 2026-10-24 (it
   only ties the published R(7,11) >= 405) (each returned UNSAT from CaDiCaL via pysat).
 - Checks: two exact checkers in the run (bitset branch and bound, and CaDiCaL via pysat returning UNSAT; no DRAT/LRAT certificate) agree for every colour;
-  the standard-library checker in verify-it-yourself/ agrees; three fresh-context skeptics (REPRODUCE, NOVELTY,
-  CRITERION) each checked it; see panel/.
+  the standard-library checker in verify-it-yourself/ agrees; the reports of three fresh-context skeptics (REPRODUCE, NOVELTY,
+  CRITERION) are in panel/.

@@ -13,8 +13,8 @@ confirmed_scope: The circulant 3-colouring of K_251 in object/R_3_5_7.txt (sha25
   fetches, 09:07:49Z to 09:10:16Z. pass: true.
 - CRITERION: a headless `claude -p` session (claude-opus-5-5, effort high), fresh, own copy of claim/, honest single
   fetches allowed, 09:10:51Z to 09:15:33Z. pass: true.
-- One after another, never in parallel. claim/ (including literature_record.md, the author's search record) and the
-  three instructions were fixed before REPRODUCE started; nothing changed during the panel.
+- One after another, never in parallel. claim/ (including literature_record.md, the author's search record) was
+  fixed before REPRODUCE started; nothing changed during the panel.
 
 ## What the gate checked (read by the run's main session, 2026-10-25T09:16Z)
 - Reproduction: REPRODUCE (own exhaustive search over all 251 vertices without symmetry: no K3, K5, K7, controls K2,
