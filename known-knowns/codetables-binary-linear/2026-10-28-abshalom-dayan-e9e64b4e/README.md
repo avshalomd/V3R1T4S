@@ -14,7 +14,7 @@ Not shipped: claim/checkers/witness_check.py and json_to_code.py (verify-it-your
 and RUN_IT_YOURSELF.md has the conversion one-liner), claim/table/bklc_q9_n32_k19.html (third-party page; URL, fetch
 times, HTTP status and sha256 are in the-record-we-beat/README.md), claim/table/RECORD.md (the scout's record of that page, named in
 panel/reproduce.md; its content is in the-record-we-beat/README.md), claim/rebuild/__pycache__/ (Python byte-code caches
-named in panel/reproduce.md), and the skeptics' working folders.
+named in panel/reproduce.md), and the skeptics' working folders (mine/).
 Also see "Named but not shipped" in RUN_IT_YOURSELF.md.
 
 The object's full SHA-256 is `e9e64b4eef94a2fc783bf8e027b849d0d931a3641607aa98121561a77cb77965`. The cell was read
@@ -27,7 +27,8 @@ functions of pole order 18 to 21 (`x^6`, `x^5 y`, `x^4 y^2`, `x^7`); their five 
 part all 19 rows span `C(D,21P)`, a `[27,19,6]` code. The textbook Construction X bound with a Reed-Solomon tail of
 length 5 gives only `min(10, 6 + 2) = 8`; the distance 10 comes from this specific tail, found by an exact search
 over 5-column tails for this nested pair (it stops at the first valid tail), and rests on exact computation (two exact
-methods by the author, both shipped: m3_mindist and hdep; plus the REPRODUCE and CRITERION skeptics' own; all agree; see `panel/`).
+methods by the author, both shipped: m3_mindist and hdep; the panel files in `panel/` record the REPRODUCE and
+CRITERION skeptics' own computations).
 Its number of weight-10 codewords is A_10 = 35,456 (4,432 supports, the CRITERION skeptic's count of deficient 10-subsets,
 times 8 nonzero scalars).
 
@@ -67,13 +68,13 @@ Details, HTTP headers, page hash and the neighboring cells are in `the-record-we
   10-13), shortened `[31,18,10]` (table 9-12, already our merged #644), `[33,19,10]` by a zero column (table 10-13).
 - No quantum or entanglement-assisted code is claimed here.
 - Not yet submitted to or listed by the table maintainer (codetables.de).
-- Not peer reviewed; verified by a three-skeptic panel (`panel/`) and by the standalone checker in
-  `verify-it-yourself/`.
+- Not peer reviewed. The panel files (`panel/`) and the standalone checker in `verify-it-yourself/` are shipped so
+  that anyone can check the claim.
 - The panel's NOVELTY skeptic could not read two sources (MinT had no connection; Yves Edel's tables page gave HTTP
   404); it did not retry. See `panel/novelty.md`. Neither is a bar in this target's criterion; the live codetables.de
   cell is.
 - The docstring of how-we-built-it/hermitian.py says the curve is the one "codetables.de uses for its [23..28, 9..14]
-  codes"; that statement was not checked (the file is byte-identical to the panel's copy and was left unedited).
+  codes"; that statement is unverified (the file is byte-identical to the panel's copy and was left unedited).
 
 ## Credits
 
