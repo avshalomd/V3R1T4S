@@ -12,7 +12,7 @@ confirmed_scope: The 3-colouring of K_271 in object/R_3_3_15.txt has no colour-1
   fetches, 11:32:56Z to 11:43:07Z. pass: true.
 - CRITERION: a headless `claude -p` session (claude-opus-5-5, effort high), fresh, own copy of claim/, honest single
   fetches allowed, 11:43:24Z to 11:51:06Z (panel/.work/criterion/started.txt). pass: true.
-- One after another. claim/ and the three instructions (panel/.work/instr_*.txt) were fixed at 10:03Z and 10:07Z by
+- One after another. claim/ was fixed at 10:03Z and 10:07Z by
   run 5 and not changed during the panel.
 
 ## What the gate checked (read by weekend run 7's main session, 2026-10-25T11:51:47Z)
