@@ -37,7 +37,7 @@ blocked, the other paper is paywalled. They would matter only if they contain a 
 - The full listed row n = 28, k = 6 (c: d_lower-d_upper): 0: 9-10, 4: 10-14, 6: 11-17, 8: 12-19, 11: 13-20,
   12: 14-21, 13: 15-21, 14: 16-21, 16: 17-22, 18: 18-22, 20: 19-22, 22: 20-23. Values of c that are not listed take the
   bound of the next lower listed c.
-- No challenge page. A grep of the page for `<script`, `ignore`, `instruction`, `assistant` or `prompt` returned no hits.
+- No challenge page. A grep of the page for `<script`, `ignore`, `instruction` or `assistant` returned no hits.
   injection_suspected: none.
 
 ## 2. Closure under the table's own rules

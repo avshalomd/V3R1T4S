@@ -9,8 +9,15 @@ The gate re-read the page once more at 2026-10-24T16:14:13Z: same page hash, sam
 (`the-record-we-beat/README.md`). The object's full SHA-256 is
 `51f713462c7db831723702a4d0b0cc9a73faacd2552999a7007f75d393188573`.
 
+Path note: the panel files and how-we-built-it/PREREG*.md refer to the run's claim folder and work folders. There,
+claim/object/ is object/, CLAIM.md is README.md, REPRODUCE.md is RUN_IT_YOURSELF.md, and claim/table/RECORD.md
+(the "RECORD.md" of the sentence above) is summarized in the-record-we-beat/README.md (the saved page is not
+shipped). Work files and folders named there (panel/claim.sha256, self_break/, mine/, scripts/, fetched/ and
+work-novelty/) are not shipped, and the numbered runs named there (for example 2026-10-24-0924, 2026-10-24-1033 and
+2026-10-24-1500, also written as run 1033) are the contributor's runs of the kit. data/gate_fetch/ (the gate's re-fetch folder) is not shipped either.
+
 The code comes from the extended one-point Hermitian code `E_16` on `y^3 + y = x^4` over GF(9): a `[28, 14, 12]_9`
-code whose Hermitian hull has dimension 8 (the maximum over all column sign patterns). That gives
+code whose Hermitian hull has dimension 8 (the maximum over all column sign patterns according to the contributor's search; unverified). That gives
 `[[28, 14 - 8, 12; 28 - 14 - 8]]_3 = [[28, 6, 12; 6]]_3`. The object holds the GF(9) generator `G9`, its Hermitian
 dual `D9`, and the stabilizer matrix `S = phi(D9)` over GF(3).
 
@@ -61,8 +68,7 @@ a `[28,14,12]_9` code with Hermitian hull 5.
 - The NOVELTY skeptic could not read two qutrit stabilizer-code papers in full (one paywalled, one behind a bot
   check). They would matter only if they held a code such as `[[28,0,12]]_3` or `[[29,1,12]]_3`.
 - Not yet submitted to or listed by the table maintainer (`eaqecc.codetables.de`).
-- Not peer reviewed; verified by a three-skeptic panel (`panel/`) and by the standalone checker in
-  `verify-it-yourself/`.
+- Not peer reviewed. The standalone checker is in `verify-it-yourself/`; the run's skeptic reports are in `panel/`.
 
 ## Credits
 
@@ -83,5 +89,5 @@ a `[28,14,12]_9` code with Hermitian hull 5.
   this code extends, and the comparison above.
 - **V. D. Goppa** (algebraic-geometry codes) and **Henning Stichtenoth** (Hermitian codes), whose distance bound
   gives `d >= 28 - m` for the extended code `E_m`.
-- **Andries Brouwer and Karl-Heinz Zimmermann**, whose minimum-distance algorithm one of the panel's checks uses.
+- **Andries Brouwer and Karl-Heinz Zimmermann**, whose minimum-distance algorithm an earlier Brouwer-Zimmermann distance check of this code used.
 - Contributor credit: Abshalom Dayan, using the V3R1T4S kit (https://github.com/elder-plinius/V3R1T4S).

@@ -13,7 +13,7 @@ the family against the table and kept it as a panel-ready candidate. This run re
 new exact checker: a GF(9) information-set test on the code recovered from S, which checks every one of the
 21,474,180 sets of 17 columns. That checker was tested against brute force on 450 random cases, on a known positive
 and on seeded negatives. It agrees with the earlier position-subset rank test over GF(3) and with an earlier
-Brouwer-Zimmermann run. The claim folder then went to a three-skeptic panel, one skeptic at a time.
+Brouwer-Zimmermann run.
 
 What failed, looking for d = 13 at the same cell: a local search started from E_16 (column replacements scored
 exactly by the number of weight-12 supports) never improved on the start in three seeds. Column scalings cannot

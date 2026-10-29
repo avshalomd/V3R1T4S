@@ -4,6 +4,6 @@
   Hermitian code E_m (`hermitian.py`: points and monomials of y^3 + y = x^4 over GF(9); `gf9lib.py`: GF(9)
   arithmetic, Hermitian dual, phi map to GF(3)). This object: `python3 build_obj.py 16 out.json 12` (E_16, no column
   scaled), byte-identical to `object/eaqecc_28_6_12_6.json`.
-- `PREREG.md`: the frozen plan of the run that panelled this claim (run 2026-10-24-1500). `PREREG_found_run.md`: the
-  frozen plan of the run that found it and kept it as a candidate (run 2026-10-24-1033). No null test: an explicit
+- `PREREG.md`: the frozen plan of the run that claimed it. `PREREG_found_run.md`: the
+  frozen plan of the run that found it and kept it as a candidate. No null test: an explicit
   object checked by deterministic exact checkers against a table value.
