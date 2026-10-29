@@ -1,6 +1,6 @@
 # Self-break summary (before the panel)
 
-Run 2026-10-25 (fresh-context reviewer) and run 2026-10-27 (main session, not a fresh context); the fresh-context
+Run of 2026-10-25 (a fresh-context session) and run of 2026-10-27 (main session, not a fresh context); the fresh-context
 checks of record are panel/.
 - Two independent checkers written from the definition (exact integers over all 4,112,784 Brent equations; and the
   full tensor modulo two primes): 0 wrong; 1270 terms, none with a zero factor, no duplicates, no two terms

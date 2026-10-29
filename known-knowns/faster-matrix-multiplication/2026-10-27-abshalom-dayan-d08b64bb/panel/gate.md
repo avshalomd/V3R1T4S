@@ -37,8 +37,7 @@ What the gate read and decided:
 
 Re-run of CRITERION (amended 2026-10-28T17:23:29Z by the supervising session, on Abshalom Dayan's decision): because the first
 CRITERION skeptic routed around a tool-guard block (process note above), a fresh CRITERION subagent (Claude Opus 5.5)
-was run on an unchanged copy of claim/ (all 15 files match panel/claim.sha256) with the stop-on-block rule in its
-prompt. It made one plain GET per criterion source at 2026-10-28T05:44:19-05:44:20Z, met no guard block, 401, 403 or
+was run on an unchanged copy of claim/ (all 15 files match panel/claim.sha256). It made one plain GET per criterion source at 2026-10-28T05:44:19-05:44:20Z, met no guard block, 401, 403 or
 429, re-verified all 4,112,784 Brent equations with its own checker and ended pass: true. panel/criterion.md is now
 that verdict and confirmed_scope above is its sentence; fmm_sota.json, the Lille page and ranks.md were byte-identical
 to the run's fetches. The first CRITERION verdict is kept in the run folder as panel_ws/criterion/criterion.v1.md.

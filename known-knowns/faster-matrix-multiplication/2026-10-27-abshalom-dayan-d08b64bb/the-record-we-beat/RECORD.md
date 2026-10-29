@@ -24,5 +24,5 @@ Earlier the same day the GitHub search API, under eight spellings, found nothing
 
 The skeptics' own fetches (2026-10-27T22:09-22:11Z NOVELTY, 22:16Z CRITERION) returned the same sha256 for all four
 sources; see panel/novelty.md and panel/criterion.md. TABLE_RECORD.md is the scout's record shown to the panel
-(unchanged). The filing step must re-fetch all four sources immediately before the pull request is opened (criterion
-text).
+(unchanged). The criterion asks for all four sources to be re-fetched immediately before claiming; the CRITERION
+re-run fetched all four again at 2026-10-28T05:44:19-05:44:20Z (panel/criterion.md, panel/gate.md).

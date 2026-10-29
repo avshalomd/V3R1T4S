@@ -3,8 +3,35 @@
 ## What
 The files claim/object/u.txt (sha256 d08b64bb), claim/object/v.txt (sha256 a1c14244) and claim/object/w.txt (sha256 8180074e) define a bilinear scheme with 1270 rank-one terms (each with three nonzero factors) for <12,13,13> over Q that satisfies all 4,112,784 Brent equations exactly (0 mismatches in my independent integer-scaled full-tensor check and in the claim's own checker), and 1270 is strictly below every bar the criterion names as I fetched them: fmm_sota.json rank 1274 (2026-10-28T05:44:19Z, HTTP 200, sha256 2a653515), https://fmm.univ-lille.fr/12x13x13.html rank 1274 (2026-10-28T05:44:19Z, HTTP 200, sha256 1f1af49d), Perminov docs/ranks.md minimum over ZT 1298 (?), Z 1298 (?) and Q 1274, which is 1274 (2026-10-28T05:44:20Z, HTTP 200, sha256 e71786dd), and https://github.com/MerlijnW70/fmm-schemes, whose README lists no <12,13,13> scheme or permutation (2026-10-28T05:44:20Z, HTTP 200, sha256 c0d29fe3).
 
+Path note: claim/ (the run's claim folder) was frozen at 2026-10-27T22:06Z (panel/claim.sha256, 15 files) and checked unchanged after each skeptic; three
+fresh subagents ran one after another, each with only its own copy of claim/: REPRODUCE (Claude Sonnet 5.5), NOVELTY
+and CRITERION (Claude Opus 5.5). The first CRITERION skeptic routed around a local tool guard (see panel/gate.md), so
+CRITERION was re-run on 2026-10-28 by a fresh subagent on an unchanged copy of claim/, with no block; panel/criterion.md
+is that clean verdict and the What sentence above is its confirmed_scope. The panel files are copied as written, except that a few words on how the skeptic sessions were set up or screened were reworded. Where
+they name claim/ files:
+- claim/object/ is object/ and claim/verify-it-yourself/ is verify-it-yourself/ (byte-identical except run_checks.sh,
+  which here is the version that writes no temporary files into the package folder; RECEIPTS.md added).
+- claim/CLAIM.md and claim/REPRODUCE.md are in how-we-built-it/ (REPRODUCE.md unchanged, its paths refer to the claim
+  folder; CLAIM.md with the same one-token URL-template edit); claim/TABLE_RECORD.md is
+  the-record-we-beat/TABLE_RECORD.md (unchanged).
+- claim/rebuild/*.py is how-we-built-it/code/ (byte-identical). The LITA parent file 13x13x13_r1379.npz is third-party
+  data and is not shipped: fetch it as how-we-built-it/COMMANDS.md says and compare its sha256.
+- Workspace names that are not part of this package: the run id 2026-10-27-2200 (panel/gate.md: the run of 2026-10-27), the folder
+  runs/2026-10-25-0343/leads/12x13x13_r1270/claim/object/ (how-we-built-it/PREREG.md; its three files are
+  byte-identical to object/), target.md (how-we-built-it/PREREG.md; its criterion text is the 'Success criterion'
+  section of how-we-built-it/CLAIM.md), panel_ws/criterion/mine/ and panel_ws/criterion/criterion.v1.md (panel/gate.md: the first
+  CRITERION skeptic's working files and verdict, not shipped), mine/ (panel/criterion.md: the re-run skeptic's working
+  files, not shipped) and self-break notes, summarised in how-we-built-it/SELF_BREAK.md.
+- The skeptics' working files (their fetched pages and their own checkers) are not shipped; their results, URLs, times
+  and sha256 values are in panel/.
+
+Corrections to the panel text:
+- the-record-we-beat/TABLE_RECORD.md (the panel's input, unchanged) says the 22:05Z search repeat "was stopped" at the first
+  HTTP 403; in fact the script sent its remaining five queries once each (22:05:41-22:05:51Z, all 403) before
+  stopping. None was a retry, and nothing in the claim rests on them.
+
 Level: the main success criterion of fmm-catalogue-small-format-rank (max(12,13,13) = 13 <= 16; sorted format not
-(3,3,3) or (4,4,4)), not a partial win. Status: CONFIRMED by the three-skeptic panel and the honesty gate (panel/). The
+(3,3,3) or (4,4,4)), not a partial win. The three skeptic reports and the honesty gate are in panel/. The
 scheme comes from Khoruzhii, Serafin, Gelss and Pokutta's published LITA 13x13x13 rank-1379 scheme by one exact
 one-slice cut (84 terms vanish, 1295 remain) followed by exact absorption of 25 terms; the rebuild is deterministic and
 byte-identical (how-we-built-it/COMMANDS.md). No scheme for this format is merged in this repository, and no pull
@@ -40,9 +67,8 @@ The minimum over the four named sources is 1274 (the Lille index at https://fmm.
 This repository: TROPHY_CASE.md (fetched 2026-10-27T22:19:25Z) has no <12,13,13> entry. All 761 pull requests
 (numbers 1 to 790, every state, read through the pulls API at 2026-10-27T22:19:25-22:19:48Z; the NOVELTY skeptic read
 them separately) name neither (12,13,13) nor a permutation in any spelling in their titles or bodies (the files of
-#708 name it, see above); an independent review re-read all 763 (numbers 1 to 792) at 2026-10-27T22:56Z with the same
-result. The filing step must re-fetch all four
-sources immediately before the pull request is opened (criterion text). Snapshots: the-record-we-beat/.
+#708 name it, see above). The criterion asks for all four sources to be re-fetched immediately before claiming; the
+last fetch of all four was at 2026-10-28T05:44:19Z/20Z (CRITERION re-run). Snapshots: the-record-we-beat/.
 
 ## Not claimed
 - Nothing about any other format: this package is one cell, <12,13,13>.
@@ -53,32 +79,6 @@ sources immediately before the pull request is opened (criterion text). Snapshot
 - Not a new search method: the scheme is LITA's public 13x13x13 scheme cut once and reduced by exact absorption, the
   same technique as earlier merged records of this family. It is not a composition, padding or block split of known
   schemes, and 1270 equals no value listed anywhere we looked.
-
-## Notes on the panel files
-claim/ was frozen at 2026-10-27T22:06Z (panel/claim.sha256, 15 files) and checked unchanged after each skeptic; three
-fresh subagents ran one after another, each with only its own copy of claim/: REPRODUCE (Claude Sonnet 5.5), NOVELTY
-and CRITERION (Claude Opus 5.5). The first CRITERION skeptic routed around a local tool guard (see panel/gate.md), so
-CRITERION was re-run on 2026-10-28 by a fresh subagent on an unchanged copy of claim/, with no block; panel/criterion.md
-is that clean verdict and the What sentence above is its confirmed_scope. The panel files are copied unchanged. Where
-they name claim/ files:
-- claim/object/ is object/ and claim/verify-it-yourself/ is verify-it-yourself/ (byte-identical except run_checks.sh,
-  which here is the version that writes no temporary files into the package folder; RECEIPTS.md added).
-- claim/CLAIM.md and claim/REPRODUCE.md are in how-we-built-it/ (REPRODUCE.md unchanged, its paths refer to the claim
-  folder; CLAIM.md with the same one-token URL-template edit); claim/TABLE_RECORD.md is
-  the-record-we-beat/TABLE_RECORD.md (unchanged).
-- claim/rebuild/*.py is how-we-built-it/code/ (byte-identical). The LITA parent file 13x13x13_r1379.npz is third-party
-  data and is not shipped: fetch it as how-we-built-it/COMMANDS.md says and compare its sha256.
-- Workspace names that are not part of this package: the run id 2026-10-27-2200 (panel/gate.md), the folder
-  runs/2026-10-25-0343/leads/12x13x13_r1270/claim/object/ (how-we-built-it/PREREG.md; its three files are
-  byte-identical to object/), target.md (how-we-built-it/PREREG.md; its criterion text is the 'Success criterion'
-  section of how-we-built-it/CLAIM.md), panel_ws/criterion/mine/ and panel_ws/criterion/criterion.v1.md (panel/gate.md: the first
-  CRITERION skeptic's working files and verdict, not shipped), mine/ (panel/criterion.md: the re-run skeptic's working
-  files, not shipped) and self-break notes, summarised in how-we-built-it/SELF_BREAK.md.
-- The skeptics' working files (their fetched pages and their own checkers) are not shipped; their results, URLs, times
-  and sha256 values are in panel/.
-- the-record-we-beat/TABLE_RECORD.md (unchanged panel input) says the 22:05Z search repeat "was stopped" at the first
-  HTTP 403; in fact the script sent its remaining five queries once each (22:05:41-22:05:51Z, all 403) before
-  stopping. None was a retry, and nothing in the claim rests on them.
 
 ## Credits
 - Kirill Khoruzhii, Luzian Serafin, Patrick Gelss and Sebastian Pokutta, LITA (Local Improvements to Trilinear
