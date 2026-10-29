@@ -16,7 +16,7 @@ Action for the claim package (not a novelty failure): CLAIM.md says 1104 is "str
 
 Side note, not checked: the slice sizes 80/512/512 in REPRODUCE.md fit the doubling pattern 2 x (512 + 40). If the object really is a doubling, it would also imply a 552-cap in PG(8,3), above Edel's 541. I did not verify that.
 
-Sanity check, outside my brief: `shasum` of cap_1104_n9.txt gave 26a206db2dafae4a7f2c6f7478738acf5550af13998da2d4d0dff610ba83f82e (matches CLAIM.md). An inline Python pair scan, using no files from the package's checker, found 1104 distinct 9-digit ternary vectors and 0 pairs whose third point -(x+y) mod 3 lies in the set (2026-10-24T20:04:15Z).
+Sanity check: `shasum` of cap_1104_n9.txt gave 26a206db2dafae4a7f2c6f7478738acf5550af13998da2d4d0dff610ba83f82e (matches CLAIM.md). An inline Python pair scan, using no files from the package's checker, found 1104 distinct 9-digit ternary vectors and 0 pairs whose third point -(x+y) mod 3 lies in the set (2026-10-24T20:04:15Z).
 
 ## Sources checked (one plain GET each, User-Agent "V3R1T4S-research-run (honest client)", times from `date -u`)
 

@@ -15,5 +15,5 @@ a partial win.
   (D = diag(2,2,2,2,2,1,1,1) up to C's own sign symmetries) leaves 92, which hold an 80-point cap (CP-SAT, proven
   optimal). 512 + 512 + 80 = 1104, against 1082 published. The same recipe applied to the 236-cap gives 496, exactly
   Edel's old value for F_3^8, which made the construction plausible.
-- Checks: the run's two-route exact checker, a separate numpy checker, and three fresh-context skeptics (REPRODUCE,
-  NOVELTY, CRITERION), each of which passed it; see panel/.
+- Checks: the run's two-route exact checker and a separate numpy checker; the three skeptic reports (REPRODUCE,
+  NOVELTY, CRITERION) are in panel/.

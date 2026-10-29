@@ -1,7 +1,18 @@
 # A cap of 1104 points in F_3^9 (cap-set-dim7-dim8, partial win p1)
 
 ## What
-The file cap_1104_n9.txt (sha256 26a206db2dafae4a7f2c6f7478738acf5550af13998da2d4d0dff610ba83f82e) is an affine cap of 1104 distinct points in F_3^9, with no three distinct points summing to 0 mod 3, verified exhaustively over all 608,856 pairs and by an exact Fourier count; 1104 is strictly larger than every F_3^9 cap size found on 2026-10-24 in the sources p1 names as the panel read them (1082 from the FunSearch notebook and from doubling Edel's 541-cap in PG(8,3), no n = 9 value in X-evolve Table 2 or OEIS A090245, none in arXiv titles and abstracts) and than the unrefereed 1084 of Noirsys/capset, so it meets partial win p1 for dimension 9 and does not meet the main n = 7 or 8 criterion.
+The file cap_1104_n9.txt (sha256 26a206db2dafae4a7f2c6f7478738acf5550af13998da2d4d0dff610ba83f82e) is an affine cap of 1104 distinct points in F_3^9, with no three distinct points summing to 0 mod 3, verified exhaustively over all 608,856 pairs; 1104 is strictly larger than every F_3^9 cap size found on 2026-10-24 in the sources p1 names as the panel read them (1082 from the FunSearch notebook and from doubling Edel's 541-cap in PG(8,3), no n = 9 value in X-evolve Table 2 or OEIS A090245, none in arXiv titles and abstracts) and than the unrefereed 1084 of Noirsys/capset, so it meets partial win p1 for dimension 9 and does not meet the main n = 7 or 8 criterion.
+
+Note: the sentence above is the confirmed_scope in panel/gate.md, where the words "and by an exact Fourier count"
+were removed after the gate (in both places): the code for that count is not shipped, and the shipped check (verify-it-yourself/capcheck.py) is the
+exhaustive pair check.
+
+Path note: the panel files and how-we-built-it/PREREG.md refer to the run's claim folder and work folders. There,
+cap_1104_n9.txt is object/cap_1104_n9.txt, CLAIM.md is README.md, REPRODUCE.md is RUN_IT_YOURSELF.md and
+checker/capcheck.py is verify-it-yourself/capcheck.py. The FunSearch 512-cap inputs/record_512_n8.txt is not shipped
+(how-we-built-it/fetch_512.py downloads it), nor are inputs/verify_structure.py and sources/funsearch-cap_set.ipynb.
+Work files and folders named there (for example panel/.work/, mychk/, novelty-fetch/, criterion_fetch/,
+criterion_check.py and criterion_extra.py) are not shipped.
 
 ## Check it yourself
 ```sh

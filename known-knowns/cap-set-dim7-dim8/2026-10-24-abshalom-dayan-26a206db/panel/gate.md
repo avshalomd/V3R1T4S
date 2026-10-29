@@ -2,7 +2,7 @@
 
 status: CONFIRMED_PARTIAL
 partial_win: p1
-confirmed_scope: The file cap_1104_n9.txt (sha256 26a206db2dafae4a7f2c6f7478738acf5550af13998da2d4d0dff610ba83f82e) is an affine cap of 1104 distinct points in F_3^9, with no three distinct points summing to 0 mod 3, verified exhaustively over all 608,856 pairs and by an exact Fourier count; 1104 is strictly larger than every F_3^9 cap size found on 2026-10-24 in the sources p1 names as the panel read them (1082 from the FunSearch notebook and from doubling Edel's 541-cap in PG(8,3), no n = 9 value in X-evolve Table 2 or OEIS A090245, none in arXiv titles and abstracts) and than the unrefereed 1084 of Noirsys/capset, so it meets partial win p1 for dimension 9 and does not meet the main n = 7 or 8 criterion.
+confirmed_scope: The file cap_1104_n9.txt (sha256 26a206db2dafae4a7f2c6f7478738acf5550af13998da2d4d0dff610ba83f82e) is an affine cap of 1104 distinct points in F_3^9, with no three distinct points summing to 0 mod 3, verified exhaustively over all 608,856 pairs; 1104 is strictly larger than every F_3^9 cap size found on 2026-10-24 in the sources p1 names as the panel read them (1082 from the FunSearch notebook and from doubling Edel's 541-cap in PG(8,3), no n = 9 value in X-evolve Table 2 or OEIS A090245, none in arXiv titles and abstracts) and than the unrefereed 1084 of Noirsys/capset, so it meets partial win p1 for dimension 9 and does not meet the main n = 7 or 8 criterion.
 
 ## How the panel was run
 - REPRODUCE: a headless `claude -p` session (claude-sonnet-5-5, effort high), fresh, started inside its own copy of
