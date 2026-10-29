@@ -14,7 +14,7 @@ Not shipped: claim/checkers/witness_check.py and json_to_code.py (verify-it-your
 and RUN_IT_YOURSELF.md has the conversion one-liner), claim/table/bklc_q9_n31_k17.html and its .headers, .result and
 .time files (third-party page and fetch metadata; URL, fetch times, HTTP status and sha256 are in
 the-record-we-beat/README.md), claim/table/RECORD.md (the scout's record of that page; its content is in
-the-record-we-beat/README.md), any Python byte-code caches, and the skeptics' working folders.
+the-record-we-beat/README.md), any Python byte-code caches, and the skeptics' working folders (mine/, live/, fetched/, scripts/, author_run/).
 Also see "Named but not shipped" in RUN_IT_YOURSELF.md.
 
 The object's full SHA-256 is `f08aa6475f164ffa1ed1f41f5c63eb0f5516b74c34c1b198da8c83ae1a7da5dd`. The cell was read
@@ -27,7 +27,8 @@ functions of pole order 17 to 19 (`x^3 y^2`, `x^6`, `x^5 y`); their four tail en
 `C(D,19P)`, a `[27,17,8]` code. The textbook Construction X bound with a Reed-Solomon (MDS) tail of length 4 gives
 only `min(11, 8 + 2) = 10`; the distance 11 comes from this specific tail, found by an exact search over 4-column
 tails for this nested pair (it stops at the first valid tail), and rests on exact computation (two exact methods by
-the author, both shipped: m3_mindist and hdep; plus the REPRODUCE and CRITERION skeptics' own; all agree; see `panel/`). Its number of weight-11 codewords is A_11 = 48,648 (6,081 supports, counted by both of the REPRODUCE skeptic's methods, times 8 nonzero scalars).
+the author, both shipped: m3_mindist and hdep; the panel files in `panel/` record the REPRODUCE and CRITERION skeptics'
+own computations). Its number of weight-11 codewords is A_11 = 48,648 (6,081 supports, counted by both of the REPRODUCE skeptic's methods, times 8 nonzero scalars).
 
 This is a GF(9) result. The bank target is named `codetables-binary-linear`, but its success criterion is stated for
 GF(q); this code is not a binary code.
@@ -65,12 +66,12 @@ Details, HTTP headers, page hash and the neighboring cells are in `the-record-we
   `[32,17,11]` by a zero column (table 11-14).
 - No quantum or entanglement-assisted code is claimed here.
 - Not yet submitted to or listed by the table maintainer (codetables.de).
-- Not peer reviewed; verified by a three-skeptic panel (`panel/`) and by the standalone checker in
-  `verify-it-yourself/`.
+- Not peer reviewed. The panel files (`panel/`) and the standalone checker in `verify-it-yourself/` are shipped so
+  that anyone can check the claim.
 - The panel's NOVELTY skeptic read abstracts and PR titles and bodies, not full texts or PR file contents, and did not
   query MinT; see `panel/novelty.md`. The live codetables.de cell is the bar in this target's criterion.
 - The docstring of how-we-built-it/hermitian.py says the curve is the one "codetables.de uses for its [23..28, 9..14]
-  codes"; that statement was not checked (the file is byte-identical to the panel's copy and was left unedited).
+  codes"; that statement is unverified (the file is byte-identical to the panel's copy and was left unedited).
 
 ## Credits
 

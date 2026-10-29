@@ -50,4 +50,4 @@ that every hyperplane c-perp holds at most 4 - max(0, 11 - mu(c)) of them. Its o
 `16,19,4,31,17 nodes=15 sols=1 0 1 2 13`; `build_tail.py 16 19 0,1,2,13 OUT` turns it into the matrix.
 
 Named but not shipped: some files name run-workspace items that are not in this package and are not needed to check
-the claim: the run folders 2026-10-27-0100, 2026-10-28-0100 and 2026-10-29-0100 (panel/gate.md, how-we-built-it/PREREG.md, how-we-built-it/README.md), the run's dossier and NEXT_RUN.md (how-we-built-it/PREREG.md), out/candidates.txt (gen_tail.py's CAND input), constructor/code/tailc.c (the earlier tail search that tailg.c generalizes), the self-break step (how-we-built-it/PREREG.md, panel/gate.md), and the skeptics' working folders (panel/).
+the claim: three run folders named by their date and time (panel/gate.md, how-we-built-it/PREREG.md), the run's dossier and NEXT_RUN.md (how-we-built-it/PREREG.md), out/candidates.txt (gen_tail.py's CAND input), constructor/code/tailc.c (the earlier tail search that tailg.c generalizes), the self-break step (how-we-built-it/PREREG.md, panel/gate.md), and the skeptics' working folders (panel/).
