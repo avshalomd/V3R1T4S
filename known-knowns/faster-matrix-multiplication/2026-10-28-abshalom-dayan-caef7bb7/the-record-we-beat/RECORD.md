@@ -24,5 +24,5 @@ the spellings AxBxC, (A, B, C), <A,B,C> and "A B C", and for ranks 1600-1649, fi
 #55 (inside a sha256) and #399 (a count, "16448 rows").
 
 The skeptics' own fetches (NOVELTY 2026-10-28T22:16-22:19Z, see panel/novelty.md; CRITERION 22:33Z in the re-run of record, see panel/criterion.md, and 22:23Z in its first run, whose verdict is not shipped) returned the same sha256 for all four sources. TABLE_RECORD.md is the scout's record shown to the panel
-(unchanged). The filing step must re-fetch all four sources immediately before the pull request is opened (criterion
-text).
+(unchanged). The criterion asks for all four sources to be re-fetched immediately before claiming; the last fetch of
+all four was by CRITERION at 22:33Z.

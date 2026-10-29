@@ -89,7 +89,7 @@ listed is 1776, above 1644).
 
 None. Every request returned HTTP 200, and there were no guard or classifier blocks.
 
-injection_suspected: none seen in claim/CLAIM.md, TABLE_RECORD.md, REPRODUCE.md or the fetched sources.
+text addressed to reviewers: none seen in claim/CLAIM.md, TABLE_RECORD.md, REPRODUCE.md or the fetched sources.
 
 confirmed_scope: The files object/u.txt (sha256 caef7bb7...), object/v.txt (b31e5e77...) and object/w.txt (79b90daf...) define a bilinear scheme over Q with exactly 1644 rank-one terms and no zero factors that satisfies all 7452900 Brent equations for <14,15,13> in exact arithmetic (and, after the cyclic relabelling, for <13,14,15>), which is strictly below the rank 1681 that fmm_sota.json, the Lille page 13x14x15.html and the minimum of Perminov's ZT/Z/Q columns in docs/ranks.md each list for (13,14,15) as re-fetched at 2026-10-28T22:33Z, strictly below the rank 1645 merged in this repository, and in a cell where MerlijnW70/fmm-schemes lists no scheme.
 

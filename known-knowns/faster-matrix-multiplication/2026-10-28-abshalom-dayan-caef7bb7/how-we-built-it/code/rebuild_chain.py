@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Rebuild the <13,14,15> rank-1644 scheme (stored as format 14x15x13) from LITA's 15x15x15 rank-1977 scheme by three
-exact one-slice restrictions, each followed by flat (consensus) absorption with a fixed seed, exactly as run
-2026-10-25-0343 built it (rebuild_slice.py for step 1, scanD.py cuts for steps 2 and 3: restrict, then
+exact one-slice restrictions, each followed by flat (consensus) absorption with a fixed seed, exactly as the run
+of 2026-10-25 built it (rebuild_slice.py for step 1, scanD.py cuts for steps 2 and 3, both not shipped: restrict, then
 flat_all(rng=Random(seed), restarts=6), mode rflat, start 0). Needs engine.py and flat.py from this folder
 (numpy, python-flint 0.9.0).
 Usage: rebuild_chain.py lita_15.json out.json"""

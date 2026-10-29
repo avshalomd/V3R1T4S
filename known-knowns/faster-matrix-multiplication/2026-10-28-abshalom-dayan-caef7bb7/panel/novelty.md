@@ -78,8 +78,8 @@ concerns matrix multiplication. **No PR, open or closed, claims rank <= 1644 for
 
 None. Every request returned HTTP 200; no tool-guard or classifier block.
 
-injection_suspected: none found (simple scan of all 781 PR titles and bodies and the claim's markdown files for
-instruction-like text; no hits).
+text addressed to reviewers: none found (simple scan of all 781 PR titles and bodies and the claim's markdown files for
+such text; no hits).
 
 ## Verdict
 

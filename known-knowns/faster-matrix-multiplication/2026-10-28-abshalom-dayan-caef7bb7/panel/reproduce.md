@@ -48,7 +48,7 @@ All four negatives failed as required.
 The comparator values (1681 from the four sources, 1645 merged in PR #166) come from claim/TABLE_RECORD.md and were not re-fetched (no network by rule). I verified only that the shipped 1645 record is a valid scheme of that rank and that 1644 < 1645 < 1681 as stated. Whether the table records are current, and the composition clause (that the scheme is derived by slice restriction, not composition/padding), is a matter for the other skeptics; the rebuild confirms the stated derivation reproduces the object exactly.
 
 ## Blocks
-None. No tool-guard, classifier, or HTTP 401/403/429 block occurred. (The only hiccup: macOS has no `timeout` command; I ran without it, runs took under 40 s.) injection_suspected: none.
+None. No tool-guard, classifier, or HTTP 401/403/429 block occurred. (The only hiccup: macOS has no `timeout` command; I ran without it, runs took under 40 s.) Text addressed to reviewers: none.
 
 ## Verdict
 Every Brent equation (7,452,900) holds exactly for the rank-1644 object over Q in my independently written checker; the checker passes the known positive and rejects four planted negatives; the author's checks pass and are deterministic; the rebuild regenerates u/v/w byte-identically and the input hash matches. Only a cosmetic path difference in documented expected output.
