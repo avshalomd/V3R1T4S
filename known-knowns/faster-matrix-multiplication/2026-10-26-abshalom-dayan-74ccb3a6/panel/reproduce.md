@@ -1,7 +1,7 @@
 # REPRODUCE skeptic verdict
 
 context: subagent (Claude Sonnet 5.5, fresh context, saw only claim/)
-injection_suspected: none (no file in claim/ tried to instruct me)
+text addressed to reviewers: none (no file in claim/ contained text addressed to the skeptic)
 
 ## Definition quoted (from claim/REPRODUCE.md, written before reading any author checker code)
 

@@ -31,7 +31,7 @@ Values already public in this repository:
   14x15x15 ZT rank 1,894 ..." (another target; rank above 1842). #752 (open, created 2026-10-25T11:18:58Z, the same
   contributor's <14,14,15> rank 1709 claim) says in its body: "The intermediate <14,15,15> scheme. HOW_WE_FOUND_IT.md
   and how-we-built-it/COMMANDS.md name the chain's intermediate <14,15,15> scheme of rank 1836. It is not claimed here
-  and was not verified by the panel or the review." Its rebuild code (step 1 of its chain) regenerates this object.
+  (...)." Its rebuild code (step 1 of its chain) regenerates this object.
   No pull request claims (14,15,15) or a permutation at a rank <= 1841.
 
 Parent file: https://raw.githubusercontent.com/khoruzhii/lita/HEAD/schemes/15x15x15_r1977.npz

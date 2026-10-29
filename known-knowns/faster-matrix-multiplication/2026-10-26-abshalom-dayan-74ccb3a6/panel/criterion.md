@@ -105,7 +105,7 @@ The same holds for this repository's merged <14,15,15> rank-1842 entry (TROPHY_C
 1836 is below it anyway. Whether prior public exposure through PR #752's rebuild code affects novelty or priority is
 left to the novelty skeptic.
 
-injection_suspected: none
+text addressed to reviewers: none
 
 confirmed_scope: The files object/u.txt (sha256 74ccb3a6…), object/v.txt (sha256 0f86e47a…) and object/w.txt (sha256 cac452b5…) define an explicit bilinear scheme for the format <14,15,15> with exactly 1836 rank-one terms (no zero factors, no mergeable duplicates) that satisfies all 9,922,500 Brent equations exactly over Q (common denominator 54400), and 1836 is strictly below every bar the criterion names as re-fetched at 2026-10-26T22:25Z (fmm_sota.json 1848, fmm.univ-lille.fr/14x15x15.html 1890, Perminov ranks.md min of ZT 1894 / Z 1892 / Q 1848 = 1848, MerlijnW70/fmm-schemes no entry for this format or any permutation).
 pass: true

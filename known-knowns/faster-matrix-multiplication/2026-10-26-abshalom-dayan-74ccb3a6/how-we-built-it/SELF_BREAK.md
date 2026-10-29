@@ -1,4 +1,4 @@
-# Self-break summary (run 2026-10-26-2200, main session, before the panel)
+# Self-break summary (run of 2026-10-26, main session, before the panel)
 
 Not a fresh context; the fresh-context checks are panel/.
 - An independent checker written from the definition (exact integers, all 9,922,500 Brent equations): 0 wrong; 1836

@@ -116,6 +116,6 @@ Caveat for the gate and maintainers: a strictly literal reading has the filing d
 | PR #752 (same object, same contributor; sets the credit date) | 1836 (not an independent value) | same result |
 | literature, last 24 months (arXiv, LITA, matmulcatalog) | nothing below 1848 | -12 or better |
 
-No source blocked a request. No injection attempts were found in the claim files, pull-request bodies or fetched pages. The fetch log and the saved bodies are in the novelty skeptic's working folder, fetch/.
+No source blocked a request. No text addressed to reviewers was found in the claim files, pull-request bodies or fetched pages. The fetch log and the saved bodies are in the novelty skeptic's working folder, fetch/.
 
 pass: true

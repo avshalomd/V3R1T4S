@@ -23,4 +23,4 @@ Last searches: 14x15x15 2026-10-26T22:30:41Z, 200, ccbb8c66cc8725a5bf9d9064e1025
 
 The skeptics' own fetches (2026-10-26T22:13Z NOVELTY, 22:25Z CRITERION) returned the same sha256 for all four sources;
 see panel/novelty.md and panel/criterion.md. TABLE_RECORD.md is the scout's record shown to the panel (unchanged).
-The filing step must re-fetch all four sources immediately before the pull request is opened (criterion text).
+The criterion asks for all four sources to be re-fetched immediately before claiming; the last fetch of all four above is 2026-10-26T22:30:40Z.

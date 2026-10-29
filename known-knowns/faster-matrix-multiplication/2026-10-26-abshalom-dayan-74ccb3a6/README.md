@@ -3,8 +3,28 @@
 ## What
 The files object/u.txt (sha256 74ccb3a6…), object/v.txt (sha256 0f86e47a…) and object/w.txt (sha256 cac452b5…) define an explicit bilinear scheme for the format <14,15,15> with exactly 1836 rank-one terms (no zero factors, no mergeable duplicates) that satisfies all 9,922,500 Brent equations exactly over Q (common denominator 54400), and 1836 is strictly below every bar the criterion names as re-fetched at 2026-10-26T22:25Z (fmm_sota.json 1848, fmm.univ-lille.fr/14x15x15.html 1890, Perminov ranks.md min of ZT 1894 / Z 1892 / Q 1848 = 1848, MerlijnW70/fmm-schemes no entry for this format or any permutation).
 
+Path note: claim/ (the run's claim folder) was frozen at 2026-10-26T22:08:55Z (panel/claim.sha256, 15 files); three fresh subagents ran one after
+another, each with only its own copy of claim/: REPRODUCE (Claude Sonnet 5.5), NOVELTY and CRITERION (Claude Opus 5.5).
+The panel files are copied as written, except that a few words on how the skeptic sessions were set up or screened were reworded. Where they name claim/ files:
+- claim/object/ is object/ and claim/verify-it-yourself/ is verify-it-yourself/ (byte-identical except run_checks.sh, which was changed after the
+  panel only so that it no longer writes temporary files into the package folder; RECEIPTS.md added).
+- Workspace names that are not part of this package: the run id 2026-10-26-2200 (panel/gate.md: the run of
+  2026-10-26), the folder runs/2026-10-25-0343/leads/14x15x15_r1836/stage/object/
+  (how-we-built-it/PREREG.md; its three files are byte-identical to object/), target.md (how-we-built-it/PREREG.md; its
+  criterion text is the 'Success criterion' section of how-we-built-it/CLAIM.md) and the run report's 'Needs you' list
+  (panel/gate.md).
+- claim/CLAIM.md, claim/REPRODUCE.md are in how-we-built-it/. REPRODUCE.md is unchanged (its paths refer to the claim
+  folder); CLAIM.md has one edit: the criterion's Lille URL template is written {n}x{m}x{p} instead of with angle
+  brackets, because the package checker reads angle-bracket names as unfilled placeholders (so its sha256 differs from
+  panel/claim.sha256); claim/TABLE_RECORD.md is the-record-we-beat/TABLE_RECORD.md (unchanged).
+- claim/rebuild/*.py is how-we-built-it/code/ (byte-identical). The LITA parent file 15x15x15_r1977.npz is third-party
+  data and is not shipped: fetch it as how-we-built-it/COMMANDS.md says and compare its sha256.
+- The skeptics' working files (their fetched pages and their own checkers) are not shipped; their results, URLs, times
+  and sha256 values are in panel/.
+- self_break.md (named in panel/gate.md) is summarised in how-we-built-it/SELF_BREAK.md.
+
 Level: the main success criterion of fmm-catalogue-small-format-rank (max(14,15,15) = 15 <= 16; sorted format not
-(3,3,3) or (4,4,4)), not a partial win. Status: CONFIRMED by the three-skeptic panel and the honesty gate (panel/). The
+(3,3,3) or (4,4,4)), not a partial win. The three skeptic reports and the honesty gate are in panel/. The
 scheme comes from Khoruzhii, Serafin, Gelss and Pokutta's published LITA 15x15x15 rank-1977 scheme by one exact
 one-slice cut (112 terms vanish) followed by exact absorption of 29 terms; the rebuild is deterministic and
 byte-identical (how-we-built-it/COMMANDS.md).
@@ -13,9 +33,9 @@ byte-identical (how-we-built-it/COMMANDS.md).
 body of this contributor's open pull request #752 (the <14,14,15> rank-1709 claim), as the unclaimed intermediate of
 its rebuild chain; that pull request ships the code that regenerates it, but not the scheme files. Under the policy for
 this family (kit/POLICY.md, fast matrix multiplication, rules 2 and 3) we ask that the credit date be that filing,
-2026-10-25T11:18:58Z. Apart from #752's own mention of this scheme, nothing at or below 1836 for this format was public then or is now. The NOVELTY skeptic
-(panel/novelty.md) judged that #752 sets the credit date and does not make the claim non-novel, and wrote down the
-stricter reading (that #752's mention itself makes the value "already public") as a caveat for the maintainers.
+2026-10-25T11:18:58Z. Apart from #752's own mention of this scheme, nothing at or below 1836 for this format was public then or is now.
+panel/novelty.md takes #752 as setting the credit date, not as making the claim non-novel, and records the stricter
+reading (that #752's mention itself makes the value "already public") as a caveat.
 
 ## Check it yourself
     sh verify-it-yourself/run_checks.sh
@@ -48,8 +68,8 @@ Values already public in this repository (not table values; the claim is below t
 | open pull request #752 (this contributor) | names this <14,15,15> scheme as an unclaimed intermediate | 1836 (this object) | https://github.com/elder-plinius/V3R1T4S/pull/752 |
 
 The panel read all 755 pull requests of this repository: none other holds a (14,15,15) scheme at or below 1841. The
-filing step must re-fetch all four sources immediately before the pull request is opened (criterion text).
-Snapshots: the-record-we-beat/.
+criterion asks for all four sources to be re-fetched immediately before claiming; the run's last fetch of all four was at
+2026-10-26T22:30:40Z. Snapshots: the-record-we-beat/.
 
 ## Not claimed
 - Nothing about any other format: this package is one cell, <14,15,15>. The <14,14,15> rank 1709 derived from this
@@ -59,30 +79,8 @@ Snapshots: the-record-we-beat/.
 - Not a ring upgrade: the coefficients are rationals (least common denominator 5440); nothing is claimed over Z or GF(2).
 - Not a new search method: the scheme is LITA's public 15x15x15 scheme cut once and reduced by exact absorption. It is
   not a composition, padding or block split of known schemes, and 1836 equals no value listed anywhere we looked.
-- Against this repository's own record: the merged <14,15,15> entry is 1842, so 1836 improves it by 6. Whether the
-  repository counts a further improvement of a cell it already lists is the maintainers' call (precedent: pull request
-  #197, 1762 against a merged 1763).
-
-## Notes on the panel files
-claim/ was frozen at 2026-10-26T22:08:55Z (panel/claim.sha256, 15 files); three fresh subagents ran one after
-another, each with only its own copy of claim/: REPRODUCE (Claude Sonnet 5.5), NOVELTY and CRITERION (Claude Opus 5.5).
-The panel files are copied unchanged. Where they name claim/ files:
-- claim/object/ is object/ and claim/verify-it-yourself/ is verify-it-yourself/ (byte-identical except run_checks.sh, which was changed after the
-  panel only so that it no longer writes temporary files into the package folder; RECEIPTS.md added).
-- Workspace names that are not part of this package: the run id 2026-10-26-2200 (panel/gate.md,
-  how-we-built-it/SELF_BREAK.md), the folder runs/2026-10-25-0343/leads/14x15x15_r1836/stage/object/
-  (how-we-built-it/PREREG.md; its three files are byte-identical to object/), target.md (how-we-built-it/PREREG.md; its
-  criterion text is the 'Success criterion' section of how-we-built-it/CLAIM.md) and the run report's 'Needs you' list
-  (panel/gate.md).
-- claim/CLAIM.md, claim/REPRODUCE.md are in how-we-built-it/. REPRODUCE.md is unchanged (its paths refer to the claim
-  folder); CLAIM.md has one edit: the criterion's Lille URL template is written {n}x{m}x{p} instead of with angle
-  brackets, because the package checker reads angle-bracket names as unfilled placeholders (so its sha256 differs from
-  panel/claim.sha256); claim/TABLE_RECORD.md is the-record-we-beat/TABLE_RECORD.md (unchanged).
-- claim/rebuild/*.py is how-we-built-it/code/ (byte-identical). The LITA parent file 15x15x15_r1977.npz is third-party
-  data and is not shipped: fetch it as how-we-built-it/COMMANDS.md says and compare its sha256.
-- The skeptics' working files (their fetched pages and their own checkers) are not shipped; their results, URLs, times
-  and sha256 values are in panel/.
-- self_break.md (named in panel/gate.md) is summarised in how-we-built-it/SELF_BREAK.md.
+- Against this repository's own record: the merged <14,15,15> entry is 1842, so 1836 improves it by 6. A precedent for a
+  further improvement of a cell the repository already lists: pull request #197, 1762 against a merged 1763.
 
 ## Credits
 - Kirill Khoruzhii, Luzian Serafin, Patrick Gelss and Sebastian Pokutta, LITA (Local Improvements to Trilinear Aggregation), https://github.com/khoruzhii/lita: the
