@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""formalist lens (run 2026-10-24-1953): machine-check every hypothesis of a theorem-based proof that the EAQECC in an
+"""formalist lens: machine-check every hypothesis of a theorem-based proof that the EAQECC in an
 object JSON (a Construction X code over GF(9) from Hermitian-curve AG codes) has d_EA >= d_X, with no minimum-distance
 computation. Written fresh: own GF(9), GF(729) = GF(9)[u]/(cubic), GF(3)/GF(9) linear algebra and Riemann-Roch
 spaces (shares no code with the claim's checkers, its builder or deg3.py). Proof steps L1-L8: see HOW_WE_FOUND_IT.md (the run's NOTES.md is not shipped).

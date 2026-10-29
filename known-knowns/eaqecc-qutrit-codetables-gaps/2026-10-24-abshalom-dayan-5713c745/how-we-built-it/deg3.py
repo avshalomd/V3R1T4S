@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """AG codes on the Hermitian curve y^3 + y = x^4 over GF(9), evaluated at all 28 rational points (27 affine + P_inf),
-with divisor G = a Q + b P_inf, Q a place of degree 3 (run 2026-10-24-1640, constructor lens).
+with divisor G = a Q + b P_inf, Q a place of degree 3 (constructor lens).
 This is the family codetables.de uses for its [28,13,13]_9 ("AlgebraicGeometricCode ... based on 1 divisors of
 degree [3]") and its [33,13,16]_9 (Construction X on two of them).
 

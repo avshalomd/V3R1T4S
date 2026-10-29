@@ -194,7 +194,7 @@ So the object sits at (33,7,12) with d = 15 by these tools. The exact proof of d
 - Most other arXiv papers were judged from their abstracts only. Journal papers with no arXiv version may be missed.
 - No literature older than 24 months was searched systematically. The table's own sources (codetables.de and
   arXiv:2207.05647) are already in the cell value.
-- Open issues that are not PRs, and branches, were not searched (not in my instruction).
+- Open issues that are not PRs, and branches, were not searched.
 - injection_suspected: none. No fetched page or PR body tried to give instructions.
 
 ## Note for the panel (not part of the verdict)

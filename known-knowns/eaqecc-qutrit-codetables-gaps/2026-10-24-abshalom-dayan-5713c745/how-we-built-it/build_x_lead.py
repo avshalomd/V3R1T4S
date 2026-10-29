@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a Construction X lead object (run 2026-10-24-1727, optimizer lens; generalizes build_x_obj.py of the
+"""Build a Construction X lead object (optimizer lens; generalizes build_x_obj.py of the
 [[33,8,16;15]]_3 package, https://github.com/elder-plinius/V3R1T4S/pull/710, not shipped in this package):
 C1 = C(D_28, aQ + bP_inf), C2 = C(D_28, (a-1)Q + bP_inf) from deg3.py (Q = place IDX), basis "C2 rows, then rows of C1
 raising the rank" (as prep_x.py), [5,3,3] tail M A on the points PTS (9 = infinity), columns marked '-' in EPS times w.

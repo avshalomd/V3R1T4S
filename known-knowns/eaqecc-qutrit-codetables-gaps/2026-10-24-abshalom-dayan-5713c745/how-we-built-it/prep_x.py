@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Prepare a Construction X input: C2 subset of C1 (two "K n" code files), output "K1 K2 n" then K1 rows of n with the
 first K2 rows a basis of C2 and the last K1 - K2 rows completing a basis of C1 (checks C2 is a subcode of C1).
-Usage: prep_x.py C1.code C2.code out.xin (run 2026-10-24-1640)"""
+Usage: prep_x.py C1.code C2.code out.xin"""
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from gf9lib import rref9

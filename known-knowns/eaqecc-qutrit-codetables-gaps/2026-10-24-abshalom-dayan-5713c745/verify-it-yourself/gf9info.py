@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact EAQECC parameters from a qutrit stabilizer matrix S alone (run 2026-10-24-1500, written from the bank
+"""Exact EAQECC parameters from a qutrit stabilizer matrix S alone (written from the bank
 definition; shares no code with earlier runs' checkers or builders).
 
 S rows are (x|z) over GF(3), 2n columns, symplectic form <(x|z),(x'|z')> = x.z' - z.x'.

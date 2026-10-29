@@ -12,7 +12,7 @@ Commands from this folder (python3 standard library and cc), in the order the ob
 2. The maximum Hermitian hull of every Construction X code of this pair (all 2^27 head sign patterns, every
    [5,3,3] tail and every 3 x 3 gluing matrix; minimal-rank-completion bound, made exact by the rank classification of
    Hermitian forms; about 4 minutes on one core). Unverified: this "exact maximum", here and in bound_X16_q0_a4.txt,
-   is contributor text that no skeptic or reviewer verified, as README.md says; the claim does not depend on it:
+   is unverified contributor text, as README.md says; the claim does not depend on it:
 
        cc -O3 -o hullbound hullbound.c && ./hullbound bound < X16_q0_a4.xin    # bound_X16_q0_a4.txt: exact maximum 7 (unverified)
 
@@ -33,6 +33,6 @@ Commands from this folder (python3 standard library and cc), in the order the ob
    `X code [33,14] hull=7 -> [[33,7,?;12]]`. The object's "construction" string says "rows 11..13 of the tail = M A",
    which is right for this pair (C2 has dimension 11, so rows 11..13, 0-based, carry M A).
 
-- `PREREG.md`: the frozen plan of the run that panelled this claim (run 2026-10-24-1953), written before any of its
+- `PREREG.md`: the frozen plan of the run that panelled this claim, written before any of its
   checkers ran on the object. No null test: an explicit object checked by deterministic exact checkers against a
   table value.

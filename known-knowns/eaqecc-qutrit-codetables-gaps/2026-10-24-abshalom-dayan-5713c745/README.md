@@ -9,12 +9,21 @@ The gate re-read the page once more at 2026-10-24T21:38:48Z: same page hash, sam
 (`the-record-we-beat/README.md`). The object's full SHA-256 is
 `5713c745e8e837dc41e1883a120488fb38dce3b4254292335ca98f99a1787256`.
 
+Path note: the sentence above, the panel files and `how-we-built-it/PREREG.md` refer to the run's claim folder, whose
+root is this package's root. There, `claim/object/eaqecc_33_7_15_12.json` is `object/eaqecc_33_7_15_12.json` (same
+sha256), `CLAIM.md` is `README.md`, `REPRODUCE.md` is `RUN_IT_YOURSELF.md`, `checkers/` is `verify-it-yourself/` and
+`rebuild/` is `how-we-built-it/`. `claim/table/` (the fetched page) is not shipped; its URL, fetch times, sha256 and
+the listed row are in `the-record-we-beat/README.md`. Work files and folders named there (`panel/claim.sha256`,
+`panel/main_session_notes.txt`, `self_break/`, `data/gate_fetch/`, `attempts/`, `objects/`, and the skeptics' `mine/`,
+`run/`, `author_run/`, `work-criterion/`, `fetched/` and `scripts/`) are not shipped. Dated run and folder names ("run" or
+"folder" followed by a date and time, or by a four-digit time alone) name runs of the contributor's workspace, which are not shipped either.
+
 The code is a Construction X code over GF(9) from two algebraic-geometry codes of the Hermitian curve
 `y^3 + y = x^4` whose divisors are supported on a place `Q` of degree 3 and the point at infinity:
 `C(D_28, 4Q + 4P_inf)` `[28, 14, 12]_9` contains `C(D_28, 3Q + 4P_inf)` `[28, 11, 15]_9`, glued to a `[5, 3, 3]_9`
 Reed-Solomon tail, with a column sign pattern chosen so that the Hermitian hull has dimension 7 (the maximum over every
-Construction X code of this pair according to how-we-built-it/hullbound.c; this bound is contributor text that no
-skeptic or reviewer verified, and the claim does not depend on it). The result is a `[33, 14, 15]_9` code with Hermitian hull 7, which gives
+Construction X code of this pair according to how-we-built-it/hullbound.c; this bound is unverified contributor
+text, and the claim does not depend on it). The result is a `[33, 14, 15]_9` code with Hermitian hull 7, which gives
 `[[33, 14 - 7, 15; 33 - 14 - 7]]_3 = [[33, 7, 15; 12]]_3`. The object holds the GF(9) generator `G9`, its Hermitian
 dual `D9`, and the stabilizer matrix `S = phi(D9)` over GF(3).
 
@@ -49,8 +58,9 @@ distance computation, about 15 seconds).
 Details, HTTP headers, page hash and the listed `(33, 7)` row are in `the-record-we-beat/README.md`.
 
 The classical code behind it is listed but not at this hull: `codetables.de` lists `[33,14]` over GF(9) at 15-18
-(Construction X on the same kind of AG codes), and the qutrit table uses a `[33,14,15]_9`-type code only up to
-Hermitian hull 2 (its `[[33,12,15;17]]_3`, from arXiv:2207.05647); it lists 14 at every cell that hulls 3 to 7 would
+(Construction X on the same kind of AG codes). The qutrit table's `[[33,12,15;17]]_3` has the parameters a
+`[33,14,15]_9` code with Hermitian hull 2 would give (the table credits it to arXiv:2207.05647 without naming the code,
+so reading it as such a code is an inference); the table lists 14 at every cell that hulls 3 to 7 would
 reach (`(33,11,16)`, `(33,10,15)`, `(33,9,14)`, `(33,8,13)`, `(33,7,12)`). The closure of the table under its own
 propagation rules, of the codes in this repository's open pull requests (#710's `[[33,8,16;15]]_3` included) and of
 the newest qutrit EA codes the NOVELTY skeptic found (arXiv:2607.02170, July 2026, length at most 25) gives at most
@@ -72,19 +82,15 @@ the newest qutrit EA codes the NOVELTY skeptic found (arXiv:2607.02170, July 202
   version may be missed, and closed or merged pull requests were checked through the repository's search (one,
   #331) and `known-knowns/` folder.
 - Not yet submitted to or listed by the table maintainer (`eaqecc.codetables.de`).
-- Not peer reviewed; verified by a three-skeptic panel (`panel/`) and by the standalone checker in
-  `verify-it-yourself/`.
+- The leads `[[33,9,14;12]]_3` and `[[33,3,20;18]]_3` named in `panel/gate.md` are not claimed here.
+- Not peer reviewed. The panel files (`panel/`) and the standalone checker in `verify-it-yourself/` are shipped so
+  that anyone can check the claim.
 
-## Paths in the panel files
-
-The panel files in `panel/` are shipped unchanged from the contributor's run folder, so they use that folder's paths.
-In this package, `claim/` is the package root: `claim/object/eaqecc_33_7_15_12.json` is
-`object/eaqecc_33_7_15_12.json` (same sha256), `CLAIM.md` is `README.md`, `REPRODUCE.md` is `RUN_IT_YOURSELF.md`,
-`checkers/` is `verify-it-yourself/` and `rebuild/` is `how-we-built-it/`. Not included in this package:
-`claim/table/` (the fetched page; its URL, fetch times, sha256 and the listed row are in
-`the-record-we-beat/README.md`), `panel/claim.sha256`, `panel/main_session_notes.txt`, `self_break/`,
-`data/gate_fetch/` and the skeptics' work folders (`mine/`, `run/`, `author_run/`, `work-criterion/`, `fetched/`,
-`scripts/`). Run ids such as "run 2026-10-24-1953" name folders of that workspace, which are not included either.
+Corrections to the panel text:
+- `panel/gate.md` and `panel/novelty.md` say the qutrit table uses the `[33,14,15]_9` code type only at hull 2 (its
+  `[[33,12,15;17]]_3`). The table does not name that code; the entry only has the parameters such a code would give.
+- "Listed since 2003" (`panel/gate.md`) and "since 2003" (`panel/novelty.md`) refer to the `codetables.de` page's
+  "last modified: 2003-10-23".
 
 ## Credits
 
