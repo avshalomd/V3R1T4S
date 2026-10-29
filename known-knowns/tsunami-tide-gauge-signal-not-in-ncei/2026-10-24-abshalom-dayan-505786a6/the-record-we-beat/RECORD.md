@@ -10,6 +10,7 @@
   Extracted: 230 events for 2015-2026, newest event id 6193 (2026-10-09). Matched to the 264 quakes: 115 quakes have an
   NCEI event (any validity) within +/-1 calendar day and 1000 km (object/map.csv, column listed).
 - Per-event tide-gauge rows: runups API, typeMeasurementId=2 (fetch times and sha256 in how-we-built-it/inputs.tsv).
+- Response headers of these fetches are not recorded in this package.
 
 ## The p3 cell
 - p3 had no claimed or merged result in this repository at 2026-10-24T19:20Z (GitHub search API on

@@ -1,4 +1,4 @@
-"""Travel-time model for run 2026-10-24-1916 (frozen in PREREG.md before any gauge series is scored).
+"""Travel-time model of this run (frozen in PREREG.md before any gauge series is scored).
 
 ETOPO1 Ice, grid-registered, 2 arcmin (NCEI THREDDS, stride 2) -> azimuthal-equidistant grid centred on the source
 (dx 3.7 km) -> second-order fast marching (scikit-fmm) with speed sqrt(g * max(h, 1 m)) on water cells (z < 0).
