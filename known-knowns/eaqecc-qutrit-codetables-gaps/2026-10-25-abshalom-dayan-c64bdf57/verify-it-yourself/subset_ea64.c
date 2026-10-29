@@ -1,6 +1,6 @@
-/* subset_ea64 (run 2026-10-24-1727): run 1253's subset_ea.c widened from n <= 32 to n <= 64 by storing the x part
+/* subset_ea64: an earlier run's subset_ea.c (not shipped) widened from n <= 32 to n <= 64 by storing the x part
    in bits 0..63 and the z part in bits 64..127 of unsigned __int128 masks; the algorithm is unchanged.
-   Exact EAQECC distance test over GF(3) by position subsets (run 2026-10-24-1253, written from the definition).
+   Exact EAQECC distance test over GF(3) by position subsets (written from the definition).
    Input (stdin): "n dimI dimN", then dimN rows of 2n entries in {0,1,2} (x part then z part); the first dimI rows
    span the isotropic part I = span(S) ∩ span(S)^perp, all dimN rows span N = span(S)^perp.
    A vector of N \ I with symplectic weight <= W exists  iff  for some W-subset T of positions,

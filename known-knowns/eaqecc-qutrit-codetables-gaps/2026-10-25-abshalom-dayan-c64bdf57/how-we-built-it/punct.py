@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""constructor lens, run folder 2026-10-25-0810: punctured extended one-point Hermitian codes E_m with the deleted
+"""constructor lens: punctured extended one-point Hermitian codes E_m with the deleted
 coordinate set taken up to the automorphisms of the curve that fix P_inf.
 
 E_m (hermitian.py): rows = monomials x^i y^j (j <= 2, 3i + 4j <= m) at the 27 affine points of y^3 + y = x^4 over

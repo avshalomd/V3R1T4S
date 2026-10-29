@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Self-break (run folder 2026-10-25-0948; written in folder 0931), written from the bank definition only, no earlier checker code:
+"""Self-break check, written from the bank definition only, no earlier checker code:
 from the stabilizer matrix S (rows (x|z) over GF(3), 2n columns) compute
   s = rank S, c = rank(S J S^T)/2, k = n - s + c,
   a GF(3) basis of N = span(S)^perp (symplectic dual: <u,v> = u_x.v_z - u_z.v_x = 0 for every row of S),

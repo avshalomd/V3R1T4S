@@ -15,5 +15,5 @@
   5-subsets: coordinates 0, 3, 11, 12, 16): maximum hull 5, reached by 4 sign patterns (`-` marks a column times w in
   the first maximizing pattern it found, which is the pattern the object uses: columns 1, 3, 6, 8, 10, 11, 14, 15,
   16, 17, 19, 21 of the length-23 code, 0-based), with the histogram of hull dimensions over all 2^22 patterns.
-- `PREREG.md`: the frozen plan of the run folder that claimed this code (run folder 2026-10-25-0948). No null test: an
+- `PREREG.md`: the frozen plan of the run folder that claimed this code. No null test: an
   explicit object checked by deterministic exact checkers against a table cell.

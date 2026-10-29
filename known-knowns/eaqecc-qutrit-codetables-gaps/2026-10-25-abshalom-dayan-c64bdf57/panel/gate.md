@@ -10,8 +10,8 @@ c64bdf57a5280892b8d4e085ea565c865d5584de5198baa9763cb516318f06f4).
 Claim folder unchanged since it was frozen (panel/claim.sha256, 10:55:04Z): every file's sha256 matches (28 of 28
 files OK, checked at the gate, 2026-10-25T14:04:18Z). Self-break (self_break/verdict.md, from the run): SURVIVES.
 
-How the panel was run: the run ended before its panel ran. The supervising session ran the run's own skeptic
-instructions (panel/prompts/*.txt, unchanged) as three fresh subagents (claude-opus-5-5), each given only its own copy
+How the panel was run: the run ended before its panel ran. The supervising session ran the run's three skeptics
+as fresh subagents (claude-opus-5-5), each given only its own copy
 of claim/ (panel/work-*/claim/), one after another, never in parallel. Verdict files written 11:26:24Z (REPRODUCE),
 11:36:16Z (NOVELTY), 14:03:58Z (CRITERION) UTC by file time; the CRITERION skeptic was held back between 11:50Z and
 13:58Z by a usage pause and then run unchanged.
@@ -33,7 +33,7 @@ Disclosures to carry into the package and the pull request description:
 - The teleportation-cell point, with the correct reason (their isotropic part is Z-only, so the rules that need pure
   codes do not apply to them; propagating them breaks the page's own upper bounds).
 - NOVELTY ran at 11:27Z, before draft PR #758 ([[24,4,13;10]]_3, same contributor, same construction family) was filed
-  at 13:06Z; whether #758's code reaches (23,4,c <= 9) by the page's rules is to be checked in the pre-filing review
+  at 13:06Z; whether #758's code reaches (23,4,c <= 9) by the page's rules is to be checked before filing
   and stated in the PR.
 
 Verdict: CONFIRMED_SOLUTION. Gate written 2026-10-25T14:04Z.

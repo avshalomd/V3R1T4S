@@ -1,5 +1,5 @@
-/* bz64 (run 2026-10-24-1640: bz9 with 64-bit masks, n <= 64; made by sed from bz9.c, otherwise identical). bz9: exact minimum Hamming distance of a linear code over GF(9) by the Brouwer-Zimmermann method with
-   Zimmermann's bound for partial information sets. Written for run 2026-10-24-1033 independently of analyze.c.
+/* bz64 (bz9 with 64-bit masks, n <= 64; made by sed from bz9.c (not shipped), otherwise identical). bz9: exact minimum Hamming distance of a linear code over GF(9) by the Brouwer-Zimmermann method with
+   Zimmermann's bound for partial information sets. Written independently of analyze.c (not shipped).
    GF(9) = GF(3)[w]/(w^2 - w - 1), element a + b*w stored as a + 3b. A vector of length n <= 64 is stored bit-sliced:
    masks a1, a2 (positions where a = 1, a = 2) and b1, b2 (same for b). Hamming weight = popcount(a1|a2|b1|b2).
    Input (stdin): "K n" then K rows of n integers 0..8 (a generator matrix of full rank K).

@@ -1,6 +1,6 @@
 """Build a claim JSON from the extended one-point Hermitian code E_m with some coordinates deleted (puncturing) and
 then some columns of the punctured code multiplied by w (an element of norm -1, which flips that column's sign in the
-Hermitian Gram matrix and so changes the hull). Run folder 2026-10-25-0856 (from build_obj.py of folder 0810).
+Hermitian Gram matrix and so changes the hull). Adapted from build_obj.py of an earlier run (not shipped).
 Usage: build_punct_obj.py m out.json d_claimed deleted_cols scaled_cols
   deleted_cols: comma list of 0-based coordinates of E_m (27 = P_inf) to delete
   scaled_cols:  comma list of 0-based columns of the punctured code to multiply by w"""

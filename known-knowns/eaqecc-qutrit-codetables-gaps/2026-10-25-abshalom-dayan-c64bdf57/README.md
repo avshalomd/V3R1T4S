@@ -6,9 +6,16 @@ The GF(3) stabilizer matrix S in claim/object/eaqecc_23_4_12_9.json defines a no
 
 Note: the sentence above is quoted word for word from `panel/gate.md` (`confirmed_scope`, from the CRITERION skeptic's
 verdict); `claim/` in it is this package's root. The object's full SHA-256 is
-`c64bdf57a5280892b8d4e085ea565c865d5584de5198baa9763cb516318f06f4`. The frozen panel files use the run's claim-folder
-names (CLAIM.md, REPRODUCE.md, table/, checkers/, rebuild/, self_break/); in this package their content is in
-README.md, HOW_WE_FOUND_IT.md and RUN_IT_YOURSELF.md, the-record-we-beat/, verify-it-yourself/ and how-we-built-it/.
+`c64bdf57a5280892b8d4e085ea565c865d5584de5198baa9763cb516318f06f4`.
+
+Path note: the panel files (including `panel/claim.sha256`, which lists the claim folder's files) and
+`how-we-built-it/PREREG.md` refer to the run's claim folder. There, `claim/object/eaqecc_23_4_12_9.json` is
+`object/eaqecc_23_4_12_9.json`, `CLAIM.md` is `README.md` (with `HOW_WE_FOUND_IT.md`), `REPRODUCE.md` is
+`RUN_IT_YOURSELF.md`, `checkers/` is `verify-it-yourself/`, `rebuild/` is `how-we-built-it/` and `table/` is
+`the-record-we-beat/` (the page itself is not shipped). Work files and folders named there (`self_break/`, `runs/`,
+`tests/`, `panel/work-*/` and the skeptics' `mine/`, `author_run/`, `fetched/` and `scripts/`)
+are not shipped. Dated run and folder names ("run", "folder" or "run folder" followed by a date and time, or by a
+four-digit time alone) name runs of the contributor's workspace, which are not shipped either.
 
 This is the bank's full success criterion at the listed cell `(n=23, k=4, c=9)`: exact `d = 12`, strictly above
 the cell's `d_lower = 11` and at most its `d_upper = 18`.
@@ -62,21 +69,20 @@ NOVELTY skeptic found gives at most 11 at `(23, 4, 9)` (`panel/novelty.md`). The
 
 ## Disclosures
 
-- **How the panel was run.** The run ended before its panel ran. The supervising session then ran the run's own
-  skeptic instructions, unchanged, as three fresh subagents (REPRODUCE, NOVELTY, CRITERION), each given only its own
-  copy of the claim folder, one after another. So the panel was run after the run, by the supervising session, and not
+- **How the panel was run.** The run ended before its panel ran. The supervising session then ran the run's three
+  skeptics (REPRODUCE, NOVELTY, CRITERION) as fresh subagents, each given only its own copy of the claim folder, one
+  after another. So the panel was run after the run, by the supervising session, and not
   by the run itself. The CRITERION skeptic was held back between 11:50Z and 13:58Z by a usage pause and then run
   unchanged (`panel/gate.md` has the times).
 - **Teleportation cells.** The page lists `(23,3,3)` as `[[23,3,12-18;3]]` and `(23,4,4)` as `[[23,4,10-16;4]]`, both
   "using teleportation". The only route to 12 at `(23,4,9)` that the CRITERION skeptic found starts from the
   teleportation cell `(23,3,3)` and applies "increasing dimension"; it is not valid (see "Not claimed"). If
   teleportation cells were valid sources for the page's rules, `[[23,3,12;3]]` would give 12 at `(23,4,4)` (where the
-  page lists 10) and so 12 here. The independent pre-filing review found a second such route: the teleportation cell
-  `(24,3,3)` (`[[24,3,13;3]]`) by quantum shortening would give `[[23,4,12;3]]` and so 12 here; it is excluded for the
-  same reason.
+  page lists 10) and so 12 here. There is a second such route: the teleportation cell `(24,3,3)` (`[[24,3,13;3]]`) by
+  quantum shortening would give `[[23,4,12;3]]` and so 12 here; it is excluded for the same reason.
 - **Order relative to draft PR #758.** The NOVELTY skeptic ran at 11:27Z, before draft PR #758 (`[[24,4,13;10]]_3`,
-  same contributor, same construction family) was filed at 13:06Z, so the panel did not see it. The independent
-  pre-filing review re-checked it: none of the page's propagation rules lowers `c`, so #758's code (`c = 10`) gives
+  same contributor, same construction family) was filed at 13:06Z, so the panel did not see it. Checked on
+  2026-10-25, after the panel and before filing: none of the page's propagation rules lowers `c`, so #758's code (`c = 10`) gives
   nothing at `c <= 9`, and the closure of the listed non-teleportation cells together with the codes of all 17 pull
   requests for this target (#758 included) still gives 11 at `(23,4,9)`. The only steps that lower `c` are the page's
   catalytic note, which the page excludes (see "Not claimed"), and Theorem 18 of arXiv:2207.05647, which adds a
@@ -112,8 +118,8 @@ NOVELTY skeptic found gives at most 11 at `(23, 4, 9)` (`panel/novelty.md`). The
 - Closest known codes: the listed `(23,4,10)` value is 12 (`d_lower`), so 12 is reached at `c = 10` but not at
   `c = 9`; PR #739's `[[25,5,12;8]]` reaches `[[23,4,12;10]]`, also `c = 10`.
 - Not yet submitted to or listed by the table maintainer (`eaqecc.codetables.de`).
-- Not peer reviewed; verified by a three-skeptic panel (`panel/`) and by the standalone checker in
-  `verify-it-yourself/`.
+- Not peer reviewed. The panel files (`panel/`) and the standalone checker in `verify-it-yourself/` are shipped so
+  that anyone can check the claim.
 
 ## Credits
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""formalist lens, run folder 2026-10-25-0948 (copied from folder 0931, itself from folder 0856; from folder 0810's onepoint_check.py): a no-search proof that the
+"""formalist lens (adapted from onepoint_check.py of an earlier run, not shipped): a no-search proof that the
 object's distance is >= 28 - m - r for E_m with r coordinates deleted and some columns multiplied by w.
 It shares only the GF(9) tables of gf9lib.py with the builder; no builder or checker code.
 1. From S alone: rank S over GF(3), c = rank(S J S^T)/2, k = n - s + c (own elimination).
