@@ -47,7 +47,7 @@ Degrees agree with my sizes (distance 101 is its own inverse: 2*18-1 = 35, 2*20 
 
 ## Scope and caveats
 - Mathematical content of the claim (the colouring is a valid 3-colouring of K_202 with the stated forbidden cliques, hence R(3,3,12) >= 203) reproduced by two independent exact methods plus the author's code; no mismatch, nothing missing, deterministic.
-- I did not re-fetch DS1 or search for newer papers (outside this skeleton's instruction; the NOVELTY skeptic covers it). The comparison to 194 rests on the author's table_record.md, which I only read; 203 > 194 is arithmetic on that quoted figure.
+- I did not re-fetch DS1 or search for newer papers (outside this skeptic's scope; the NOVELTY skeptic covers it). The comparison to 194 rests on the author's table_record.md, which I only read; 203 > 194 is arithmetic on that quoted figure.
 - The "exhaustive" requirement is met: both clique searches are complete (B&B and UNSAT), not samples.
 
 pass: true

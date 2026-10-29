@@ -12,8 +12,8 @@ a two-colour Ramsey lower bound above DS1; a multicolour cell above DS1 is parti
   Colour 3 is the source's K12-free colour, unchanged. 202 + 1 = 203 > 194.
 - What failed: one-vertex extension of the object (SAT, exact UNSAT); circulant and edge-level splits of the other
   sources tried for R(3,3,m) (each either exact UNSAT or, for the (5,11), (5,12) and (5,14) circulants, a successful
-  split filed as its own claim); lazy edge-level K4/K5 splits
+  split that is a separate claim); lazy edge-level K4/K5 splits
   of non-circulant graphs gave no answer within their time caps.
 - Checks: two exact checkers in the run (bitset branch and bound, and CaDiCaL via pysat returning UNSAT; no DRAT/LRAT certificate) agree that colour 3 has
-  no K12; the standard-library checker in verify-it-yourself/ agrees; three fresh-context
-  skeptics (REPRODUCE, NOVELTY, CRITERION) each checked it; see panel/.
+  no K12; the standard-library checker in verify-it-yourself/ agrees; the reports of three fresh-context
+  skeptics (REPRODUCE, NOVELTY, CRITERION) are in panel/.

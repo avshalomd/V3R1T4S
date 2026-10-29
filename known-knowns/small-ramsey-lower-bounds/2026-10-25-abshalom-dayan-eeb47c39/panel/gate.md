@@ -11,8 +11,8 @@ confirmed_scope: The circulant 3-colouring of K_202 in object/R_3_3_12.txt has n
   fetches, 08:53:09Z to 08:56:24Z. pass: true.
 - CRITERION: a headless `claude -p` session (claude-opus-5-5, effort high), fresh, own copy of claim/, honest single
   fetches allowed, 08:57:16Z to 09:01:01Z. pass: true.
-- One after another, never in parallel. claim/ (including literature_record.md, the author's search record) and the
-  three instructions were fixed before REPRODUCE started; nothing changed during the panel.
+- One after another, never in parallel. claim/ (including literature_record.md, the author's search record) was
+  fixed before REPRODUCE started; nothing changed during the panel.
 
 ## What the gate checked (read by the run's main session, 2026-10-25T09:02Z)
 - Reproduction: REPRODUCE (own B&B: clique numbers 2, 2, 11; CaDiCaL: K12 through vertex 0 UNSAT, K11 SAT as control
