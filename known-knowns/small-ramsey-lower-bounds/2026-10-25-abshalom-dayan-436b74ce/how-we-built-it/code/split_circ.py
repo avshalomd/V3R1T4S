@@ -1,4 +1,4 @@
-"""Circulant split (BRIEF angle 1): split colour `c` of a two-colour circulant on Z_N into part 1 (K_a-free) and
+"""Circulant split (angle 1 of the run's brief, not shipped): split colour `c` of a two-colour circulant on Z_N into part 1 (K_a-free) and
 part 2 (K_b-free), both circulant, by SAT over one variable per distance class of colour c (true = part 1).
 Triangle clauses are complete; K_b clauses for b >= 4 (and K_a for a >= 4) are added lazily from an exact clique
 search through vertex 0 of the expanded part (vertex-transitive, so any clique maps to one containing 0).

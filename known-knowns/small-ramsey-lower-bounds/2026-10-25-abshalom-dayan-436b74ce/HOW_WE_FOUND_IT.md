@@ -14,5 +14,5 @@ a two-colour Ramsey lower bound above DS1; a multicolour cell above DS1 is parti
 - What failed: one-vertex extension of the object (SAT; stopped undecided at its 1600 s alarm); K3 + K5 circulant
   splits of the (6,10) graph on 203 and the (6,12) graph on 293 (solver UNSAT, no certificate saved).
 - Checks: two exact checkers in the run (bitset branch and bound, and a CaDiCaL UNSAT answer, no certificate saved) agree for every colour;
-  the standard-library checker in verify-it-yourself/ agrees; three fresh-context skeptics (REPRODUCE, NOVELTY,
-  CRITERION) each checked it; see panel/.
+  the standard-library checker in verify-it-yourself/ agrees; the reports of three fresh-context skeptics (REPRODUCE, NOVELTY,
+  CRITERION) are in panel/.
