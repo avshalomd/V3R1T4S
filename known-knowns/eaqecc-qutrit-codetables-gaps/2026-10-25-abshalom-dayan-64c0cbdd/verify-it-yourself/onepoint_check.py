@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""formalist lens (run folder 2026-10-24-2311): a no-search proof that the object's distance is >= 13, written fresh
+"""formalist lens: a no-search proof that the object's distance is >= 13, written fresh
 (it shares only the GF(9) tables of gf9lib.py with the builder; no builder or checker code).
 1. From S alone: rank S over GF(3), c = rank(S J S^T)/2, k = n - s + c (own elimination).
 2. Build E = the extended one-point code of the Hermitian curve y^3 + y = x^4 over GF(9) with pole order m (monomials

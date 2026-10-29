@@ -10,7 +10,12 @@ The gate re-read the page once more at 2026-10-25T00:49:54Z: same page hash, sam
 `64c0cbddea11688f7cc06644d8751c2f62328aae74f7f149b89164a73dea0c78`.
 
 Path note: the object the sentence names as `claim/object/eaqecc_28_7_13_9.json` is `object/eaqecc_28_7_13_9.json`
-in this package (same sha256).
+in this package (same sha256). More generally, the panel files, `how-we-built-it/PREREG.md` and `how-we-built-it/PREREG_found_run.md` refer to
+the run's claim folder, whose root is this package's root: there, `CLAIM.md` is `README.md`, `REPRODUCE.md` is `RUN_IT_YOURSELF.md`,
+`checkers/` is `verify-it-yourself/` and `rebuild/` is `how-we-built-it/`. Work files and folders named there
+(`panel/claim.sha256`, `self_break/`, `data/gate_fetch/`, `attempts/`, `objects/`, and the skeptics' `mine/`,
+`author_run/`, `fetched/` and `scripts/`) are not shipped. Dated run and folder names ("run" or "folder" followed by a
+date and time, or by a four-digit time alone) name runs of the contributor's workspace, which are not shipped either.
 
 The code comes from the extended one-point Hermitian code `E_15` on `y^3 + y = x^4` over GF(9) (the 27 affine
 points plus a coordinate for the point at infinity): a `[28, 13, 13]_9` code whose natural Hermitian hull (no column
@@ -60,7 +65,11 @@ EA codes (Christensen, Munuera, Pereira, Ruano) and of the newest qutrit EA code
   table's propagation rules (for example `[[29,7,13;9]]_3` and `[[30,7,13;9]]_3` by lengthening) are not claimed here.
 - This is an improvement of the table cell, not a new technique: the Hermitian construction and one-point Hermitian
   EA codes are published. The classical `[28, 13, 13]_9` code is not ours either: `codetables.de` lists it (an AG code
-  on the Hermitian curve). What is new is the qutrit EA code from its hull of dimension 6.
+  on the Hermitian curve). What is new is the qutrit EA code from its hull of dimension 6. The code is the one-column
+  extension of the length-27 one-point Hermitian code `[[27,6,13;9]]_3` of Christensen, Munuera, Pereira and Ruano
+  (arXiv:2105.02166): one more qutrit and one more logical qutrit at the same d and c. No rule of the table gives
+  `(28,7,9)` at d = 13 from it. arXiv:2607.02170 extends one-point Hermitian codes in the same way, but all its qutrit
+  codes have n <= 26.
 - The table also has cells marked "using teleportation" (`c = k`). If they were fed into the page's six propagation
   rules this cell would get 24, but the same seeding pushes 2700 listed cells above their own upper bounds, so the
   page does not propagate them; this package follows the page.
@@ -68,8 +77,8 @@ EA codes (Christensen, Munuera, Pereira, Ruano) and of the newest qutrit EA code
   the table) and judged journal-only papers (IEEE TIT 2025, IJTP 2024, Discrete Mathematics 2024, AMC 2025) from the
   codes arXiv:2607.02170 cites from them; journal papers without an arXiv version may be missed.
 - Not yet submitted to or listed by the table maintainer (`eaqecc.codetables.de`).
-- Not peer reviewed; verified by a three-skeptic panel (`panel/`) and by the standalone checker in
-  `verify-it-yourself/`.
+- Not peer reviewed. The panel files (`panel/`) and the standalone checker in `verify-it-yourself/` are shipped so
+  that anyone can check the claim.
 
 ## Credits
 
@@ -93,5 +102,5 @@ EA codes (Christensen, Munuera, Pereira, Ruano) and of the newest qutrit EA code
   1345-1348, https://doi.org/10.1109/18.21267, whose distance bound
   gives `d >= 28 - m` for the extended code `E_m`.
 - **Andries Brouwer and Karl-Heinz Zimmermann**, whose minimum-distance algorithm the panel's bz64 distance check
-  (`panel/criterion.md`) uses (as described by Hernando, Igual and Quintana-Orti, https://arxiv.org/abs/1603.06757).
+  (`panel/criterion.md`; bz64.c is not shipped in this package, and the shipped checks establish d = 13 without it) uses (as described by Hernando, Igual and Quintana-Orti, https://arxiv.org/abs/1603.06757).
 - Contributor credit: Abshalom Dayan, using the V3R1T4S kit (https://github.com/elder-plinius/V3R1T4S).

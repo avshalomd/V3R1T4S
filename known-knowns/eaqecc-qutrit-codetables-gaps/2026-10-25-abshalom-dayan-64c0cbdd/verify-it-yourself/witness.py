@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Extract and check a witness (run 2026-10-24-1253): a vector v of span(S)^perp supported inside the given position
+"""Extract and check a witness: a vector v of span(S)^perp supported inside the given position
 set T and not in the isotropic part span(S) ∩ span(S)^perp. Checks, from S directly: <r, v> = 0 for every row r of
 S; v is not in span(S) (so not in the isotropic part); its symplectic weight.
 Usage: witness.py object.json "t1,t2,..."   prints v as (x|z) and the checks."""

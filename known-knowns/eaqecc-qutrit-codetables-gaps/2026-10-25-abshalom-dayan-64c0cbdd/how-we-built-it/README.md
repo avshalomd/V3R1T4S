@@ -5,6 +5,6 @@
   arithmetic, Hermitian dual, phi map to GF(3)). This object: `python3 build_obj.py 15 out.json 13` (E_15, no column
   scaled), byte-identical to `object/eaqecc_28_7_13_9.json` (sha256 64c0cbdd...0c78). It prints
   `E_15 scaled_cols=[] [28,13] hull=6 -> [[28,7,?;9]]`.
-- `PREREG.md`: the frozen plan of the run that panelled this claim (run 2026-10-24-2311). `PREREG_found_run.md`: the
-  frozen plan of the run that found it and kept it as a candidate (run 2026-10-24-1033). No null test: an explicit
+- `PREREG.md`: the frozen plan of the run that panelled this claim. `PREREG_found_run.md`: the
+  frozen plan of the run that found it and kept it as a candidate. No null test: an explicit
   object checked by deterministic exact checkers against a table value.

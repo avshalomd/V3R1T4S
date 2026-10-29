@@ -1,4 +1,4 @@
-/* Exact information-set test over GF(9) (run 2026-10-24-1500, written from the definition).
+/* Exact information-set test over GF(9) (written from the definition).
    Input (stdin): "kappa n" then kappa rows of n entries in 0..8 (a + 3b for a + b w, w^2 = w + 1).
    For subset size m: enumerate every m-subset U of the n columns (depth-first, incremental echelon form) and count
    those with rank(G_U) < kappa. d(C) >= n - m + 1 holds iff that count is 0 (a nonzero codeword of weight <= n - m
