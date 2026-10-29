@@ -2,7 +2,7 @@
 
 Rank does not change when the format is permuted, so every source was searched for 18x18x19, 18x19x18 and 19x18x18.
 Every fetch was one plain GET (curl with the User-Agent "V3R1T4S-research-agent (honest single GET)", no cookies, no
-retries; GitHub API reads through `gh api -X GET`). Times are UTC from `date -u`; sha256 is of the saved body. The
+retries; GitHub API reads were plain GET requests to api.github.com). Times are UTC from `date -u`; sha256 is of the saved body. The
 complete log of every request is FETCH_LOG.txt next to this file. Pages are not copied here.
 
 ## The bank's p1 sources (fmm_sota.json and the Lille catalogue)
@@ -47,7 +47,7 @@ in fmm_sota.json are (18,18,19) 3355, (18,18,20) 3526, (18,19,19) 3633, (19,19,1
 | fetched (UTC) | HTTP | query | sha256 | finding |
 |---|---|---|---|---|
 | 2026-10-24T19:07:17Z to 19:07:36Z | 200 (7 pages) | https://api.github.com/repos/elder-plinius/V3R1T4S/pulls?state=all&per_page=100&page=1..7 | see FETCH_LOG.txt | 685 pull requests (#1 to #708; 337 open, 348 closed, 150 merged). Titles and bodies scanned for 18x18x19 / 18x19x18 / 19x18x18 in x, ×, comma, space and bracket notations, and for the number 3225: one hit, #708 (open, created 2026-10-24T18:58:23Z, the sibling <18,19,19> 3424 claim by the same contributor), whose "Not claimed" list says "The run also built <18,18,19> at 3225 (fmm_sota.json 3355); it is not part of this package", and its how-we-built-it/ holds the code that rebuilds this scheme (see "Prior publication" below). No pull request contains the <18,18,19> scheme files |
-| 2026-10-24T19:10:06Z to 19:12:05Z | gh exit 0 (118 requests) | https://api.github.com/repos/elder-plinius/V3R1T4S/pulls/{number}/files for each of the 118 FMM-related pull requests | see FETCH_LOG.txt | 3199 file names; none names 18x18x19 in any order or contains 3225; the largest NxMxP in a file name is 18x19x19 (#708) |
+| 2026-10-24T19:10:06Z to 19:12:05Z | 200 (118 requests) | https://api.github.com/repos/elder-plinius/V3R1T4S/pulls/{number}/files for each of the 118 FMM-related pull requests | see FETCH_LOG.txt | 3199 file names; none names 18x18x19 in any order or contains 3225; the largest NxMxP in a file name is 18x19x19 (#708) |
 | 2026-10-24T19:06:49Z to 19:07:07Z | 200 | GitHub search, `repo:elder-plinius/V3R1T4S is:pr` with 18x18x19, 18x19x18, 19x18x18, 3225, "18,18,19", 18×18×19 | see FETCH_LOG.txt | 0, 0, 0, 1 (#708), 1 (#708) and 50 loose matches for "18×18×19" (GitHub tokenises it into separate numbers; the FMM ones are #45, #46, #50, #51, #399, #615 and #708, and the full-listing scan above shows that only #708 names the cell) |
 | 2026-10-24T19:09:54Z | 200 | https://api.github.com/repos/elder-plinius/V3R1T4S/commits?per_page=3 | a2fca2872220514df41bec5e1bd6af794dae6192d2983dbbefeabc44ecb0e18a | main head 1ebdef41c304, 2026-10-24T16:13:09Z |
 | 2026-10-24T19:09:55Z | 200 | https://api.github.com/repos/elder-plinius/V3R1T4S/git/trees/main?recursive=1 | b1f7db3b79a823a824cd42da5e80f5c671ae03ca303e056686fb78a411fd9a0b | 5439 paths, not truncated; largest dimension in any FMM path 16; nothing for the cell |

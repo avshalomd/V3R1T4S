@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""General form of rebuild_16x16x17.py for any odd N: from LITA's N x N x N scheme, two exact one-slice steps.
+"""General form of rebuild_16x16x17.py (not shipped) for any odd N: from LITA's N x N x N scheme, two exact one-slice steps.
 
 Step 1 (axis 0, rows of A and C): e = star, f = e_0, then exact 2-reductions -> <N-1,N,N>.
 Step 2 (axis 1, columns of A / rows of B): e = e_0, f = star, then exact 2-reductions -> <N-1,N-1,N>.
-star = (1,...,1, -(N-5)/2 at index (N-1)/2, 1,...,1)   (N = 17 gives rebuild_16x16x17.py exactly).
+star = (1,...,1, -(N-5)/2 at index (N-1)/2, 1,...,1)   (N = 17 gives rebuild_16x16x17.py, not shipped, exactly).
 Usage: rebuild_lita_slices.py lita_N.json out_step1.json out_step2.json
 """
 import sys, os, time

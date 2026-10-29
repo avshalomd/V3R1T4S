@@ -14,8 +14,8 @@ the package must correct its disclosure of what #708 contains.
 
 ## Sources (my own fetches, one plain GET each, UTC, `date -u`)
 
-All fetches: curl, User-Agent "V3R1T4S-novelty-skeptic (single GET)", no cookies, no retries; GitHub through
-`gh api -X GET` (exit 0 for every call). No block, classifier denial, 401, 403 or 429 occurred.
+All fetches: curl, User-Agent "V3R1T4S-novelty-skeptic (single GET)", no cookies, no retries; GitHub API reads as plain GET
+requests to api.github.com (every call succeeded). No block, classifier denial, 401, 403 or 429 occurred.
 
 ### Bank p1 bar (fmm_sota.json and Lille; status_source https://fmm.univ-lille.fr/)
 
@@ -38,23 +38,23 @@ My hashes match the ones the claim records (the-record-we-beat/RECORD.md) for al
 | 2026-10-24T19:28:14Z | 200 | https://raw.githubusercontent.com/dronperminov/FastMatrixMultiplication/master/docs/ranks.md | 77203a718e82fec693578d193c9ccbb2332edcf41f086088a8405cd403666c5a | no row; largest dimension in the table 16 |
 | 2026-10-24T19:28:14Z | 200 | https://raw.githubusercontent.com/dronperminov/FastMatrixMultiplication/master/docs/additions.md | 258cfa9846615ac5e75f665969b2aad3ca496a11fcb9d9561e368474a309ca88 | no row |
 | 2026-10-24T19:28:15Z | 200 | https://raw.githubusercontent.com/dronperminov/FastMatrixMultiplication/master/CHANGELOG.md | e451692724898898bbc051649324b015be4d7842d403f9c54909f4513f32d489 | no mention |
-| 2026-10-24T19:28:41Z | 200 (gh rc 0) | https://api.github.com/repos/dronperminov/FastMatrixMultiplication/git/trees/master?recursive=1 (includes schemes/results/) | 408ac494c266f4a35503469729a264ff85643d988e1ef543701410622407a3f7 | 6863 paths, not truncated, largest dimension 16; no file for the cell |
-| 2026-10-24T19:28:43Z | 200 (gh rc 0) | https://api.github.com/repos/MerlijnW70/fmm-schemes/git/trees/HEAD?recursive=1 | e6866337cf18c6f4bb9d2b950240341d901260e28b560a301853202c03b1a5fc | 39 paths, largest dimension 16; nothing |
+| 2026-10-24T19:28:41Z | 200 | https://api.github.com/repos/dronperminov/FastMatrixMultiplication/git/trees/master?recursive=1 (includes schemes/results/) | 408ac494c266f4a35503469729a264ff85643d988e1ef543701410622407a3f7 | 6863 paths, not truncated, largest dimension 16; no file for the cell |
+| 2026-10-24T19:28:43Z | 200 | https://api.github.com/repos/MerlijnW70/fmm-schemes/git/trees/HEAD?recursive=1 | e6866337cf18c6f4bb9d2b950240341d901260e28b560a301853202c03b1a5fc | 39 paths, largest dimension 16; nothing |
 | 2026-10-24T19:28:15Z | 200 | https://raw.githubusercontent.com/solven-eu/matmulcatalog/master/docs/catalog.json | 5c600b98b4bb8f9feed5b4d9ffabf11af34b98f49bf43ae250b81e71f43e000b | (18,18,19): 3355 (Q,R,C), 3356, 3524; external_best_rank 3355 |
 | 2026-10-24T19:28:16Z | 200 | https://raw.githubusercontent.com/solven-eu/matmulcatalog/master/generated/COVERAGE.md | c2a9bd929b477acb44d4f92aa8055a0c26eab3c33121c0734be650c5c86254b7 | no row (stops at max dimension 16) |
 | 2026-10-24T19:28:16Z | 200 | https://raw.githubusercontent.com/khoruzhii/lita/main/README.md | 97df246f15643a7396307765d23432d03bcb5af97a9f8bf92cae85cb428d5b3f | square schemes only (even and odd N); no rectangular result, no restriction result; manuscript "in preparation" |
-| 2026-10-24T19:28:43Z | 200 (gh rc 0) | https://api.github.com/repos/khoruzhii/lita/git/trees/HEAD?recursive=1 | 75d497884cdff3414cc1b996c21083229d2984437f308186a686048ba4f7ee57 | 20 square schemes 13^3 to 32^3 (19^3 r3633, 20^3 r3994); no rectangular file |
-| 2026-10-24T19:28:44Z | 200 (gh rc 0) | https://api.github.com/repos/khoruzhii/lita/commits?per_page=10 | a8ce4c2848796206b567208528d751391f626900767541a2aabfbf2ba5751580 | head 472a79fbc8, 2026-10-07; nothing newer |
+| 2026-10-24T19:28:43Z | 200 | https://api.github.com/repos/khoruzhii/lita/git/trees/HEAD?recursive=1 | 75d497884cdff3414cc1b996c21083229d2984437f308186a686048ba4f7ee57 | 20 square schemes 13^3 to 32^3 (19^3 r3633, 20^3 r3994); no rectangular file |
+| 2026-10-24T19:28:44Z | 200 | https://api.github.com/repos/khoruzhii/lita/commits?per_page=10 | a8ce4c2848796206b567208528d751391f626900767541a2aabfbf2ba5751580 | head 472a79fbc8, 2026-10-07; nothing newer |
 
 ### This repository (elder-plinius/V3R1T4S)
 
 | fetched (UTC) | HTTP | URL | sha256 | finding |
 |---|---|---|---|---|
 | 2026-10-24T19:28:16Z | 200 | https://raw.githubusercontent.com/elder-plinius/V3R1T4S/main/TROPHY_CASE.md | b946f68eb0a6473dd2224065a52390235a535d3282da24669f6724a1472171a1 | no row for the cell, no 3225 |
-| 2026-10-24T19:28:44Z | 200 (gh rc 0) | https://api.github.com/repos/elder-plinius/V3R1T4S/git/trees/main?recursive=1 | e49a030f07630ba8def4ae850727750719a3401efe6da1940ad03fc80ee8874c | 5439 paths, not truncated, largest FMM dimension 16; nothing merged for the cell |
-| 2026-10-24T19:28:45Z | 200 (gh rc 0) | https://api.github.com/repos/elder-plinius/V3R1T4S/commits?per_page=5 | ec1d4b44cda5bd28bc5be96c0ebd7dd475cc06c619c963062a960506dcaad82e | main head 1ebdef41c3, 2026-10-24T16:13:09Z |
-| 2026-10-24T19:29:01Z to 19:29:08Z | 200 (gh rc 0, 8 pages) | https://api.github.com/repos/elder-plinius/V3R1T4S/pulls?state=all&per_page=100&page=1..8 | page 1 a6febe40..., page 8 (empty) 4f53cda1... | 685 PRs, #1 to #708 (337 open, 348 closed, 150 merged), 118 FMM-related. Titles and bodies scanned for the cell in every order and notation (x, ×, commas, angle brackets, parentheses) and for 3225; also for any format that contains (18,18,19) componentwise. Only hit: #708 (open, the contributor, created 2026-10-24T18:58:23Z). No PR by anyone else names the cell, 3225, or a containing format with a rank |
-| 2026-10-24T19:29:16Z to 19:29:18Z | 200 (gh rc 0) | https://api.github.com/repos/elder-plinius/V3R1T4S/pulls/708, /pulls/708/files, /pulls/708/commits, /issues/708/comments | 1457d5ac..., 812cf2fc..., c34f21a1..., 4f53cda1... | one commit e4bb688f43 (2026-10-24T18:31:54Z), 30 files, no comments. Object: <18,19,19> rank 3424 only. See the ruling |
+| 2026-10-24T19:28:44Z | 200 | https://api.github.com/repos/elder-plinius/V3R1T4S/git/trees/main?recursive=1 | e49a030f07630ba8def4ae850727750719a3401efe6da1940ad03fc80ee8874c | 5439 paths, not truncated, largest FMM dimension 16; nothing merged for the cell |
+| 2026-10-24T19:28:45Z | 200 | https://api.github.com/repos/elder-plinius/V3R1T4S/commits?per_page=5 | ec1d4b44cda5bd28bc5be96c0ebd7dd475cc06c619c963062a960506dcaad82e | main head 1ebdef41c3, 2026-10-24T16:13:09Z |
+| 2026-10-24T19:29:01Z to 19:29:08Z | 200 (8 pages) | https://api.github.com/repos/elder-plinius/V3R1T4S/pulls?state=all&per_page=100&page=1..8 | page 1 a6febe40..., page 8 (empty) 4f53cda1... | 685 PRs, #1 to #708 (337 open, 348 closed, 150 merged), 118 FMM-related. Titles and bodies scanned for the cell in every order and notation (x, ×, commas, angle brackets, parentheses) and for 3225; also for any format that contains (18,18,19) componentwise. Only hit: #708 (open, the contributor, created 2026-10-24T18:58:23Z). No PR by anyone else names the cell, 3225, or a containing format with a rank |
+| 2026-10-24T19:29:16Z to 19:29:18Z | 200 | https://api.github.com/repos/elder-plinius/V3R1T4S/pulls/708, /pulls/708/files, /pulls/708/commits, /issues/708/comments | 1457d5ac..., 812cf2fc..., c34f21a1..., 4f53cda1... | one commit e4bb688f43 (2026-10-24T18:31:54Z), 30 files, no comments. Object: <18,19,19> rank 3424 only. See the ruling |
 
 ### Literature (last 24 months)
 

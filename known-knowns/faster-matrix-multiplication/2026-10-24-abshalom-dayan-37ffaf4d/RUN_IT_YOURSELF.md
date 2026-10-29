@@ -36,6 +36,9 @@ lines `# format 18 18 19` and `# rank 3225`, then one line per term k = 0..3224 
 m_k = (sum u_k[i*18+j] A[i][j]) * (sum v_k[j*19+l] B[j][l]) for A 18x18 and B 18x19, and
 C[i][l] = sum_k w_k[i*19+l] m_k.
 
+"common denominator 352800" in check 2's output is that checker's scaling factor; the least common denominators
+are U 8400, V 84 and W 84.
+
 To join v.txt by hand: `cat object/v.part1.txt object/v.part2.txt > v.txt`.
 
 ## Rebuild the object (optional; numpy 2.5.4 and python-flint 0.9.0, network for one download)

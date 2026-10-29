@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Predicted ranks for the p1 band next to LITA's odd squares N = 13..31, compared with the saved tables.
-Step 1 (one slice + one absorption) removes (N^2+3N)/2 terms (object-as-data closed form, proved on 13, 15, 17);
+Step 1 (one slice + one absorption) removes (N^2+3N)/2 terms (object-as-data closed form, proved on 13, 15, 17; unverified);
 step 2 removes (N^2+2N-1)/2 (seen on 15 and 17); step 3 (N^2+N-2)/2 (seen on 15 and 17). Predictions only: a cell
 counts only once its scheme is built and checked exactly.
-Usage: predict_p1_band.py <run dir>   (reads data/fmm_sota_claimtime.json and data/lille_index.html)"""
+Usage: predict_p1_band.py <run dir>   (reads data/fmm_sota_claimtime.json and data/lille_index.html, not shipped)"""
 import sys, os, json, re, html
 run = sys.argv[1]
 fs = {tuple(e["format"]): e["rank"] for e in json.load(open(os.path.join(run, "data", "fmm_sota_claimtime.json")))["entries"]}

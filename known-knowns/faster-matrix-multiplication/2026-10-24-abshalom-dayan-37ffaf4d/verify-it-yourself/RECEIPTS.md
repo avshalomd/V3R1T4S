@@ -45,5 +45,8 @@ problem: 152 Brent equations fail
 FAIL
 ```
 
+"common denominator 352800" in the second checker's output is its scaling factor; the least common denominators are
+U 8400, V 84 and W 84. check_scheme.py is the run-folder name of check_scheme_second.py.
+
 Corrupted copy of this folder (one coefficient in object/w.txt changed): run_checks.sh prints the w.txt sha256
 MISMATCH, both checkers report 1100 wrong Brent equations, and the last line is FAIL (exit status 1).

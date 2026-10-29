@@ -4,7 +4,7 @@ This cell came out of the same run as PR #708 (<18,19,19> rank 3424). That run r
 Pokutta's LITA square schemes as data and found that one non-coordinate slice of LITA N^3 (direction
 e* = (1,...,1, -(N-5)/2, 1,...,1) on one side of a shared index, a unit vector on the other) kills
 (N^2 - 1)/2 + (3N - 1)/2 terms, and that one exact 2-reduction then removes one more term. For N = 19 that gave
-<18,19,19> at 3424, filed as #708.
+<18,19,19> at 3424 (PR #708).
 
 Applying a second slice of the same kind to the 3424 scheme, on a different shared index, kills 198 more terms, and
 one more 2-reduction gives <18,18,19> at 3225, against 3355 in fmm_sota.json and the Lille index. The code that does

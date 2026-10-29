@@ -2,8 +2,6 @@
 
 context: subagent (Claude Sonnet 5.5, fresh context, given only a copy of claim/)
 
-Instruction followed (kit, quoted): "Before reading the author's code, write your own checker from the definition (quote it). Verify every property and the claimed value from the saved files; re-derive every proof step. For an exhaustive search, a sample is a spot check and cannot pass. Fail on any mismatch, missing object or non-determinism."
-
 ## 1. My own checker (written before reading any author code)
 
 Definition used (quoted from my checker header): a bilinear scheme of rank R for <n,m,p> (A n x m, B m x p, C n x p) is
