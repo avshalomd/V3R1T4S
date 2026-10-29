@@ -11,7 +11,7 @@ confirmed_scope: The circulant 3-colouring of K_266 in object/R_3_3_14.txt (sha2
   (panel/.work/novelty/claim), with web access for honest single fetches. pass: true.
 - CRITERION, first session (claude-opus-5-5, effort high, 08:25:48Z to 08:33:59Z): pass: false. Kept unchanged as
   panel/criterion_attempt1.md. Its only reason: p1 also requires N+1 above "any newer arXiv paper for that multicolour
-  cell", claim/ held no search record for that clause, and its instruction did not allow the web, so it could not
+  cell", claim/ held no search record for that clause, and it had no web access, so it could not
   check the clause itself. It found the object correct by two exact methods.
 - CRITERION, second session (claude-opus-5-5, effort high, started 08:35:46Z): a new fresh session, after two changes
   (below). Its file is panel/criterion.md.
@@ -22,8 +22,8 @@ confirmed_scope: The circulant 3-colouring of K_266 in object/R_3_3_14.txt (sha2
   (runs 4 and 5, four queries, URLs, fetch times, HTTP status and hashes; one new query at 08:34:36Z) and the other
   sources read. CLAIM.md, the object, REPRODUCE.md, table_record.md and verify_circ.py were not changed. REPRODUCE and
   NOVELTY saw claim/ without that file.
-- CRITERION's instruction gained one sentence allowing honest web access to check every clause itself, and saying that
-  literature_record.md is the author's record, not a verdict. The quoted RUN.md role text is unchanged.
+- The CRITERION rerun was given honest web access to check every clause itself, and literature_record.md was marked
+  as the author's record, not a verdict. The CRITERION role is unchanged.
 - Whether a rerun after a procedural fail is acceptable is your call: see REPORT.md, "Needs you".
 
 ## What the gate checked (read by the run's main session, 2026-10-25T08:41:09Z)

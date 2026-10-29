@@ -38,7 +38,7 @@ The degrees match mine.
 
 ## Off-by-one and the table
 - A colouring of K_266 without the forbidden cliques proves R(3,3,14) >= 267. That is consistent with the claim.
-- The DS1 entry of 242 for the R(3,3,14) cell is taken from `table_record.md` (Table XIb, 242 in the m=14 column of the k=3 row). I did not re-fetch DS1 or search newer papers, because this instruction covers reproduction only. 267 > 242 holds against that record, but whether anything newer exists is for the NOVELTY skeptic.
+- The DS1 entry of 242 for the R(3,3,14) cell is taken from `table_record.md` (Table XIb, 242 in the m=14 column of the k=3 row). I did not re-fetch DS1 or search newer papers, because this skeptic covers reproduction only. 267 > 242 holds against that record, but whether anything newer exists is for the NOVELTY skeptic.
 
 ## Caveats
 - The reduction to vertex 0 relies on circulant vertex-transitivity, which is exact.

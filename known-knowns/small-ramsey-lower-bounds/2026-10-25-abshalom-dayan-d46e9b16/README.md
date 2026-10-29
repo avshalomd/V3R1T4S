@@ -3,6 +3,10 @@
 ## What
 The circulant 3-colouring of K_266 in object/R_3_3_14.txt (sha256 d46e9b16…34ba) has no monochromatic K_3 in colours 1 and 2 and no K_14 in colour 3, verified exhaustively by a SAT/UNSAT search and by the author's branch and bound, so R(3,3,14) ≥ 267, which is strictly above DS1's (April 24, 2026) bound of 242 and above every bound for this cell that I found on arXiv up to 2026-10-21 (titles and abstracts only).
 
+Path note: the panel files and how-we-built-it/PREREG.md refer to the run's folders. There, claim/ is this package's folder, CLAIM.md is README.md, REPRODUCE.md is RUN_IT_YOURSELF.md, table_record.md is the-record-we-beat/README.md, verify_circ.py is verify-it-yourself/verify_circ.py, check_fast.py, alpha.c and RUN/checker/mcheck.py are in how-we-built-it/code/, and repo/bank/targets.json is bank/targets.json in this repository. Work files and folders named there (claim/literature_record.md, the author's search record; work/; panel/.work/; RUN/checker/checker_tests.out; the run's REPORT.md and its "Needs you" section) are not shipped; everything REPORT.md says about this claim is in panel/gate.md. "Runs 4 and 5" and "the scout" are earlier steps of the same weekend runs.
+
+The CRITERION skeptic ran twice. The first session (panel/criterion_attempt1.md, kept unchanged) found the object correct by two exact methods but returned pass: false because it had no web access to check the p1 clause "any newer arXiv paper for that multicolour cell" and claim/ held no search record for it. The run then added claim/literature_record.md and allowed that skeptic honest web access; a new fresh session wrote panel/criterion.md. NOVELTY had web access from the start and covered the same clause in panel/novelty.md. panel/gate.md records both sessions and every change.
+
 ## Check it yourself
 ```sh
 sh verify-it-yourself/run_checks.sh
@@ -21,10 +25,7 @@ Expected last three lines: `proves R(3,3,14) >= 267`, `PASS`, `PASS` (the checke
 - One cell only. Other cells built in the same runs are separate claims with their own panels.
 - Not a new method: the construction is the splitting method of Exoo and Tatarevic applied to a published two-colour circulant (see Credits).
 - "Nothing at 267 or above was published" rests on the searches listed in panel/novelty.md and panel/criterion.md (DS1, arXiv, the authors' repositories, this repository).
-
-## Notes on the panel files
-- The panel files mention the run's REPORT.md (its "Needs you" section). That report is not part of this package; everything it says about this claim is in panel/gate.md.
-- The CRITERION skeptic ran twice. The first session (panel/criterion_attempt1.md, kept unchanged) found the object correct by two exact methods but returned pass: false because it had no web access to check the p1 clause "any newer arXiv paper for that multicolour cell" and claim/ held no search record for it. The run then added claim/literature_record.md and allowed that skeptic honest web access; a new fresh session (panel/criterion.md) passed. NOVELTY, which had web access from the start, passed the same clause on its own. panel/gate.md records both sessions and every change.
+- Exoo's construction folder http://cs.indstate.edu/ge/RAMSEY/ExTa/ returned HTTP 403 to the run and was not retried, so it was not read.
 
 ## Credits
 - Geoffrey Exoo and Milos Tatarevic, "New Lower Bounds for 28 Classical Ramsey Numbers", Electron. J. Combin. 22(3)
