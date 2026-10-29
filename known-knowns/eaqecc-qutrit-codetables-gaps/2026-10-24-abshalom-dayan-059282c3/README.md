@@ -9,11 +9,19 @@ The gate re-read the page once more at 2026-10-24T22:41:24Z: same page hash, sam
 (`the-record-we-beat/README.md`). The object's full SHA-256 is
 `059282c383e7d059867ecd1a1ec51d54197af25b2c6a320dd26b150ac1a99391`.
 
+Path note: the sentence above, the panel files and how-we-built-it/PREREG.md refer to the run's claim folder and
+work folders. There, claim/object/ is object/, CLAIM.md is README.md, REPRODUCE.md is RUN_IT_YOURSELF.md,
+checkers/ is verify-it-yourself/ and rebuild/ is how-we-built-it/; claim/table/ held the table page, whose fetch
+record and sha256 are in the-record-we-beat/README.md. Work files and folders named there (for example
+self_break/, mine/, run/, fetched/, scripts/, attempts/, data/ and data/gate_fetch/) are not shipped. The numbered
+runs and run folders named there (for example 2026-10-24-1640, 2026-10-24-1727, 2026-10-24-1953 and
+2026-10-24-2001, also written as run 1640) are the contributor's other runs of the same kit; they are not shipped. panel/claim.sha256 (the list of the claim folder's files) is not shipped either.
+
 The code is a Construction X code over GF(9) from two algebraic-geometry codes of the Hermitian curve
 `y^3 + y = x^4` whose divisors are supported on a place `Q` of degree 3 and the point at infinity:
 `C(D_28, 3Q + 8P_inf)` `[28, 15, 11]_9` contains `C(D_28, 2Q + 8P_inf)` `[28, 12, 14]_9`, glued to a `[5, 3, 3]_9`
-Reed-Solomon tail, with a column sign pattern chosen so that the Hermitian hull has dimension 6 (the exact maximum
-over every Construction X code of this pair). The result is a `[33, 15, 14]_9` code with Hermitian hull 6, which gives
+Reed-Solomon tail, with a column sign pattern chosen so that the Hermitian hull has dimension 6 (the maximum
+over every Construction X code of this pair according to how-we-built-it/hullbound.c; contributor text, unverified). The result is a `[33, 15, 14]_9` code with Hermitian hull 6, which gives
 `[[33, 15 - 6, 14; 33 - 15 - 6]]_3 = [[33, 9, 14; 12]]_3`. The object holds the GF(9) generator `G9`, its Hermitian
 dual `D9`, and the stabilizer matrix `S = phi(D9)` over GF(3).
 
@@ -53,7 +61,9 @@ at the cells of Hermitian hulls 0, 1 and 2 (`(33,15,18)`, `(33,14,17)`, `(33,13,
 The closure of the table under its own propagation rules, of the codes in this repository's open pull requests
 (#710's `[[33,8,16;15]]_3` included), of codetables.de's qutrit stabilizer codes for n = 33 to 46 and of the newest
 qutrit EA codes the NOVELTY skeptic found (arXiv:2607.02170, July 2026, length at most 25) gives at most 13 at this
-cell. The same row lists `[[33,9,14-21;13]]_3`, so d = 14 was known only with one more entangled pair.
+cell. The same row lists `[[33,9,14-21;13]]_3`, so d = 14 was known only with one more entangled pair. The code of open
+pull request #721, `[[33,7,15;12]]_3`, does not give d = 14 at `(33,9,12)` under the table's rules: its d = 15
+reaches `(n,k,c) = (33,9,14)`, a different cell.
 
 ## Not claimed
 
@@ -70,8 +80,7 @@ cell. The same row lists `[[33,9,14-21;13]]_3`, so d = 14 was known only with on
   arXiv:2608.09886); three paywalled journal papers (IEEE TIT 2025, AMC 2025, IJTP 2024) were judged from the codes
   arXiv:2607.02170 cites from them, and journal papers without an arXiv version may be missed.
 - Not yet submitted to or listed by the table maintainer (`eaqecc.codetables.de`).
-- Not peer reviewed; verified by a three-skeptic panel (`panel/`) and by the standalone checker in
-  `verify-it-yourself/`.
+- Not peer reviewed. The standalone checker is in `verify-it-yourself/`; the run's skeptic reports are in `panel/`.
 
 ## Credits
 

@@ -15,7 +15,7 @@ by rank. An exhaustive pass over all 2^27 head sign patterns (column scalings of
 C(D_28, 3Q + 8P_inf) [28,15,11] > C(D_28, 2Q + 8P_inf) [28,12,14] gives an exact maximum hull of 6, reached only with
 the head unscaled. Random tails at that pattern reached 6 on try 2511. The code has d = 14 exactly.
 
-The run that panelled it rebuilt the object byte for byte from frozen parameters, re-tested its checkers on a known
+The run that claimed it rebuilt the object byte for byte from frozen parameters, re-tested its checkers on a known
 positive and a seeded negative, and found d = 14 by two exact methods that agree (a GF(9) information-set test over
 all 573,166,440 sets of 20 columns; a GF(3) position-subset rank test over all 573,166,440 sets of 13 positions, with
 10404 = 10404 counts one step up), a Brouwer-Zimmermann computation, and weight-14 witnesses outside the isotropic part.

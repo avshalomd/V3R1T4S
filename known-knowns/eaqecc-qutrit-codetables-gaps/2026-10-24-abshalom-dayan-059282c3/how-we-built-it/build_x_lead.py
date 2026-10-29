@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a Construction X lead object (run 2026-10-24-1727, optimizer lens; generalizes claim/rebuild/build_x_obj.py):
+"""Build a Construction X lead object (generalizes the earlier builder build_x_obj.py, not shipped here):
 C1 = C(D_28, aQ + bP_inf), C2 = C(D_28, (a-1)Q + bP_inf) from deg3.py (Q = place IDX), basis "C2 rows, then rows of C1
 raising the rank" (as prep_x.py), [5,3,3] tail M A on the points PTS (9 = infinity), columns marked '-' in EPS times w.
 Usage: build_x_lead.py IDX a b PTS M EPS out.json d_claimed [out_G9.code]   (PTS, M comma-separated)"""

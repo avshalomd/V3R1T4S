@@ -1,5 +1,5 @@
 """Standalone checker for a qutrit EAQECC [[n,k,d;c]]_3 given by its stabilizer matrix S over GF(3) (Python standard
-library; the exhaustive distance enumeration is done by enum_min.c, a small C program, because 3^22 vectors are far
+library; the exhaustive distance enumeration is done by enum_min.c (not shipped; this package uses only the prepare mode), a small C program, because 3^22 vectors are far
 too many for pure Python).
 
 Definition checked (bank entry eaqecc-qutrit-codetables-gaps): with s independent generators (rows of S, (x|z),

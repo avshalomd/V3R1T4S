@@ -1,5 +1,5 @@
-/* Exact upper bound on the Hermitian hull of every Construction X code from a pair C1 > C2 (run 2026-10-24-1727,
-   optimizer lens). Input (stdin): "K1 K2 n" and K1 rows of n over GF(9) (codes a + 3b), the first K2 rows spanning C2.
+/* Exact upper bound on the Hermitian hull of every Construction X code from a pair C1 > C2.
+   Input (stdin): "K1 K2 n" and K1 rows of n over GF(9) (codes a + 3b), the first K2 rows spanning C2.
    An X code is C = {(c, tau(c)) : c in C1} with tau: C1 -> GF(9)^m linear, kernel C2 (any tail code A of dimension
    K1 - K2 and any isomorphism M), with column scalings; a scaling enters the Hermitian Gram only through its norm,
    +-1. With the C1 basis "C2 rows, then complement rows", the Gram matrix of C under head signs e is

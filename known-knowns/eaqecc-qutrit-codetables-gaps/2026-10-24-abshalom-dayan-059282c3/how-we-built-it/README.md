@@ -32,6 +32,6 @@ Commands from this folder (python3 standard library and cc), in the order the ob
    tail = M A" (a fixed phrase in build_x_lead.py); for this pair C2 has dimension 12, so the rows carrying M A are
    rows 12..14 (0-based) of G9. The matrices are unaffected.
 
-- `PREREG.md`: the frozen plan of the run folder that panelled this claim (run 2026-10-24-2001), written before any of
+- `PREREG.md`: the frozen plan of the run folder that produced this claim, written before any of
   its checkers ran on the object. No null test: an explicit object checked by deterministic exact checkers against a
   table value.

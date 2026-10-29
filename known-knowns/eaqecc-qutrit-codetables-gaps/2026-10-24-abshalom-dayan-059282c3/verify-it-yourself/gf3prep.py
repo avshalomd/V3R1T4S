@@ -2,7 +2,7 @@
 """From a symplectic stabilizer matrix S over GF(3) (rows (x|z), 2n columns), compute exactly:
 s = rank(S), c = rank(S J S^T)/2, k = n - s + c, a basis of N = span(S)^perp (symplectic dual) and of the
 isotropic part I = span(S) ∩ N. Writes a text file for subset_ea.c: "n dimI dimN" then dimN rows of 2n entries,
-the first dimI rows spanning I. Written for run 2026-10-24-1253 from the bank definition; shares no code with the
+the first dimI rows spanning I. Written from the bank definition; shares no code with the
 builders. Usage: gf3prep.py object.json out.txt   (or gf3prep.py --text S.txt out.txt with "n s" + s rows)."""
 import json, sys
 
