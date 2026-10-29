@@ -11,10 +11,10 @@ a two-colour Ramsey lower bound above DS1; a multicolour cell above DS1 is parti
   triangle-free circulant colours; a SAT solver over the distance classes found the split in well under a second.
   Colour 3 is the source's K9-free colour, unchanged. 132 + 1 = 133 > 129 (DS1 reference Ex18).
 - How it was found: a sweep over every (source, colour, split) combination of Kuznetsov's Table 2 whose cell is in
-  DS1 Table XIb; beyond the cells already split in this weekend's earlier runs ((5,11), (5,12) and (5,14), filed
-  separately), this was the only new SAT case.
+  DS1 Table XIb; beyond the cells already split in this weekend's earlier runs ((5,11), (5,12) and (5,14), separate
+  claims), this was the only new SAT case.
 - What failed: one-vertex extension of the object (CaDiCaL via pysat returned UNSAT); the K3 + K3 split of the (6,9) graph on 182
   for the same cell (CaDiCaL via pysat returned UNSAT); lazy edge-level K4/K5 splits of non-circulant graphs gave no answer within their caps.
 - Checks: two exact checkers in the run (bitset branch and bound, and CaDiCaL via pysat returning UNSAT; no DRAT/LRAT certificate) agree that colour 3 has
-  no K9; the standard-library checker in verify-it-yourself/ agrees; three fresh-context
-  skeptics (REPRODUCE, NOVELTY, CRITERION) each checked it; see panel/.
+  no K9; the standard-library checker in verify-it-yourself/ agrees; the reports of three fresh-context
+  skeptics (REPRODUCE, NOVELTY, CRITERION) are in panel/.

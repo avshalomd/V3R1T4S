@@ -3,6 +3,11 @@
 ## What
 The circulant 3-colouring of K_132 in object/R_3_3_9.txt (sha256 a88af7a9fb8fc8eb0ddf226628db6f59df6c1fb8504ed3ec80d2eeaf972a64cd) has no monochromatic K_3 in colours 1 and 2 and no K_9 in colour 3 (checked exhaustively by three independent methods), so R(3,3,9) >= 133, which is strictly above the 129 in DS1 revision #18 (April 24, 2026) Table XIb and above every bound I found in arXiv papers posted or updated after that revision.
 
+Path note: the panel files and how-we-built-it/PREREG.md refer to the run's folders. There, claim/ is this package's folder, CLAIM.md is README.md, table_record.md is the-record-we-beat/README.md and verify_circ.py is verify-it-yourself/verify_circ.py; check_fast.py and alpha.c are in how-we-built-it/code/, and repo/bank/targets.json is bank/targets.json in this repository. PREREG.md names two run folders: runs/2026-10-25-0719 is weekend run 5, which found this object, and runs/2026-10-25-0610 is run 4; the run-4 files it names are shipped as how-we-built-it/code/check_fast.py, how-we-built-it/code/mcheck.py (checker/mcheck.py) and verify-it-yourself/verify_circ.py (checker/verify_circ.py). Work files and folders named there (literature_record.md, the author's search record; work/; panel/.work/; run 4's PREREG.md, checker tests and mainchk/source_agree.out; the run's REPORT.md and its "Needs you" section) are not shipped; everything REPORT.md says about this claim is in panel/gate.md. "The scout" is an earlier step of the same weekend runs.
+
+Corrections to the panel text:
+- panel/gate.md gives the monotonicity bound as 103 (from R(3,3,8) >= 103); since R(3,3,9) >= R(3,3,8) + 1, it is 104. Neither is near 133.
+
 ## Check it yourself
 ```sh
 sh verify-it-yourself/run_checks.sh
@@ -21,9 +26,6 @@ Expected last three lines: `proves R(3,3,9) >= 133`, `PASS`, `PASS` (the checker
 - One cell only. Other cells built in the same runs are separate claims with their own panels.
 - Not a new method: the construction is the splitting method of Exoo and Tatarevic applied to a published two-colour circulant (see Credits).
 - "Nothing at 133 or above was published" rests on the searches listed in panel/novelty.md and panel/criterion.md (DS1, arXiv, the authors' repositories, this repository).
-
-## Notes on the panel files
-- The panel files mention run files that are not part of this package: the run's REPORT.md (its "Needs you" section), CLAIM.md, table_record.md and literature_record.md; PREREG.md and code/alpha.c also name paths in the run's workspace. These are private workspace files. Everything they say about this claim is in panel/gate.md and the panel files.
 - One source could not be read: Exoo's construction folder http://cs.indstate.edu/ge/RAMSEY/ExTa/ returned HTTP 403 and was not retried. It may hold Exoo's constructions behind the DS1 entry 129 [Ex18]; DS1 itself lists nothing above 129 for this cell.
 
 ## Credits
