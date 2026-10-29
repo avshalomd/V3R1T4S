@@ -1,6 +1,6 @@
 # The record we compare against: <22,23,23> and its permutations
 
-Rank does not change when the format is permuted, so every source was searched for all axis orders (22x23x23, 23x22x23, 23x23x22). Every fetch was one plain GET (curl with the User-Agent "V3R1T4S-research-agent (honest single GET)", no cookies, no retries; GitHub API reads through `gh api -X GET`). Times are UTC from `date -u`; sha256 is of the saved body. The complete log of every request (shared by the eight cells of this batch) is FETCH_LOG.txt next to this file. Pages are not copied here. Looking the format up in the saved pages is code/table_lookup.py (output: table_lookup.txt); the pull-request and arXiv scans are code/novelty_scan.py (output: novelty_scan.txt).
+Rank does not change when the format is permuted, so every source was searched for all axis orders (22x23x23, 23x22x23, 23x23x22). Every fetch was one plain GET (curl with the User-Agent "V3R1T4S-research-agent (honest single GET)", no cookies, no retries; GitHub API reads were plain GET requests to api.github.com). Times are UTC from `date -u`; sha256 is of the saved body. The complete log of every request (shared by the eight cells of this batch) is FETCH_LOG.txt next to this file. Pages are not copied here. Looking the format up in the saved pages is code/table_lookup.py (output: table_lookup.txt); the pull-request and arXiv scans are code/novelty_scan.py (output: novelty_scan.txt).
 
 ## The bank's p1 sources (fmm_sota.json and the Lille catalogue)
 
