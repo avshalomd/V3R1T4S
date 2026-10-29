@@ -28,6 +28,10 @@ File format: each factor file has the header lines `# format 18 19 19` and `# ra
 k = 0..3423 with the nonzero entries `index:coefficient` (integer or p/q). Convention: for A 18x19 and B 19x19,
 m_k = (sum u_k[i*19+j] A[i][j]) * (sum v_k[j*19+l] B[j][l]) and C[i][l] = sum_k w_k[i*19+l] m_k.
 
+The 352800 printed as "common denominator" is the checker's scaling factor (the lcm over terms of the product of
+each term's three factor denominators), not the least common denominator of the coefficients (8400 for U, 84 for V
+and W).
+
 `check_scheme.py` clears denominators and expands every term exactly, so all 342 * 361 * 342 = 42,224,004 Brent
 equations are checked; `check_random_eval.py` is an extra spot check (exact rational A and B).
 

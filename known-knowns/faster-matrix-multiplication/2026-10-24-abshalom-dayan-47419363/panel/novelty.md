@@ -23,7 +23,7 @@ HTTP 200. There were no blocks, challenge pages or 401/403/429/503 responses. On
 my first command never sent a request, because zsh stopped on the unquoted `?` ("no matches found") before curl
 ran. The single logged GET at 18:08:17Z is the only request made to that URL.
 
-I scanned every fetched page for text addressed to an AI agent. None was found.
+I scanned every fetched page for text addressed to reviewers. None was found.
 
 ## Primary tables (status sources), fetched 2026-10-24
 

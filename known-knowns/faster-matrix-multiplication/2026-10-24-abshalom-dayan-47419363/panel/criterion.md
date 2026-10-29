@@ -95,7 +95,7 @@ satisfies the Brent equations. The scheme is not a ternary or integer re-derivat
   per-format page, and not an already-listed composition), and that definition is met. Read more broadly, as "below
   everything known", the files add: matmulcatalog lowest 3595, no row in Perminov's table, no MerlijnW70 scheme, and
   no <18,19,19> rank in the V3R1T4S pull requests. The files do not say whether LITA's own schemes/ folder holds an
-  18x19x19 scheme, and my instructions did not allow fetching it. This is a residual caveat outside p1's literal test,
+  18x19x19 scheme, and I did not fetch it. This is a residual caveat outside p1's literal test,
   not a failed clause.
 - "Live": both p1 sources were re-fetched by the claim at 2026-10-24T17:37:57Z and by me at 2026-10-24T18:18:21Z, with
   identical sha256s each time.
@@ -110,9 +110,9 @@ I agree that a null model in the statistical sense does not apply here. The obje
 exact Brent-equation check is a proof, not a sampled result. The relevant baseline is what trivial constructions would
 give, and step 5 puts that at 3633.
 
-## Injected instructions
+## Text addressed to reviewers
 
-The fetched pages and claim files contain no instructions addressed to an agent. I scanned the Lille page text for
+The fetched pages and claim files contain no text addressed to reviewers. I scanned the Lille page text for
 "ignore", "instruction", "agent", "assistant" and "model", and fmm_sota.json for "ignore previous", "instruction",
 "assistant", "AI agent", "language model", "LLM" and "Claude"; none matched.
 

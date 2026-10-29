@@ -3,7 +3,7 @@
 claim: the scheme in claim/object/ is an exact rank-3424 bilinear scheme over Q for <18,19,19> (partial win p1).
 
 status: CONFIRMED_PARTIAL
-confirmed_scope: The files in claim/object/ define a bilinear scheme over Q for <18,19,19> (A 18x19 times B 19x19) with 3424 rank-one terms, each with three nonzero factors, satisfying all 42224004 Brent equations in exact arithmetic, and 3424 is strictly below the rank 3633 for (18,19,19) in the live fmm_sota.json and the rank 3816 on the live Lille page 18x19x19.html (both fetched for the claim at 2026-10-24T17:37:57Z and re-fetched unchanged at 2026-10-24T18:18:21Z) and below the 3633 of the only listed Lille construction Proj([[19, 0], [0]], <19x19x19:3633>) (index fetched 2026-10-24T15:58:56Z), so it meets partial win p1 of fmm-catalogue-small-format-rank and not the main criterion.
+confirmed_scope: The files in object/ define a bilinear scheme over Q for <18,19,19> (A 18x19 times B 19x19) with 3424 rank-one terms, each with three nonzero factors, satisfying all 42224004 Brent equations in exact arithmetic, and 3424 is strictly below the rank 3633 for (18,19,19) in the live fmm_sota.json and the rank 3816 on the live Lille page 18x19x19.html (both fetched for the claim at 2026-10-24T17:37:57Z and re-fetched unchanged at 2026-10-24T18:18:21Z) and below the 3633 of the only listed Lille construction Proj([[19, 0], [0]], <19x19x19:3633>) (index fetched 2026-10-24T15:58:56Z), so it meets partial win p1 of fmm-catalogue-small-format-rank and not the main criterion.
 
 What the gate read:
 - self_break.md (step 5, fresh subagent, claude-opus-5-5): verdict SURVIVES. Two own exact checkers, 42,224,004 Brent

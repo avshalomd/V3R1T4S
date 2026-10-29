@@ -7,7 +7,9 @@ for all A, B over the ring (here Q). Equivalently (Brent equations), for all i, 
     sum_k u_k[i*n2+j] * v_k[j'*n3+l] * w_k[i'*n3+l'] = 1 if (i, j, l) == (i', j', l') else 0.
 Files: <dir>/u.txt, v.txt, w.txt; header lines '# format n1 n2 n3' and '# rank r'; then exactly r data lines, line k
 listing the nonzero entries of factor k as 'index:coefficient' (integer or p/q). Every coefficient is cleared to an
-integer with one common denominator D and every term is expanded exactly; all n1 n2 n2 n3 n1 n3 equations are checked.
+integer with one scaling factor D (the lcm over terms of the product of the term's three factor denominators; the
+output line calls it "common denominator", but it is not the least common denominator of the coefficients) and every
+term is expanded exactly; all n1 n2 n2 n3 n1 n3 equations are checked.
 Also required: every term has three nonzero factors (so the number of multiplications is exactly r).
 Usage: check_scheme.py <dir>        Last line: PASS or FAIL. Exit status 0 or 1.
 """
