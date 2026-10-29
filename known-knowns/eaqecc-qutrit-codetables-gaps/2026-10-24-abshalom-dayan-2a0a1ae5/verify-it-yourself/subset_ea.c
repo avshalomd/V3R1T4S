@@ -1,4 +1,4 @@
-/* Exact EAQECC distance test over GF(3) by position subsets (run 2026-10-24-1253, written from the definition).
+/* Exact EAQECC distance test over GF(3) by position subsets (written from the definition).
    Input (stdin): "n dimI dimN", then dimN rows of 2n entries in {0,1,2} (x part then z part); the first dimI rows
    span the isotropic part I = span(S) ∩ span(S)^perp, all dimN rows span N = span(S)^perp.
    A vector of N \ I with symplectic weight <= W exists  iff  for some W-subset T of positions,

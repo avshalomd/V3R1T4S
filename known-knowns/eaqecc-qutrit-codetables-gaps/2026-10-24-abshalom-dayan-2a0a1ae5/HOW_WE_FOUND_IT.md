@@ -14,7 +14,6 @@ scanning the family against the table and kept it as a panel-ready candidate. Th
 checked it with two exact methods that agree: a GF(9) information-set test on the code recovered from S (all
 13,123,110 sets of 18 columns) and a GF(3) position-subset rank test (all 13,123,110 sets of 10 positions), each with
 a weight-11 witness outside the isotropic part, after re-testing both on a known positive and on seeded negatives.
-The claim folder then went to a three-skeptic panel, one skeptic at a time.
 
 What failed, looking for d = 12 at the same cell: a local search started from E_17 (column replacements scored
 exactly by the number of weight-11 supports) never improved on the start in three seeds. Column scalings cannot

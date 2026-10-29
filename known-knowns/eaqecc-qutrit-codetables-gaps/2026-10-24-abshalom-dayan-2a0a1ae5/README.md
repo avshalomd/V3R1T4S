@@ -9,8 +9,15 @@ The gate re-read the page once more at 2026-10-24T17:49:29Z: same page hash, sam
 (`the-record-we-beat/README.md`). The object's full SHA-256 is
 `2a0a1ae5e178dcc0264b6a9f40ee1935991f28e65199a0712aecffe879b6c7d0`.
 
+Path note: the panel files and how-we-built-it/PREREG*.md refer to the run's claim folder and work folders. There,
+claim/object/ is object/, CLAIM.md is README.md, REPRODUCE.md is RUN_IT_YOURSELF.md and rebuild/ is
+how-we-built-it/; claim/table/RECORD.md is summarized in the-record-we-beat/README.md (the saved page
+claim/table/qutrit.php is not shipped). Work files and folders named there (panel/claim.sha256, self_break/, mine/,
+scripts/, fetched/, closure_result*.txt and runs/) are not shipped, and the numbered runs named there (for example
+2026-10-24-0924, 2026-10-24-1033, 2026-10-24-1640, also written as run 1033) are the contributor's runs of the kit. In the panel files checkers/ is verify-it-yourself/, and data/gate_fetch/ (the gate's re-fetch folder) is not shipped either.
+
 The code comes from the extended one-point Hermitian code `E_17` on `y^3 + y = x^4` over GF(9): a `[28, 15, 11]_9`
-code whose natural Hermitian hull has dimension 6 (the maximum over all column sign patterns). That gives
+code whose natural Hermitian hull has dimension 6 (the maximum over all column sign patterns according to the contributor's search; unverified). That gives
 `[[28, 15 - 6, 11; 28 - 15 - 6]]_3 = [[28, 9, 11; 7]]_3`. The object holds the GF(9) generator `G9`, its Hermitian
 dual `D9`, and the stabilizer matrix `S = phi(D9)` over GF(3).
 
@@ -43,7 +50,8 @@ Published codes that the table does not list: the plain one-point Hermitian EA c
 Munuera, Pereira, Ruano) would need a `[27,15,11]_9` code to reach this cell, and codetables.de lists `[27,15]` over
 GF(9) at 10-11 with no such code known; the table's source paper lists `[[28,9,12;9]]_3`, which needs more
 entanglement (`c = 9`), and the table's rules never lower `c` without lowering `d` or `k`. The table already uses a
-`[28,15,11]_9` code with Hermitian hull 4 (its `[[28,11,11;9]]_3`); what is new is the hull of dimension 6.
+`[28,15,11]_9` code with Hermitian hull 4 (inferred from its `[[28,11,11;9]]_3` entry, not read from the source
+paper); what is new is the hull of dimension 6.
 
 ## Not claimed
 
@@ -58,8 +66,7 @@ entanglement (`c = 9`), and the table's rules never lower `c` without lowering `
   July 2026 arXiv paper that compares against them states no qutrit code longer than 26. Closed pull requests were not
   searched.
 - Not yet submitted to or listed by the table maintainer (`eaqecc.codetables.de`).
-- Not peer reviewed; verified by a three-skeptic panel (`panel/`) and by the standalone checker in
-  `verify-it-yourself/`.
+- Not peer reviewed. The standalone checker is in `verify-it-yourself/`; the run's skeptic reports are in `panel/`.
 
 ## Credits
 
@@ -67,7 +74,8 @@ entanglement (`c = 9`), and the table's rules never lower `c` without lowering `
   https://eaqecc.codetables.de/qutrit.php) and `codetables.de` (https://codetables.de/).
 - **Gaojun Luo, Martianus Frederic Ezerman, Markus Grassl, and San Ling**, "Constructing quantum error-correcting
   codes that require a variable amount of entanglement", *Quantum Information Processing* 23, 4 (2024),
-  https://doi.org/10.1007/s11128-023-04211-x (preprint https://arxiv.org/abs/2207.05647), whose Hermitian
+  https://doi.org/10.1007/s11128-023-04211-x (preprint https://arxiv.org/abs/2207.05647, titled "How Much
+  Entanglement Does a Quantum Code Need?"), whose Hermitian
   construction (Proposition 1) turns a GF(9) code with a given Hermitian hull into the qutrit EA code, whose
   one-column extension (Proposition 10) raises a hull, and whose propagation rules the table uses.
 - **Todd A. Brun, Igor Devetak, and Min-Hsiu Hsieh**, "Correcting quantum errors with entanglement", *Science* 314,
@@ -75,8 +83,9 @@ entanglement (`c = 9`), and the table's rules never lower `c` without lowering `
 - **Carlos Galindo, Fernando Hernando, Ryutaroh Matsumoto, and Diego Ruano**, "Entanglement-assisted quantum
   error-correcting codes over arbitrary finite fields", *Quantum Information Processing* 18, 116 (2019),
   https://arxiv.org/abs/1812.05312.
-- **Christensen, Munuera, Pereira, and Ruano**, entanglement-assisted quantum codes from one-point Hermitian codes,
-  https://arxiv.org/abs/2105.02166 (Advances in Mathematics of Communications 17(1), 2023): the length-27 family
+- **Christensen, Munuera, Pereira, and Ruano**, "An Algorithmic Approach to Entanglement-Assisted Quantum
+  Error-Correcting Codes from the Hermitian Curve", Advances in Mathematics of Communications 17(1) (2023),
+  https://doi.org/10.3934/amc.2021072 (preprint https://arxiv.org/abs/2105.02166): the length-27 family
   this code extends, and the comparison above.
 - **V. D. Goppa** (algebraic-geometry codes) and **Henning Stichtenoth** (Hermitian codes), whose distance bound
   gives `d >= 28 - m` for the extended code `E_m`.

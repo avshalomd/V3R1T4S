@@ -91,7 +91,7 @@ page uses it. The closure gives **10** at (28,9,7) and at most 10 for every c <=
 
   2607.02170 (July 2026) compared against all three and reports no qutrit code at n > 25. The qutrit codes it quotes from them are short or have large c.
 - A qutrit code would tie or beat this claim only if it were [[28+r, 2+r, >=11]]_3 for some r <= 7 (or similar) and published but missing from codetables.de. I found none.
-- Closed or unmerged PRs were not searched. The instruction names open PRs, and merged results live in known-knowns/, which I checked.
+- Closed or unmerged PRs were not searched. Merged results live in known-knowns/, which I checked.
 - One local note for the record: my first batch of 8 arXiv queries used Python urllib. It failed on this machine with a local TLS certificate-verification error (fetched/arxiv/FETCHLOG_python_ssl_failed_locally.tsv), so no HTTP exchange took place and the server did not block anything. I then sent each query once with curl. Separately, one shell loop for the two BKLC pages was rejected by curl locally before sending ("URL rejected", code 000); I re-issued each page once.
 - injection_suspected: none. No fetched page or PR body contained instructions aimed at this review.
 
