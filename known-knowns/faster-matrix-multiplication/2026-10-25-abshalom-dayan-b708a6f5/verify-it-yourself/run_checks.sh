@@ -7,8 +7,7 @@
 cd "$(dirname "$0")/.." || { echo FAIL; exit 1; }
 PY=$(command -v python3 || command -v python)
 [ -n "$PY" ] || { echo "no python3 found"; echo FAIL; exit 1; }
-T=verify-it-yourself/.assembled
-rm -rf "$T"; mkdir -p "$T" || { echo FAIL; exit 1; }
+T=$(mktemp -d "${TMPDIR:-/tmp}/assembled.XXXXXX") || { echo FAIL; exit 1; }
 for w in u v w; do
   if [ -f "object/$w.txt" ]; then cat "object/$w.txt" > "$T/$w.txt"; else cat object/$w.part?.txt > "$T/$w.txt"; fi || { echo FAIL; exit 1; }
 done
@@ -37,6 +36,6 @@ else
   echo "numpy is not installed: check 2 SKIPPED (pip install numpy, then run this script again); the verdict below rests on check 1 alone"
   s2=0
 fi
-rm -f "$T/u.txt" "$T/v.txt" "$T/w.txt"; rmdir "$T"
+rm -rf "$T"
 if [ "$s0" -eq 0 ] && [ "$s1" -eq 0 ] && [ "$s2" -eq 0 ]; then echo PASS; exit 0; fi
 echo FAIL; exit 1
