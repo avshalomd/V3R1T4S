@@ -7,13 +7,21 @@ The 42 x 70 GF(3) stabilizer matrix S in claim/object/eaqecc_35_7_16_14.json (sh
 Note: the sentence above is quoted word for word from `panel/gate.md` (the CRITERION skeptic's `confirmed_scope`).
 The gate re-read the page once more at 2026-10-25T04:58:16Z: same page hash, same cell
 (`the-record-we-beat/README.md`). The object's full SHA-256 is
-`e3d6a8cad3db3a6ea28262ced2969b03a429b1ede488ae9cd59b69f5055b73b4`.
+`e3d6a8cad3db3a6ea28262ced2969b03a429b1ede488ae9cd59b69f5055b73b4`, and the table page's full SHA-256 is
+`37bbf731030c113e2e2e75fe7b5ed0b1d11829cfc4a5f1ad948a38b1ac7c936c`.
+
+Path note: claim/object/eaqecc_35_7_16_14.json in the sentence above and in the panel files is
+object/eaqecc_35_7_16_14.json here. The other run-folder paths in the panel files and how-we-built-it/PREREG.md
+(claim/, fetched/qutrit.php, panel/claim.sha256, self_break/, mine/, panel/cutoff-0334/, and work folders such as
+scripts/, data/ and attempts/) are not shipped; in claim/, CLAIM.md is README.md, REPRODUCE.md is
+RUN_IT_YOURSELF.md, checkers/ is verify-it-yourself/ and rebuild/ is how-we-built-it/. The numbered runs and run
+folders named in the panel files and PREREG.md are the contributor's other runs of the same kit; they are not shipped. data/gate_fetch/ (the gate's re-fetch folder) is not shipped either.
 
 The code is a Construction X code over GF(9) from two algebraic-geometry codes of the Hermitian curve
 `y^3 + y = x^4` whose divisors are supported on a place `Q` of degree 4 and the point at infinity:
 `C(D_28, 2Q + 8P_inf)` `[28, 14, 12]_9` contains `C(D_28, Q + 8P_inf)` `[28, 10, 16]_9`, glued to a `[7, 4, 4]_9`
-Reed-Solomon tail, with a column sign pattern chosen so that the Hermitian hull has dimension 7 (the exact maximum
-over every Construction X code of this pair). The result is a `[35, 14, 16]_9` code with Hermitian hull 7, which
+Reed-Solomon tail, with a column sign pattern chosen so that the Hermitian hull has dimension 7 (the maximum
+over every Construction X code of this pair according to how-we-built-it/hullbound4.c; contributor text, unverified). The result is a `[35, 14, 16]_9` code with Hermitian hull 7, which
 gives `[[35, 14 - 7, 16; 35 - 14 - 7]]_3 = [[35, 7, 16; 14]]_3`. The object holds the GF(9) generator `G9`, its
 Hermitian dual `D9`, and the stabilizer matrix `S = phi(D9)` over GF(3).
 
@@ -52,7 +60,8 @@ The classical distance is not new: `codetables.de` lists `[35,14]` over GF(9) at
 is new is a `[35,14,16]_9` code with Hermitian hull 7, and the qutrit EA code it gives. The closure of the table
 under its own propagation rules, of the codes in this repository's open pull requests (none at n = 35 or 36), of
 this workspace's other codes and of the literature the NOVELTY skeptic found gives at most 15 at this cell
-(the newest qutrit EA codes it found, arXiv:2607.02170 of July 2026, have length at most 25). The same row lists `[[35,7,16-26;15]]_3`, so d = 16 was known only with one more entangled pair.
+(the newest qutrit EA codes it found, arXiv:2607.02170 of July 2026, have length at most 25). The same row lists `[[35,7,16-26;15]]_3`, so d = 16 was known only with one more entangled pair. The code of open pull request #721,
+`[[33,7,15;12]]_3`, lengthens to `[[35,7,15;12]]_3`, which does not reach d = 16 at `(35,7,14)`.
 
 ## Not claimed
 
@@ -69,8 +78,7 @@ this workspace's other codes and of the literature the NOVELTY skeptic found giv
   not retried) and read the full text of arXiv:2607.02170; the journal-only paper of Cao, Li and Zhu (IEEE TIT 2025)
   was judged from the codes arXiv:2607.02170 cites from it, and journal papers without an arXiv version may be missed.
 - Not yet submitted to or listed by the table maintainer (`eaqecc.codetables.de`).
-- Not peer reviewed; verified by a three-skeptic panel (`panel/`) and by the standalone checker in
-  `verify-it-yourself/`.
+- Not peer reviewed. The standalone checker is in `verify-it-yourself/`; the run's skeptic reports are in `panel/`.
 
 ## Credits
 

@@ -21,7 +21,7 @@ sign patterns (column scalings of norm -1) of the 24 pairs gave: a = 2 and a = 6
 the other a at most 6 with Reed-Solomon tails, and no pair reaches 8 with any tail. Random GRS tails at the hull-7 head pattern of place 0,
 a = 2 reached true hull 7 on try 11535. The code has d = 16 exactly.
 
-The run that panelled it rebuilt the object byte for byte from frozen parameters, re-tested its checkers on a known
+The run that claimed it rebuilt the object byte for byte from frozen parameters, re-tested its checkers on a known
 positive and a seeded negative, and found d = 16 by exact methods that agree (a GF(9) information-set test over all
 3,247,943,160 sets of 20 columns; a GF(3) position-subset rank test over all 3,247,943,160 sets of 15 positions, with
 7762 = 7762 counts one step up), a Brouwer-Zimmermann computation, and weight-16 witnesses outside the isotropic part.

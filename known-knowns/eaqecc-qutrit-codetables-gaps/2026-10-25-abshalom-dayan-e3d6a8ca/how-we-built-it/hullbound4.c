@@ -1,5 +1,5 @@
 /* Exact upper bound on the Hermitian hull of every Construction X code from a pair C1 > C2, for a tail of dimension
-   dt = K1 - K2 and length m (run folder 2026-10-24-2256, optimizer lens; generalized from run 1953's hullbound.c,
+   dt = K1 - K2 and length m (generalized from an earlier hullbound.c, not shipped here,
    which was fixed at dt = 3, m = 5). Input (stdin): "K1 K2 n" and K1 rows of n over GF(9) (codes a + 3b), the first K2
    rows spanning C2. An X code is C = {(c, tau(c)) : c in C1}, tau: C1 -> GF(9)^m linear with kernel C2 (a tail code A
    of dimension dt and an isomorphism M), with column scalings; a scaling enters the Hermitian Gram only through its

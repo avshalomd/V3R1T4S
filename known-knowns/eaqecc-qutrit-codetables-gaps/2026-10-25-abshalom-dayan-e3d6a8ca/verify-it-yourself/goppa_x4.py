@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""formalist lens (run folder 2026-10-25-0233): machine-check every hypothesis of a theorem-based proof that the EAQECC
+"""Machine-check every hypothesis of a theorem-based proof that the EAQECC
 in an object JSON (a Construction X code over GF(9) from Hermitian-curve AG codes with a divisor on a DEGREE-4 place)
-has d_EA >= d_X, with no minimum-distance computation. Degree-4 generalization of run 1953's goppa_x.py (degree-3
-places). Written with its own field tower GF(6561) = GF(9)[u]/(quartic) (the builder's deg4.py uses
+has d_EA >= d_X, with no minimum-distance computation. Degree-4 generalization of an earlier goppa_x.py (degree-3
+places; not shipped here). Written with its own field tower GF(6561) = GF(9)[u]/(quartic) (the builder's deg4.py uses
 GF(3)[z]/(degree-8 primitive) instead) and its own GF(3)/GF(9) linear algebra and Riemann-Roch spaces; it shares no
-code with the claim's checkers, its builder or deg4.py. Proof steps L1-L8: see ../NOTES.md.
+code with the claim's checkers, its builder or deg4.py. Proof steps L1-L8: see ../NOTES.md (not shipped; HOW_WE_FOUND_IT.md gives the proof in four steps).
 Usage: goppa_x4.py object.json a b witness_word
    a, b: C1 = C_L(D_28, aQ + bP_inf), C2 = C_L(D_28, (a-1)Q + bP_inf), tried for every degree-4 place Q;
    witness_word: n comma-separated GF(9) codes (a + 3b) of a word of C claimed to have weight d_X."""

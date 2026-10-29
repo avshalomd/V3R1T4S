@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Build a Construction X lead object from a degree-4 place (run folder 2026-10-24-2256, optimizer lens; generalizes
-build_x_lead.py): C1 = L(aQ + bP_inf), C2 = L((a-1)Q + bP_inf) from deg4.py (Q = degree-4 place IDX), basis "C2 rows,
+"""Build a Construction X lead object from a degree-4 place (generalizes the earlier builder
+build_x_lead.py, not shipped here): C1 = L(aQ + bP_inf), C2 = L((a-1)Q + bP_inf) from deg4.py (Q = degree-4 place IDX), basis "C2 rows,
 then rows of C1 raising the rank" (as deg4.py pair), tail = M A with A the [m, dt] GRS generator on the points PTS
 (rows 1, x, ..., x^(dt-1); 9 = infinity, column e_(dt-1)), on the last dt rows; columns marked '-' in EPS times w.
 Usage: build_x4.py IDX a b PTS M EPS out.json d_claimed [out_G9.code]   (PTS, M comma-separated, M row-major dt x dt)"""

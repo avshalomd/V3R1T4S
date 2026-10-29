@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """AG codes on the Hermitian curve y^3 + y = x^4 over GF(9), evaluated at all 28 rational points (27 affine + P_inf),
-with divisor G = a Q + b P_inf, Q a place of degree 4 (run folder 2026-10-24-2256, optimizer lens; a generalization of
-run 1640's deg3.py from GF(729) to GF(6561) = GF(9^4)).
+with divisor G = a Q + b P_inf, Q a place of degree 4 (a generalization of an earlier
+deg3.py, not shipped here, from GF(729) to GF(6561) = GF(9^4)).
 
 Method. Q has a representative point (x0, y0) over GF(6561) with x0 of degree 4 over GF(9) (a degree-4 place cannot
 have x0 in GF(81): the curve has no degree-2 places, and a fibre over GF(81) \\ GF(9) would hold 6 points of degree 4).

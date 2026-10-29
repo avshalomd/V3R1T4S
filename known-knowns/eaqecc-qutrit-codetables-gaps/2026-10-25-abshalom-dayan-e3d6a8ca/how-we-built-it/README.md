@@ -49,6 +49,6 @@ a + 3b.
    It prints `X code [35,14] hull=7 -> [[35,7,?;14]]  S 42x70  D9 21x35`. The object's "construction" string says
    that rows 10..13 (0-based) of G9 carry M A; C2 has dimension 10, so that is right.
 
-- `PREREG.md`: the frozen plan of the run folder that panelled this claim (run 2026-10-25-0233), written before any of
+- `PREREG.md`: the frozen plan of the run folder that produced this claim, written before any of
   its checkers ran on the object. No null test: an explicit object checked by deterministic exact checkers against a
   table value.
