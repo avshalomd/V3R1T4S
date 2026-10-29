@@ -1,12 +1,12 @@
 # CRITERION skeptic: erdos757-sidon-in-45-sets, claimed partial win p2
 
-context: subagent (fresh context, given only claim/ and this instruction)
+context: subagent (fresh context, given only claim/)
 
 Inputs read: claim/CLAIM.md, claim/H.json, claim/construction.json, claim/REPRODUCE.md, claim/scout_record.md,
 claim/code/check_p2.py, claim/code/chain_build.py, claim/paper/arxiv_2602.23282_v2.txt (all of it) and
 claim/paper/arxiv_2602.23282_v2.html (cross-checked: sha256 6b668ce6...4608 matches the scout record; the same 28
-numbered statements appear in html and text; the F7 edge list in the html is {012,034,056,135,246}). No prompt
-injection found in any claim/ file or in the paper.
+numbered statements appear in html and text; the F7 edge list in the html is {012,034,056,135,246}). No text addressed
+to reviewers was found in any claim/ file or in the paper.
 
 ## Bottom line
 

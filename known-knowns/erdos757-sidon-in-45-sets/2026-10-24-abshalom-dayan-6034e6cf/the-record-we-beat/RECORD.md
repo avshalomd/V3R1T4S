@@ -10,4 +10,5 @@
 - other live values read the same day (HTTP 200): https://www.erdosproblems.com/757 (12:31:39Z: "9/17 <= c <= 4/7");
   EinsteinArena "Sidon Subsets of (4,5)-Sets" leaderboard top 0.571428571 (10:13:17Z); community record outside the named
   sources: https://erdosproblemaday.com/day/757-reader-five-ninths-refereed (12:31:40Z), a family of real sets with
-  finite ratios (7+5K)/(11+9K) and limit 5/9, never reached by a finite member.
+  finite ratios (7+5K)/(11+9K) and limit 5/9, never reached by a finite member. Response headers and sha256 values
+  were not recorded for these three pages.

@@ -1,6 +1,6 @@
 # REPRODUCE skeptic: claim p2 (erdos757-sidon-in-45-sets)
 
-context: subagent (fresh context, given only claim/ and this instruction)
+context: subagent (fresh context, given only claim/)
 
 Verdict: everything I am asked to reproduce holds. H in claim/H.json is 3-uniform, linear, F7-free and has
 pairwise distinct middles in label order, with no middle at 0 or 100 (so m = 99 <= n - 2 = 99). alpha(H) = 56
