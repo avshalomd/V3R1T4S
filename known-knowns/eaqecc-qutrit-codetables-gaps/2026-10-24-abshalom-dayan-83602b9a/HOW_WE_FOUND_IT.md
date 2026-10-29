@@ -16,9 +16,9 @@ What worked: codetables.de builds its best [23..28, 9..14]_9 codes from algebrai
 curve. The extended one-point codes E_m on y^3 + y = x^4 (the 27 affine points plus a coordinate for the point at
 infinity) have the best known distance 28 - m for m = 6..16 and surprisingly large natural Hermitian hulls. E_13 is a
 [28,11,15]_9 code with hull 6, giving [[28,5,15;11]]_3 where the table lists 13. Two exact checkers (a full
-enumeration over GF(3) from the stabilizer matrix, a full enumeration over GF(9) from the classical code) agreed
-before the panel, and the standalone checker in verify-it-yourself/ is a third, bit-sliced implementation.
+enumeration over GF(3) from the stabilizer matrix, a full enumeration over GF(9) from the classical code) agreed,
+and the standalone checker in verify-it-yourself/ is a third, bit-sliced implementation.
 
 The run that found the object was cut off before its panel. A follow-up run the same day rebuilt the object from its
-construction (byte-identical sha256), re-fetched the table once (unchanged page hash), and ran the three-skeptic
-panel in fresh contexts on a claim folder that held only the object, its checkers and the table record.
+construction (byte-identical sha256) and re-fetched the table once (unchanged page hash); its skeptic reports, written
+in fresh contexts from a claim folder that held only the object, its checkers and the table record, are in panel/.

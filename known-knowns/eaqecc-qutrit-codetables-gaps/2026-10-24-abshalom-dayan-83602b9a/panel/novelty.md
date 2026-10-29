@@ -101,7 +101,7 @@ puncturing or shortening step is used).
    "known ingredients, new parameter", not a rediscovery. A side observation, not part of this claim: E(14) has hull 6
    and gives [[28,6,>=14;10]], where the table has 12.
 
-## 5. Prompt injection
+## 5. Text addressed to reviewers
 
 None seen in the status page, papers, data files, repository files or PR texts I read.
 

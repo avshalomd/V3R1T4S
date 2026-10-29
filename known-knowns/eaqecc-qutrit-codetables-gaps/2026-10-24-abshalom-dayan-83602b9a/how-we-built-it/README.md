@@ -27,6 +27,6 @@ Requirements: python3 (standard library only) and a C compiler (cc). No pinned p
    the live table parsed into rows n,k,c,d_lower,d_upper,color,title (the page itself is not included here).
    For m = 6..16 the run found [28, m-2, 28-m] with hulls 3,4,6,5,6,5,5,6,6,6,8.
 
-PREREG.md is the frozen success rule of the run that found the object (run 2026-10-24-0924, written before any
-search output existed). That run was cut off before its panel; PREREG_panel_run.md is the rule of the follow-up run
-(2026-10-24-1033) that rebuilt the object byte for byte and ran the three-skeptic panel.
+PREREG.md is the frozen success rule of the run that found the object (written before any search output existed).
+That run was cut off before its panel; PREREG_panel_run.md is the rule of the follow-up run that rebuilt the object
+byte for byte and produced the skeptic reports in panel/.

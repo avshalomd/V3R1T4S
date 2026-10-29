@@ -5,7 +5,7 @@ context: subagent (Claude Agent tool, model claude-sonnet-5-5), given only claim
 Scope of what I read: everything under claim/ (CLAIM.md, REPRODUCE.md, object/, checkers/, rebuild/, table/). Nothing else
 under runs/. My own scripts and outputs are in panel/work-criterion/ (crit_check.py / crit_check.out,
 table_neighbors.py / table_neighbors.out, ag_sanity.py / ag_sanity.out). No network was used. I scanned the claim files for
-text aimed at an AI reader (grep for "ignore previous", "system prompt", "pass: true", "verdict" and similar): none found.
+text addressed to reviewers (grep for "ignore previous", "pass: true", "verdict" and similar): none found.
 
 ## 1. Condition-by-condition table
 
