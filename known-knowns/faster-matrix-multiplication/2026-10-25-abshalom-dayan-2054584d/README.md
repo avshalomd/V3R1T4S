@@ -3,7 +3,9 @@
 ## What
 The joined object files (sha256 u 2054584dc35f..., v 0e8f860801db..., w fb6a185d5654...) define a bilinear scheme over Q with exactly 6820 rank-one terms for <24,24,25> whose 207360000 Brent equations I verified exactly, and 6820 is strictly below both the live fmm_sota.json entry (7064) and the live Lille per-format page (7576) fetched 2026-10-25, is not a listed Lille construction, and is below every value for this format I found in those tables, the Lille index, matmulcatalog and the V3R1T4S pull requests, so it meets partial win p1 (not the main criterion).
 
-Status: CONFIRMED_PARTIAL (p1), three-skeptic panel (panel/). The scheme is A 24x24 times B 24x25. It comes from Khoruzhii, Serafin, Gelss and Pokutta's published LITA 25^3 rank-7507 scheme by two exact non-coordinate one-slice restrictions, each followed by one exact 2-reduction; the first restriction passes through the sibling <24,25,25> scheme (a separate package of this batch). The rebuild was done twice and the two runs are byte-identical (how-we-built-it/COMMANDS.md).
+Path note: the panel files, how-we-built-it/PREREG.md and verify-it-yourself/RECEIPTS.md refer to the run's claim folder, claim/. There, CLAIM.md is README.md as gated (same What sentence), REPRODUCE.md is RUN_IT_YOURSELF.md, and object/, verify-it-yourself/ and the-record-we-beat/ are the folders of the same names here. Work files and folders named in those files, in how-we-built-it/COMMANDS.md and in the-record-we-beat/FETCH_LOG.txt (STATEMENT.txt, panel/claim.sha256, cells/, data/, fetch_log.txt, and the save folders tables/, prs/ and lit/) are not shipped; the comparator records are in the-record-we-beat/. The band run named in COMMANDS.md and PREREG.md is the run that built the cells of this batch.
+
+Claimed as partial win p1; the three skeptic reports are in panel/. The scheme is A 24x24 times B 24x25. It comes from Khoruzhii, Serafin, Gelss and Pokutta's published LITA 25^3 rank-7507 scheme by two exact non-coordinate one-slice restrictions, each followed by one exact 2-reduction; the first restriction passes through the sibling <24,25,25> scheme (a separate package of this batch). The rebuild was done twice and the two runs are byte-identical (how-we-built-it/COMMANDS.md).
 
 Margin: 244 below the lowest public value for this format (7064), 244 below the two tables (7064). One fresh panel subagent per role (REPRODUCE, NOVELTY, CRITERION) judged all 12 cells of this batch (panel/gate.md).
 
@@ -12,7 +14,7 @@ From this folder, in a fresh shell (python3, standard library, no network; numpy
 
     sh verify-it-yourself/run_checks.sh
 
-Expected last line: `PASS`. About 79 s wall for the whole script (check 1 about 75 s, check 2 about 3 s) on a laptop, peak memory about 1.6 GB resident (the stdlib checker; the numpy one needs less) (measured numbers: verify-it-yourself/RECEIPTS.md). The script joins the parts in object/ into u.txt, v.txt and w.txt, checks their sha256, then runs two exact checkers: check_brent_stdlib.py (python3 standard library only) checks all 207360000 Brent equations (24*24 * 24*25 * 24*25 index triples) in integer arithmetic after multiplying each factor matrix by its least common denominator, and evaluates the scheme on three random integer matrix pairs exactly; check_exact_np.py (numpy) is a separately written exact checker of the same equations, much faster, with its own exactness argument in its docstring (it is skipped with a message if numpy is not installed, and then the verdict rests on the first checker alone). The stdlib checker is the one from the <18,18,19> package (PR #714); that package's second stdlib checker (check_scheme_second.py) is not shipped here, to keep the batch to the two checkers above. RUN_IT_YOURSELF.md has the file format and the full expected output; how-we-built-it/COMMANDS.md rebuilds the object from LITA's published scheme.
+Expected last line: `PASS`. About 79 s wall for the whole script (check 1 about 75 s, check 2 about 3 s) on a laptop, peak memory about 1.6 GB resident (the stdlib checker; the numpy one needs less) (measured numbers: verify-it-yourself/RECEIPTS.md). The script joins the parts in object/ into u.txt, v.txt and w.txt, checks their sha256, then runs two exact checkers: check_brent_stdlib.py (python3 standard library only) checks all 207360000 Brent equations (24*24 * 24*25 * 24*25 index triples) in integer arithmetic after multiplying each factor matrix by its least common denominator, and evaluates the scheme on three random integer matrix pairs exactly; check_exact_np.py (numpy) is a separately written exact checker of the same equations, much faster, with its own exactness argument in its docstring (it is skipped with a message if numpy is not installed, and then the verdict rests on the first checker alone). The stdlib checker is the one from the <18,18,19> package (PR #714); that package's second stdlib checker (check_scheme_second.py) is not shipped here, to keep the batch to the two checkers above. This package's check_exact_np.py has sha256 prefix 3f9ebe84; the four later packages of the batch (<28,28,29> to <30,31,31>) ship a version with prefix 0eeb12c7 that adds an exact Python-integer path for terms too large for float64. RUN_IT_YOURSELF.md has the file format and the full expected output; how-we-built-it/COMMANDS.md rebuilds the object from LITA's published scheme.
 
 ## Compared to
 | source | cell | value | URL | fetched (UTC) |
@@ -29,6 +31,8 @@ Expected last line: `PASS`. About 79 s wall for the whole script (check 1 about 
 | V3R1T4S pull requests (all 691, open and closed) and main | - | no scheme or rank filed for the cell in any order | https://github.com/elder-plinius/V3R1T4S | 2026-10-24T22:36:11Z to 2026-10-24T22:38:05Z |
 
 Lowest public value for <24,24,25> in any axis order: 7064. Details, the literature search and every request with its sha256: the-record-we-beat/RECORD.md and the-record-we-beat/FETCH_LOG.txt.
+
+INDEX.csv's table_fetched_utc (2026-10-25T09:09:45Z) is the criterion panelist's re-fetch of fmm_sota.json; the primary fetches are at 2026-10-24T22:35Z.
 
 ### How 6820 relates to the listed values
 - 7064 (tables) is the block sum ⟨24×24×1:576⟩ + ⟨24×24×24:6488⟩ (naive 24x24x1 plus LITA's 24^3 scheme) as the Lille construction column writes it.
@@ -48,6 +52,11 @@ The LITA slice-and-absorb method is not new in this repository. Earlier p1 claim
 - Not the sibling cells of this batch (one cell per claim): <24,25,25> rank 7157.
 - Reproducibility of the rebuild: The rebuild was done twice in the run (two separate rebuilds for N = 25) and the step JSON and text exports are byte-identical; how-we-built-it/COMMANDS.md lets you redo it.
 - The Lille page for this format (7576) is older than the index; the claim does not rest on it alone, since 6820 is below every value in every source read.
+
+## Corrections to the panel text
+README.md, RUN_IT_YOURSELF.md and HOW_WE_FOUND_IT.md were revised after the gate (wording, credits, file names, the join command), and how-we-built-it/PREREG.md had only its run id removed; the object, the What sentence and the panel files are as gated.
+
+- panel/gate.md says the earlier p1 claims #41 to #51 "were closed unmerged on 2026-10-14 with no comment on record". In fact they were closed by their own author on 2026-10-14 (12:51Z), together with about 115 of that author's other early pull requests, including claims refiled and merged the next day (#130, #164); no maintainer comment or verdict on them exists.
 
 ## Credits
 - Kirill Khoruzhii, Luzian Serafin, Patrick Gelss and Sebastian Pokutta, Local Improvements to Trilinear Aggregation (LITA), https://github.com/khoruzhii/lita (manuscript in preparation): the exact 2-reduction step (LITA's README defines 2-reducibility and src/reduce.h implements it) and the <25,25,25> rank-7507 scheme this one is restricted from (schemes/25x25x25_r7507.npz at commit 472a79fbc8248423a97bebb3aacbc89e769b9b3e). LITA builds on Victor Pan's trilinear aggregation (V. Ya. Pan, FOCS 1978, https://doi.org/10.1109/SFCS.1978.34; Comput. Math. Appl. 1982, https://doi.org/10.1016/0898-1221(82)90037-2).
