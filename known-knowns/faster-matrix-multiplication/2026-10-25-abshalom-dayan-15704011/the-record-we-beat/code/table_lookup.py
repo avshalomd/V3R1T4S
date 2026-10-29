@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Look one format up in every saved comparator (standard library only; reads the pages saved by fetch1.sh/ghget.sh).
+"""Look one format up in every saved comparator (standard library only; reads the pages saved by the run's fetch scripts, not shipped).
 
 Usage: table_lookup.py DATA_DIR n1 n2 n3 BUILT_RANK
 DATA_DIR holds tables/ (fmm_sota.json, lille_index.html, lille_<sorted>.html and the 404 pages of the other orders,
