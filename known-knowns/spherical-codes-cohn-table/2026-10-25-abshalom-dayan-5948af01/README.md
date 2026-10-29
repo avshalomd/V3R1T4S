@@ -2,11 +2,17 @@
 
 ## What
 
-The 575 vectors in object/code_6_575.txt (26 significant digits per coordinate), each normalised in mpmath at 50 digits, have maximum pairwise cosine c* = 0.7926798356844868804983 (22 significant digits), which is 0.00010040110051 (at least 1e-10, confirmed with exact rationals) below the cosine 0.792780236785 of the (6, 575) row in the /plain and HTML index pages saved in claim/ (logged as fetched at 2026-10-25T00:04:42Z and 00:04:44Z, 3 to 5 seconds before the claim files were written at 00:04:47Z), a row that in those saved pages has no '&ast;' and no 'needs more optimization', is the lowest of all listed rows with d' <= 6 and N' >= 575, and is not matched at or below c* by arXiv:2610.19988's three tables or by any paper in the saved arXiv keyword feeds; not confirmed are the row's live state after that fetch, the fetch times beyond their agreement with file times and sha256, and arXiv papers outside those keyword feeds.
+The 575 vectors in object/code_6_575.txt (26 significant digits per coordinate), each normalised in mpmath at 50 digits, have maximum pairwise cosine c* = 0.7926798356844868804983 (22 significant digits), which is 0.00010040110051 (at least 1e-10, confirmed with exact rationals) below the cosine 0.792780236785 of the (6, 575) row in the /plain and HTML index pages recorded in the-record-we-beat/RECORD.md (logged as fetched at 2026-10-25T00:04:42Z and 00:04:44Z, 3 to 5 seconds before the claim files were written at 00:04:47Z), a row that in those saved pages has no '&ast;' and no 'needs more optimization', is the lowest of all listed rows with d' <= 6 and N' >= 575, and is not matched at or below c* by arXiv:2610.19988's three tables or by any paper in the saved arXiv keyword feeds; not confirmed are the row's live state after that fetch, the fetch times beyond their agreement with file times and sha256, and arXiv papers outside those keyword feeds.
 
-Notes on the sentence above (quoted verbatim from panel/gate.md): "claim/" is the run's claim folder; the hashes of the
-pages saved there are in the-record-we-beat/RECORD.md. The mpmath normalisation is the panel's check; the shipped
-checker uses exact rational arithmetic.
+Path note: the panel files and how-we-built-it/PREREG.md refer to the run's claim folder and work folders, which are
+not shipped. There, CLAIM.md is README.md, REPRODUCE.md is RUN_IT_YOURSELF.md, and TABLE_RECORD.md and
+FETCH_RECORDS.md are summarized in the-record-we-beat/RECORD.md (page URLs, fetch times, sha256 and extracted cell).
+The run's checkers in checker/ (check_exact.py, check_mp.py), expected_output.txt, the saved table pages in
+inputs/table/ (plain.csv and the index page) and the posted code posted_6_575.txt are not shipped; the shipped
+checker is verify-it-yourself/verify_code.py. Work files and folders named there (for example work-reproduce/,
+work-novelty/, work-criterion/, data/, attempts/, runs/ and outbox/) are not shipped.
+In the What sentence and in panel/gate.md's confirmed_scope, "saved in claim/" was changed after the gate to "recorded in
+the-record-we-beat/RECORD.md"; nothing else in the sentence changed.
 
 ## Check it yourself
 
@@ -67,5 +73,5 @@ arXiv:2610.19988. Snapshot and extracted cell: the-record-we-beat/RECORD.md.
   Rustem Takhanov, Zhenisbek Assylbekov, Stanislav Yun (https://arxiv.org/abs/2606.18984), Yanlu Lian, Qun Mo,
   Yu Xia (https://arxiv.org/abs/2411.16038).
 - HiGHS (via SciPy's linprog) solves the linear programs of the polish.
-- Contributed by Abshalom Dayan. Found and checked by an AI agent run using the V3R1T4S kit (method:
-  how-we-built-it/ and HOW_WE_FOUND_IT.md; panel: panel/).
+- Contributed by Abshalom Dayan. Found by an AI agent run using the V3R1T4S kit (method: how-we-built-it/ and
+  HOW_WE_FOUND_IT.md; skeptic reports: panel/).

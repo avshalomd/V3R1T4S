@@ -41,7 +41,7 @@ stays above both the table and c* (conjunct 7).
   claimed code (my_cstar_posted.out, my_cstar_object.out), and arXiv:2610.19988's snapshot of 2026-09-23 shows the earlier
   (6, 575) entry 0.795870898081 as "Henry Cohn, 2026, needs more optimization." (my_vahteristo.out). The gain comes
   from a local polish of an unlabelled entry that had not converged. A reader who goes by the spirit of p2 rather
-  than its wording could object; I decide literally, as the role instructs.
+  than its wording could object; I decide literally.
 - "coordinates given to >= 20 digits": the 26 digits are binary64 values expanded with `%.25e`, so beyond about 17
   digits they carry no extra optimisation precision. The criterion asks only for the digits given, and c* is computed
   from the file as written, so this is not a stretch.

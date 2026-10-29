@@ -21,8 +21,6 @@ The object is a local refinement of that posted code, so the seed is Pavlos Moro
 labelled rows; an earlier (6, 575) row (Henry Cohn, 2026, 0.795870898081) did carry that label in the 2026-09-23
 snapshot recorded by arXiv:2610.19988.
 
-Before the panel, two internal break-it reviews ran in fresh contexts. The first found the claim's numbers right
-but its order wrong (the rendering script was edited after the claim-moment table read) plus record errors (the
-dimensions of PackingStar's new-bounds tables, a missing 2024 Tammes paper, credit gaps); all were fixed and the
-table re-read as the very last step. The second found only documentation points, which were fixed before a final
-re-read at 00:04:42Z, and then a fresh three-skeptic panel checked the claim.
+Before the final table read, the claim's record was corrected: the rendering script had been edited after the
+claim-moment table read, so the table was re-read as the very last step (00:04:42Z), and the dimensions of
+PackingStar's new-bounds tables, a missing 2024 Tammes paper and credit gaps were fixed in the record.
