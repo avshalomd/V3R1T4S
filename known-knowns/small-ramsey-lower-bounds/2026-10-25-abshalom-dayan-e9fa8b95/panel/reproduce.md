@@ -24,6 +24,6 @@ Circulant on Z_153, edge {i,j} has the colour of min((j-i) mod N, N-(j-i) mod N)
 
 ## Scope and caveats
 - Exhaustive and exact; no sampling. Two independent exact methods agree; all properties hold, no mismatch, no missing object.
-- N+1 = 154 > 152 relies on the DS1 Table XIb value 152 as recorded in table_record.md. I did not re-fetch the survey or search arXiv (the web was not part of my instruction); that clause belongs to the NOVELTY skeptic.
+- N+1 = 154 > 152 relies on the DS1 Table XIb value 152 as recorded in table_record.md. I did not re-fetch the survey or search arXiv (the web was not part of my task); that clause belongs to the NOVELTY skeptic.
 
 pass: true

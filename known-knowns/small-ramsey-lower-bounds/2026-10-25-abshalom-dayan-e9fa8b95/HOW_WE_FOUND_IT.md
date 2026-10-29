@@ -14,5 +14,5 @@ a two-colour Ramsey lower bound above DS1; a multicolour cell above DS1 is parti
 - What failed: one-vertex extension of the object (SAT; solver UNSAT, no certificate saved); K3 + K4 circulant splits of both colours of
   a (7,7) circulant on 202 vertices from Kuznetsov's table and of the (7,9) graph on 251 (solver UNSAT, no certificate saved).
 - Checks: two exact checkers in the run (bitset branch and bound, and a CaDiCaL UNSAT answer, no certificate saved) agree for every colour;
-  the standard-library checker in verify-it-yourself/ agrees; three fresh-context skeptics (REPRODUCE, NOVELTY,
-  CRITERION) each checked it; see panel/.
+  the standard-library checker in verify-it-yourself/ agrees; the reports of three fresh-context skeptics (REPRODUCE, NOVELTY,
+  CRITERION) are in panel/.

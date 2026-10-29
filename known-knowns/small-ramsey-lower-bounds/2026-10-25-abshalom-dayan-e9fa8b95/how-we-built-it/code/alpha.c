@@ -1,7 +1,7 @@
 /* alpha.c: exact decision "does graph G have an independent set of size >= k?" by bitset branch and bound
  * (max-clique search on the complement, greedy-colouring bound in the style of Tomita MCQ / San Segundo BBMC;
  * colour classes of the complement are cliques of G).  Based on the has_clique core of
- * runs/2026-10-24-1747/attempts/constructor/code/wit.c, extended with: adjacency-matrix input, a general mode,
+ * an earlier run's wit.c (not shipped), extended with: adjacency-matrix input, a general mode,
  * a vertex-transitive mode for circulants (verified in-code), a restriction set, vertex ordering, caps and stats.
  * usage: alpha <file.adj> <k> <mode: sym|nosym> [-r allowed.txt] [-t seconds] [-o 0|1]
  *   sym   : requires G circulant on Z_N (checked: A[i][j] == A[0][(j-i) mod N] for all i,j, else abort);

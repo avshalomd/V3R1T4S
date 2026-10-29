@@ -14,7 +14,7 @@ confirmed_scope: The circulant 3-colouring of K_153 in object/R_3_4_7.txt (sha25
   fetches, started by weekend run 7, 11:03:53Z to 11:12:15Z. pass: true.
 - CRITERION: a headless `claude -p` session (claude-opus-5-5, effort high), fresh, own copy of claim/, honest single
   fetches allowed, 11:12:19Z to 11:15:37Z. pass: true.
-- One after another, never in parallel. claim/ and the three instructions (panel/.work/instr_*.txt) were fixed at
+- One after another, never in parallel. claim/ was fixed at
   09:47Z and not changed during the panel.
 
 ## What the gate checked (read by weekend run 7's main session, 2026-10-25T11:16:18Z)
