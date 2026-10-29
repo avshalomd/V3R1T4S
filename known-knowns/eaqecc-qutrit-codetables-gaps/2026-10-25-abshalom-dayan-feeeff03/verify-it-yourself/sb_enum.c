@@ -1,4 +1,4 @@
-/* Self-break (run folder 2026-10-25-0931), written from the bank definition only: enumerate EVERY vector of
+/* Self-break check, written from the bank definition only: enumerate EVERY vector of
  * N = span(S)^perp over GF(3) (all 3^dimN - 1 nonzero GF(3) combinations of the basis written by sb_prep.py, odometer
  * order, no sampling, no cap), histogram the symplectic weights (positions i with x_i != 0 or z_i != 0), and for every
  * vector of weight <= T decide exactly whether it lies in the isotropic part I = span(S) ∩ N, using

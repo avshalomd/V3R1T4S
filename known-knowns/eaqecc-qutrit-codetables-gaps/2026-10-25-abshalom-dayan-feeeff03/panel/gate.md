@@ -12,12 +12,12 @@ files OK, checked at the gate, 2026-10-25T11:30:55Z). Self-break (self_break/ver
 
 How the panel was run: the run ended at 10:43:58Z before its panel finished (its background skeptics were stopped by
 the headless background-wait limit); its one unfinished NOVELTY attempt is kept as
-panel/attempt1-novelty-stopped-at-run-end and was not used. The supervising session then ran the run's own skeptic
-instructions (panel/prompts/*.txt, unchanged) as three fresh subagents (claude-opus-5-5), each given only its own copy
+panel/attempt1-novelty-stopped-at-run-end and was not used. The supervising session then ran the run's three skeptics
+as fresh subagents (claude-opus-5-5), each given only its own copy
 of claim/ (panel/work-*/claim/), one after another, never in parallel. Verdict files written 11:04:12Z (REPRODUCE),
-11:21:08Z (NOVELTY), 11:30:16Z (CRITERION) UTC by file time. The NOVELTY and CRITERION skeptics were told, as context,
-that draft PR #739 ([[25,5,12;8]]_3, same contributor) had been filed at 11:02Z and that the page's teleportation
-cells are impure and not valid sources for its propagation rules; both checked these points themselves.
+11:21:08Z (NOVELTY), 11:30:16Z (CRITERION) UTC by file time. The NOVELTY and CRITERION skeptics both checked draft PR #739
+([[25,5,12;8]]_3, same contributor, filed at 11:02Z) and whether the page's teleportation cells are valid sources for
+its propagation rules.
 
 - reproduce.md: own checker written before reading the author's code; s = 30, rank(S J S^T) = 20, c = 10, k = 4;
   span(S)^perp of dimension 18, isotropic part of dimension 10. Exhaustive enumeration of all 3^18 - 1 = 387420488

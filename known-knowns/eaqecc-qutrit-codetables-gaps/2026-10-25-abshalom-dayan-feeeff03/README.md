@@ -6,9 +6,18 @@ The 30 x 48 GF(3) stabilizer matrix S in claim/object/eaqecc_24_4_13_10.json (sh
 
 Note: the sentence above is quoted word for word from `panel/gate.md` (`confirmed_scope`, from the CRITERION skeptic's
 verdict); `claim/` in it is this package's root. The object's full SHA-256 is
-`feeeff03749ecfd57a5b84b8778a2ffe2111723da17f31a3f197d02d048c1794`. The frozen panel files use the run's claim-folder
-names (CLAIM.md, REPRODUCE.md, table/, checkers/, rebuild/, self_break/); in this package their content is in
-README.md, HOW_WE_FOUND_IT.md and RUN_IT_YOURSELF.md, the-record-we-beat/, verify-it-yourself/ and how-we-built-it/.
+`feeeff03749ecfd57a5b84b8778a2ffe2111723da17f31a3f197d02d048c1794`.
+
+Path note: the panel files (including `panel/claim.sha256`, which lists the claim folder's files) and
+`how-we-built-it/PREREG.md` refer to the run's claim folder. There, `claim/object/eaqecc_24_4_13_10.json` is
+`object/eaqecc_24_4_13_10.json`, `CLAIM.md` is `README.md` (with `HOW_WE_FOUND_IT.md`), `REPRODUCE.md` is
+`RUN_IT_YOURSELF.md`, `checkers/` is `verify-it-yourself/`, `rebuild/` is `how-we-built-it/` and `table/` is
+`the-record-we-beat/` (the page and the row files themselves are not shipped; the record and the listed rows are in
+`the-record-we-beat/README.md`). Work files and folders named there (`self_break/`, `runs/`, `tests/`,
+`panel/attempt1-novelty-stopped-at-run-end`, `panel/work-*/` and the skeptics' `mine/`,
+`author_run/` and `fetched/`) are not shipped. Dated run and folder names ("run", "folder" or "run folder" followed
+by a date and time, or by a four-digit time alone) name runs of the contributor's workspace, which are not shipped
+either.
 
 This is the bank's full success criterion at the listed cell `(n=24, k=4, c=10)`: exact `d = 13`, strictly above the
 cell's `d_lower = 12` and at most its `d_upper = 19`.
@@ -18,9 +27,9 @@ over GF(9): the 9 monomials `x^i y^j` (`j <= 2`, pole order `3i + 4j <= 11`) eva
 28th coordinate holding the `x y^2` coefficient (the point at infinity). It is a `[28, 9, 17]_9` code. Deleting the
 four affine points `(x, y) = (0, 0), (1, 2), (2, 2), (3, 6)` (in the encoding `a + 3b` of GF(9)) gives a
 `[24, 9, >= 13]_9` code, and multiplying 12 of its columns by `w` (an element of norm `-1`) raises its Hermitian hull
-from 1 to 5 without changing any weight. That gives `[[24, 9 - 5, 13; 24 - 9 - 5]]_3 = [[24, 4, 13; 10]]_3`. Entanglement is needed because the `[24,9]_9`
-code is not Hermitian dual-containing (its hull has dimension 5, not 9), so rank(S J S^T) = 20 and the code uses 10
-shared pairs; without entanglement the table's best at `n = 24, k = 4` is 8-10. The object
+from 1 to 5 without changing any weight. That gives `[[24, 9 - 5, 13; 24 - 9 - 5]]_3 = [[24, 4, 13; 10]]_3`. Entanglement is needed because the GF(9) code
+behind `S`, the `[24,15]` Hermitian dual of the `[24,9]_9` code, is not Hermitian self-orthogonal: its hull has
+dimension 5, so rank(S J S^T) = 2(15 - 5) = 20 and the code uses 10 shared pairs; without entanglement the table's best at `n = 24, k = 4` is 8-10. The object
 holds the GF(9) generator `G9`, its Hermitian dual `D9`, and the stabilizer matrix `S = phi(D9)` over GF(3).
 
 ## Check it yourself
@@ -62,8 +71,8 @@ NOVELTY skeptic found gives at most 12 at `(24, 4, 10)` (`panel/novelty.md`). Th
 
 - **How the panel was run.** The run ended at 10:43:58Z before its panel finished (its background skeptics were
   stopped by the headless background-wait limit). Its one unfinished NOVELTY attempt is not used. The supervising
-  session then ran the run's own skeptic instructions, unchanged, as three fresh subagents (REPRODUCE, NOVELTY,
-  CRITERION), each given only its own copy of the claim folder, one after another. So the panel was run after the
+  session then ran the run's three skeptics (REPRODUCE, NOVELTY, CRITERION) as fresh subagents, each given only its
+  own copy of the claim folder, one after another. So the panel was run after the
   run, by the supervising session, and not by the run itself (`panel/gate.md` has the times).
 - **Draft PR #739 now exists.** The claim's text says no open pull request names a code of length 23, 24 or 25. Since
   11:02Z draft PR #739 (same contributor) names `[[25,5,12;8]]_3` and codes derived from it. It does not reach this
@@ -103,8 +112,8 @@ NOVELTY skeptic found gives at most 12 at `(24, 4, 10)` (`panel/novelty.md`). Th
   would tie at 13 here, and the k = 1 rule of PR #363 reaches 14 only through impure codes (`panel/novelty.md`,
   section 5).
 - Not yet submitted to or listed by the table maintainer (`eaqecc.codetables.de`).
-- Not peer reviewed; verified by a three-skeptic panel (`panel/`) and by the standalone checker in
-  `verify-it-yourself/`.
+- Not peer reviewed. The panel files (`panel/`) and the standalone checker in `verify-it-yourself/` are shipped so
+  that anyone can check the claim.
 
 ## Credits
 

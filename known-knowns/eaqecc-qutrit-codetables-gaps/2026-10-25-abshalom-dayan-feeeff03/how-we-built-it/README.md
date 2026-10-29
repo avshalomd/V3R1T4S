@@ -16,5 +16,5 @@
   first maximizing pattern it found, which is the pattern the object uses: columns 1, 3, 5, 7, 10, 11, 12, 15, 17, 18,
   20, 22 of the length-24 code, 0-based), with the histogram of hull dimensions
   over all 2^23 patterns.
-- `PREREG.md`: the frozen plan of the run folder that claimed this code (run folder 2026-10-25-0931). No null test: an
+- `PREREG.md`: the frozen plan of the run folder that claimed this code. No null test: an
   explicit object checked by deterministic exact checkers against a table cell.

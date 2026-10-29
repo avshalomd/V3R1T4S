@@ -49,7 +49,8 @@ What it does:
   docstring: a nonzero f in L(11 P_inf) has at most 11 affine zeros, and at most 10 when its x y^2 coefficient (the
   28th coordinate) is 0, so d(E_11) >= 17; each deleted coordinate lowers a weight by at most one and scaling a
   column by a nonzero element changes no weight, so d(E') >= 17 - 4 = 13. It then checks the weight-13 witness.
-- verdict.py compares every computed value with the claim in the JSON.
+- verdict.py compares every computed value with the claim in the JSON. It does not compute d itself: its last line,
+  "computed d=...", repeats the claimed d once the subset test and the witness have passed.
 
 Why the subset test is complete: a vector of N outside I with weight <= 12 is supported inside some 12-set T; for
 that T the vectors of N supported in T then include one outside I, so dim N_T > dim I_T. Conversely, any T with
