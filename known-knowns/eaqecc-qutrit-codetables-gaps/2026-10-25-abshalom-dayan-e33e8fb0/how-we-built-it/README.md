@@ -14,5 +14,5 @@
   P at a time, each capped. `epsbig_result.txt` is its output line for this code (E_13, deleted set of orbit 0 of
   3-subsets: coordinates 0, 1, 2): maximum hull 6, reached by one sign pattern (`-` marks a column times w), with the
   histogram of hull dimensions over all 2^24 patterns.
-- `PREREG.md`: the frozen plan of the run folder that claimed this code (run folder 2026-10-25-0856). No null test:
+- `PREREG.md`: the frozen plan of the run folder that claimed this code. No null test:
   an explicit object checked by deterministic exact checkers against a table cell.

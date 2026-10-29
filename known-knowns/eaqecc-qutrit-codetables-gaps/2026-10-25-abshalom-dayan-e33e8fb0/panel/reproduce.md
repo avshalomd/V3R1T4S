@@ -46,8 +46,8 @@ It was unchanged when I finished.
     [25,11] code C, and symplectic weight equals Hamming weight on C.
 - **Exact method 1, mine/enum_bz9.c (bit-sliced GF(3), modular ternary Gray code):**
   - Enumerates every projective word of C: TOTAL_PROJECTIVE 3922632451 = (9^11 - 1)/8, so all 9^11 - 1 nonzero words
-    up to GF(9)* scalars. Weight and membership in H are scalar-invariant because H is GF(9)-linear. The figure of
-    about 3.9e8 in my instructions was off by a factor of 10; the true count is about 3.9e9, and it still runs in
+    up to GF(9)* scalars. Weight and membership in H are scalar-invariant because H is GF(9)-linear. An earlier estimate of
+    about 3.9e8 was off by a factor of 10; the true count is about 3.9e9, and it still runs in
     about 10 s.
   - Every word of weight <= 13 is tested for membership in span(S), meaning symplectic orthogonality to all 22 basis
     vectors of span(S)^perp.

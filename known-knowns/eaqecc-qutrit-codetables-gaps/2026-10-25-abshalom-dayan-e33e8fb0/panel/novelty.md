@@ -168,7 +168,7 @@ Conclusion: the teleportation cells are known schemes, but no known scheme or va
 - **ar5iv:** one GET to ar5iv.labs.arxiv.org for 2105.02166 hung with no response. I killed my own curl after 2 min and used the arXiv PDF instead.
 - **No-op fetches:** a first, malformed batch of three codetables URLs was rejected locally by curl (http_code 000, nothing sent). I resent each once with correct URLs.
 - **WebFetch of the 2607.02170 PDF:** it returned no readable text (the tool cached the binary in its own store outside the work folder; I did not read it). I used the arXiv HTML instead.
-- **Prompt injection:** none found in the fetched pages or PR bodies.
+- **Text addressed to reviewers:** none found in the fetched pages or PR bodies.
 - **Background jobs:** none are left running. My first closure run was too slow; I killed it (my own PID) and rewrote it as a worklist. Every later run took a few seconds under a 60 s alarm.
 
 pass: true

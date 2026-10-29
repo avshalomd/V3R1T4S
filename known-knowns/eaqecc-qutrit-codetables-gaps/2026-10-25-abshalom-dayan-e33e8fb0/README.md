@@ -7,6 +7,14 @@ The 28 x 50 GF(3) matrix S in claim/object/eaqecc_25_5_12_8.json (sha256 e33e8fb
 Note: the sentence above is quoted word for word from `panel/gate.md` (the CRITERION skeptic's `confirmed_scope`); `claim/` in it is this package's root.
 The object's full SHA-256 is `e33e8fb04dc70d4d703e033310b6efafb1825109a93d649ecef183451ee09ec3`.
 
+Path note: the panel files and `how-we-built-it/PREREG.md` refer to the run's claim folder. There,
+`claim/object/eaqecc_25_5_12_8.json` is `object/eaqecc_25_5_12_8.json`, `CLAIM.md` is `README.md`, `REPRODUCE.md` is
+`RUN_IT_YOURSELF.md`, `checkers/` is `verify-it-yourself/` and `rebuild/` is `how-we-built-it/`. Work files and
+folders named there (`panel/claim.sha256`, `self_break/`, `attempts/`, `runs/`, `tests/`, and the skeptics' `mine/`,
+`run/`, `fetched/` and `scripts/`) are not shipped. Dated run and folder names ("run", "folder" or "run folder"
+followed by a date and time, or by a four-digit time alone) name runs of the contributor's workspace, which are not
+shipped either.
+
 This is the bank's full success criterion at the listed cell `(n=25, k=5, c=8)`: exact `d = 12`, strictly above the
 cell's `d_lower = 11` and at most its `d_upper = 18`.
 
@@ -68,9 +76,8 @@ NOVELTY skeptic found gives at most 11 at `(25, 5, 8)` (`panel/novelty.md`). The
   but the length-reduction rule needs the isotropic part to cover the deleted coordinate in both X and Z, and a
   teleportation code's isotropic part is Z-only, so the rule does not hold for them: applied anyway, it would turn
   the listed `[[8,1,6-7;1]]` into `[[5,1,6;4]]`, which is impossible since d <= n, and it would put 144 listed
-  cells above their own upper bounds. So teleportation cells are not used as sources here (the NOVELTY skeptic
-  checked the closure, `panel/novelty.md`; the independent pre-filing review gave this reason, which corrects the
-  panel's wording that teleportation codes are "not stabilizer codes").
+  cells above their own upper bounds. So teleportation cells are not used as sources here (the closure is in
+  `panel/novelty.md`).
 - Literature the NOVELTY skeptic could not read in full: the NOVELTY skeptic read arXiv:2207.05647 (the table's source), arXiv:2607.02170 (Table V, qutrit
   codes up to length 25), arXiv:2105.02166, arXiv:2501.04921 (https://arxiv.org/abs/2501.04921), arXiv:2206.09782 (https://arxiv.org/abs/2206.09782) and the codetables.de entries for
   `[25,11]_9`, `[25,12]_9` and `[25,8]_3`; three journal papers (Cao, Li and Zhu, IEEE TIT 2025; Li, Li, Guan and
@@ -79,8 +86,14 @@ NOVELTY skeptic found gives at most 11 at `(25, 5, 8)` (`panel/novelty.md`). The
   for the pull requests' file lists (rate limit); the codes named in those files had been extracted by an earlier
   skeptic about an hour before and were included in the closure.
 - Not yet submitted to or listed by the table maintainer (`eaqecc.codetables.de`).
-- Not peer reviewed; verified by a three-skeptic panel (`panel/`) and by the standalone checker in
-  `verify-it-yourself/`.
+- Not peer reviewed. The panel files (`panel/`) and the standalone checker in `verify-it-yourself/` are shipped so
+  that anyone can check the claim.
+
+Corrections to the panel text:
+- `panel/novelty.md` says teleportation codes are "not stabilizer codes", and `panel/criterion.md` that "a
+  teleportation protocol has no stabilizer matrix with c = k". They are stabilizer codes; the reason the page's propagation rules are not applied to them is the one given above (the length-reduction
+  rule needs the isotropic part to cover the deleted coordinate in both X and Z, and a teleportation code's isotropic
+  part is Z-only).
 
 ## Credits
 

@@ -7,7 +7,7 @@ Hermitian curve y^3 + y = x^4 over GF(9) (the 27 affine points plus a coordinate
 reach the Goppa distance 28 - m. An [n, kappa, d]_9 code with Hermitian hull dimension l gives an
 [[n, kappa - l, d; n - kappa - l]]_3 code (Luo, Ezerman, Grassl and Ling, arXiv:2207.05647, Prop. 1).
 
-At length 28, E_11 to E_18 already sit at their maximum hull (an exhaustive search over all 2^27 column sign
+At length 28, E_11 to E_18 already sit at their maximum hull (unverified; an exhaustive search over all 2^27 column sign
 patterns had shown that in earlier runs), so this run's constructor lens punctured instead. It deleted 1 to 3 coordinates of E_11 to E_16
 (4 of E_11 to E_13, 5 of E_11 and E_12; one deletion set per orbit of the 216 automorphisms of the curve that fix the point at infinity) and computed the
 exact maximum Hermitian hull of each punctured code over all 2^(n-1) column sign patterns (epsbig). It then scored
