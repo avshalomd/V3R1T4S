@@ -79,7 +79,7 @@ Details, HTTP headers, page hash and the neighboring cells are in `the-record-we
 
 - **Markus Grassl**, maintainer of the code tables at https://codetables.de/, whose cell this improves; the upper
   bound there comes from **Andries E. Brouwer**'s tables (https://aeb.win.tue.nl/) via a result of **Stefano
-  Marcugini, Alfredo Milani and Fernanda Pambianco**, and the [41,28,9] code behind the lower bound, which codetables.de attributes (Lb(41,28) = 9, "XL") to **Chaoping Xing and San Ling**
+  Marcugini, Alfredo Milani and Fernanda Pambianco** (https://doi.org/10.1109/18.992802), and the [41,28,9] code behind the lower bound, which codetables.de attributes (Lb(41,28) = 9, "XL") to **Chaoping Xing and San Ling**
   (https://doi.org/10.1109/18.868488, https://doi.org/10.1109/18.850687) (codetables.de builds it as a subcode of a
   [41,29,9] BCH code).
 - **N. J. A. Sloane, S. M. Reddy and C.-L. Chen**, "New binary codes", IEEE Transactions on Information Theory 18
