@@ -1,6 +1,6 @@
 /* dualenum: weight distribution of the dual code C^perp of a linear code over GF(9) by enumerating ALL its 9^m
    codewords (m = n - k), then (in macwilliams.py) the weight distribution of C by the MacWilliams identities.
-   Written for the self-break of run 2026-10-27-0100, independently of m3_mindist, hdep and bz9t.
+   Written for the run's self-break, independently of m3_mindist, hdep and bz9t (not shipped).
    GF(9) = GF(3)[w]/(w^2 - w - 1), a + b*w encoded a + 3b. As an additive group GF(9)^m = GF(3)^(2m) with basis
    {h_i, w*h_i} (h_i the rows of a parity-check matrix H); a ternary modular Gray code over 2m digits visits every
    element once, each step adding one basis vector. Vectors are bit-sliced: for the a-part and the b-part, masks of the

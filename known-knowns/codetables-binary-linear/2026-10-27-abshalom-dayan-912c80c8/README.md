@@ -26,7 +26,8 @@ part all 19 rows span `C(D,21P)`, a `[27,19,6]` code. The textbook Construction 
 only `min(8, 6 + 1) = 7`; the true distance 8 comes from the specific tail, found by an exact search over 2-column tails
 for this nested pair, which stops at the first valid tail (the object's construction field says "exhaustive search over
 all 2-column tails"; read it the same way), and rests on exact computation (four exact methods by the author, three of
-them shipped: m3_mindist, hdep, and dualenum with MacWilliams; plus each skeptic's own; all agree; see `panel/`).
+them shipped: m3_mindist, hdep, and dualenum with MacWilliams; the panel files in `panel/` record the skeptics' own
+computations).
 
 This is a GF(9) result. The bank target is named `codetables-binary-linear`, but its success criterion is stated for
 GF(q); this code is not a binary code.
@@ -64,14 +65,14 @@ Details, HTTP headers, page hash and the neighboring cells are in `the-record-we
   8-10), `[30,19,8]` by a zero column (table 8-10).
 - No quantum or entanglement-assisted code is claimed here.
 - Not yet submitted to or listed by the table maintainer (codetables.de).
-- Not peer reviewed; verified by a three-skeptic panel (`panel/`) and by the standalone checker in
-  `verify-it-yourself/`.
+- Not peer reviewed. The panel files (`panel/`) and the standalone checker in `verify-it-yourself/` are shipped so
+  that anyone can check the claim.
 - The panel's NOVELTY skeptic could not read three sources (arXiv's export API returned 429 and 503, MinT had no
   connection, Yves Edel's GF(9) tables gave a TLS name mismatch); it did not retry. See `panel/novelty.md`.
-  A pre-filing re-check on 2026-10-27 read the arXiv API (20:29:24Z): no [29,19,>=8] code over GF(9) among the 60 newest
+  The arXiv API was read again on 2026-10-27 (20:29:24Z): no [29,19,>=8] code over GF(9) among the 60 newest
   GF(9)/Hermitian linear-code abstracts. MinT and Yves Edel's GF(9) tables still could not be read on 2026-10-27 (20:35Z to 20:40Z): MinT refused connections on ports 80 and 443, and Edel's pages gave a TLS name mismatch on mathi.uni-heidelberg.de and HTTP 404 on www.mathi.uni-heidelberg.de. Neither is a bar in this target's criterion; the live codetables.de cell is.
 - The docstring of how-we-built-it/hermitian.py says the curve is the one "codetables.de uses for its [23..28, 9..14]
-  codes"; that statement was not checked (the file is byte-identical to the panel's copy and was left unedited).
+  codes"; that statement is unverified (the file is byte-identical to the panel's copy and was left unedited).
 
 ## Credits
 

@@ -55,6 +55,6 @@ claim: the Brouwer-Zimmermann program bz9t (the fourth method in panel/gate.md a
 fetch_cells.sh and started_reproduce.txt (panel/gate.md), constructor/out/plain_d*.txt (how-we-built-it/candidates.py),
 out/candidates.txt (gen_tail.py), data/ (parse_range.py, PREREG.v2.md), constructor/code/tailc.c (tailg.c), target.md
 and scout.md (the two PREREG files), attempts/, NEXT_RUN.md and data/prs_0151_*.json (PREREG.v2.md), and the run folder
-2026-10-27-0100 (panel/gate.md, the PREREG files, dualenum.c). The PREREG files say "verbatim" but quote the criterion
+named by its date and time (panel/gate.md, the PREREG files). The PREREG files say "verbatim" but quote the criterion
 in shortened form; the exact text is codetables-binary-linear's success_criterion in bank/targets.json of the V3R1T4S
 repository.
