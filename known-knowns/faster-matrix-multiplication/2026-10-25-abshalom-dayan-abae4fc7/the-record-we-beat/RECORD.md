@@ -2,7 +2,7 @@
 
 All fetches by the run and by the three skeptics: one plain GET each, User-Agent naming V3R1T4S (the run:
 "V3R1T4S-research-agent (honest single GET)"), no cookies, no retries, no blocked request. Times are UTC from `date -u`.
-No page body is copied here. Next to this file: `TABLE_RECORD.md` (the run's own table record, unchanged),
+No page body is copied here. Next to this file: `TABLE_RECORD.md` (the run's own table record, unchanged except that a run id was removed),
 `fetch_log.txt` (the run's fetch log: time, HTTP status, URL, saved name, sha256, size) and `headers/` (the response
 headers of the run's fetches, one file per URL). Lines for Authorization, X-OAuth-*, tokens and rate limits were
 removed from them. The strict-transport-security line of the four github.com API responses was removed too, because
@@ -56,6 +56,13 @@ in both, except for the dynamic github.com repository page named below.
   sources that list the format: 1789.
 
 The minimum over the four sources is 1789 (fmm_sota.json); the claimed rank 1709 is 80 below it.
+
+### Re-fetch immediately before filing (criterion text)
+- fmm_sota.json: 2026-10-25T11:18:27Z, HTTP 200, sha256 2a6535154ac877aeb495f9294a5e97c3dbf1b1969aefe6ffc0a612f2cf01cbae (unchanged): 1789
+- https://fmm.univ-lille.fr/14x14x15.html: 2026-10-25T11:18:27Z, HTTP 200, sha256 63ce18bf1085d0f315839876c397d7ff9bfe725fa5fd998883f382a14e6b907a (unchanged): 1798
+- Perminov docs/ranks.md: 2026-10-25T11:18:27Z, HTTP 200, sha256 77203a718e82fec693578d193c9ccbb2332edcf41f086088a8405cd403666c5a (unchanged): minimum 1790
+- MerlijnW70/fmm-schemes tree: 2026-10-25T11:18:37Z, HTTP 200: 39 paths, none for 14x14x15 in any orientation
+- Pull requests of this repository up to #751: none names this format.
 
 ## Other sources checked for the same cell
 - Lille catalogue index (the bank's status_source): https://fmm.univ-lille.fr/ , fetched 2026-10-25T03:46:47Z,

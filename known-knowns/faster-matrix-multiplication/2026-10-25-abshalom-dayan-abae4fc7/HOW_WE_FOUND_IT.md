@@ -3,7 +3,7 @@
 The run's brief was the main criterion of the small-format catalogue target: beat the four tables for a format with
 max(n,m,p) <= 16. Contributors to this repository had published records for neighbouring cells by restricting the odd LITA squares
 (Khoruzhii, Serafin, Gelss and Pokutta) with one-slice cuts and removing linearly dependent terms, and earlier runs
-of this workspace had stalled one to four above the tables on the cells they aimed at. The new idea of this run was a stronger removal step:
+of the same contributor had stalled one to four above the tables on the cells they aimed at. The new idea of this run was a stronger removal step:
 "flat" (consensus) absorption, re-implemented from the ca.py of calgulbenkian (credit name anonymous-c6d1e0ab) in merged pull request #179, whose
 slice-and-absorb claims on LITA squares (#164, #166, #172, #177, #178, #197) this run follows, which reproduced a
 published 2176 -> 2105 edge on the same cut where the earlier run's weaker absorber gave 2121.

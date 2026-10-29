@@ -44,5 +44,5 @@ Other sources checked for the same cell:
   holds only cubes N x N x N for N = 13..32 (including schemes/15x15x15_r1977.npz, git blob sha1
   65821484d954b4aade06cbda624932ba2a481f7b, the parent used here); no <14,14,15> scheme.
 - The LITA parent file itself: https://raw.githubusercontent.com/khoruzhii/lita/HEAD/schemes/15x15x15_r1977.npz,
-  fetched 2026-10-24T16:05:03Z (HTTP 200) by the earlier run 2026-10-24-1557 of this workspace, sha256
+  fetched 2026-10-24T16:05:03Z (HTTP 200) by an earlier run of the same contributor, sha256
   94515288f3079546e2c9f552bd246742ac45b2bc62b5aa908a9f491c44102a33; its git blob sha1 matches the tree listing above.

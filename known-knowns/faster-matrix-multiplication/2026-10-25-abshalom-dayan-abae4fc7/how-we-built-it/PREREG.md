@@ -1,6 +1,7 @@
-# PREREG: fmm-catalogue-small-format-rank (run 2026-10-25-0343)
+# PREREG: fmm-catalogue-small-format-rank
 
-(Package copy of the run's PREREG.md, unchanged except one edit: the per-format URL template in the criterion is
+(Package copy of the run's PREREG.md, unchanged except for removing the run id from the title and a workspace name
+from the p1/p2 line, and one edit: the per-format URL template in the criterion is
 written with braces, fmm.univ-lille.fr/{n}x{m}x{p}.html, because the package checker reads the angle-bracket form
 as an unfilled placeholder. Note: paths of the form attempts/... in the text name files of the run's private
 workspace, which are not shipped; the run's own two exact checkers named there are summarised in SELF_BREAK.md,
@@ -29,7 +30,7 @@ over the ring it claims.
   ZT/Z/Q, MerlijnW70), fetched live before the claim, AND r below every value already public in this repo
   (TROPHY_CASE, known-knowns, every open or closed pull request) and the literature (a tie is not a record). Bars at
   scout time are in scout.md.
-- p1 and p2 are not pursued this run (p1 band mined by sibling workspace v3r1t4s-p).
+- p1 and p2 are not pursued this run (p1 band mined by a sibling run).
 - One cell per claim. If several cells are beaten, the claim is the one with the most negative margin r - bar; ties
   broken by smaller max dimension. Others become separate leads.
 

@@ -3,12 +3,16 @@
 ## What
 The three files in claim/object/ (sha256 abae4fc7..., a05bcf35..., 041992e8...) define a bilinear scheme with exactly 1709 rank-one terms over Q for <14,14,15> that satisfies all 8,643,600 Brent equations exactly, and 1709 is strictly below the minimum 1789 of the four named sources as fetched live at 2026-10-25T10:13:20Z (fmm_sota.json 1789, Lille 14x14x15.html 1798, Perminov ranks.md min 1790, MerlijnW70 no entry), with no V3R1T4S pull request at rank <= 1709 for this format.
 
+Path note: the sentence above and the panel files name the run's claim folder (claim/object/ is object/ here) and the
+skeptics' working folders; where each named file is in this package, or that it is not shipped, is listed under
+"Notes on the panel files" below.
+
 Level: the main success criterion of fmm-catalogue-small-format-rank (max(14,14,15) = 15 <= 16; sorted format not (3,3,3)
-or (4,4,4)), not a partial win. Status: CONFIRMED_SOLUTION by the three-skeptic panel and the honesty gate (panel/). The scheme
+or (4,4,4)), not a partial win. Claimed under the main criterion; the skeptic reports and the gate record are in panel/. The scheme
 comes from Khoruzhii, Serafin, Gelss and Pokutta's published LITA 15x15x15 rank-1977 scheme by two exact one-slice cuts,
 each followed by exact 2-reductions (112 + 105 terms vanish, 29 + 22 are removed); the rebuild is deterministic and was
 byte-identical when the run's self-break session and the packaging step reran it (how-we-built-it/COMMANDS.md); the
-panel and the pre-filing review did not rerun it (python-flint was not installed).
+panel did not rerun it (python-flint was not installed).
 
 ## Check it yourself
     sh verify-it-yourself/run_checks.sh
@@ -43,10 +47,14 @@ Values already public in this repository (not table values; the claim is below b
 | merged known-knowns, TROPHY_CASE.md entry 47 | <14,14,15> over Q | 1716 | https://github.com/elder-plinius/V3R1T4S/blob/main/TROPHY_CASE.md | 2026-10-25T05:57:36Z by the run; 10:09:23Z and 10:14:17Z by the panel |
 | closed, not merged pull request #6 | (14, 14, 15) over Q | 1715 | https://github.com/elder-plinius/V3R1T4S/pull/6 | pull-request search 2026-10-25T07:03:42Z by the run; 10:10:55Z and 10:13:51Z by the panel |
 
-The panel read all 711 pull requests (713 at the pre-filing review, 751 at filing) of this repository for every spelling and orientation of the format: only #6 holds
-a scheme for it (#399 only quotes the catalogue change 1790 -> 1789), and none is at or below 1709. Snapshots with sha256 and headers: the-record-we-beat/. The filing step must
-re-fetch all four sources immediately before the pull request is opened (criterion text); the values above are as of
-the times shown.
+The panel read all 711 pull requests (a scan at filing covered all 751) of this repository for every spelling and orientation of the format: only #6 holds
+a scheme for it (#399 only quotes the catalogue change 1790 -> 1789), and none is at or below 1709. Snapshots with sha256 and headers: the-record-we-beat/.
+
+Re-fetched live immediately before filing, as the criterion asks: fmm_sota.json (2026-10-25T11:18:27Z, HTTP 200),
+https://fmm.univ-lille.fr/14x14x15.html (11:18:27Z, HTTP 200) and Perminov docs/ranks.md (11:18:27Z, HTTP 200) were
+byte-identical to the panel's copies (sha256 2a653515..., 63ce18bf..., 77203a71...), so 1789, 1798 and 1790 stand;
+the MerlijnW70/fmm-schemes tree (11:18:37Z, HTTP 200) has 39 paths, none for this format. Pull requests up to #751:
+none names this format. 1709 is 80 below the bar of 1789 and 7 below this repository's merged 1716.
 
 ## Not claimed
 - Nothing about any other format: this package is one cell, <14,14,15>.
@@ -63,6 +71,8 @@ the times shown.
   and #178 superseded the maintainers' own merged entries 48 and 45. The run's charter treats cells this repository
   already improved as taken; the run still aimed here because its preregistered threshold (how-we-built-it/PREREG.md,
   Thresholds) is to beat the four tables and every value already public in this repository, which 1709 does.
+- Not the intermediate <14,15,15> scheme of rank 1836 that HOW_WE_FOUND_IT.md and how-we-built-it/COMMANDS.md name
+  as a step of the chain: it is not part of this package and the panel did not check it.
 - The Lille per-format page (1798) lags the index and fmm_sota.json (1789); the binding bar is the minimum, 1789.
   MerlijnW70/fmm-schemes lists no scheme for the format, so that clause holds vacuously.
 
@@ -79,11 +89,14 @@ differently here:
 - `claim/object/` is `object/` (u.txt and v.txt are stored as two parts each, joined byte for byte by run_checks.sh; the
   parts concatenate to the sha256 values in panel/gate.md and panel/claim.sha256).
 - `claim/verify-it-yourself/` is `verify-it-yourself/`: check_scheme.py and check_random_eval.py are byte-identical to
-  the claim's; only run_checks.sh differs (it joins the parts first).
+  the claim's; only run_checks.sh differs: it joins the parts first, and, since an edit after the gate, it compares
+  the three sha256 values with the files the panel checked and stops with FAIL on any other file (the gated version
+  only printed them).
 - `claim/CLAIM.md` and `claim/REPRODUCE.md` are in how-we-built-it/. CLAIM.md has one edit (the Lille URL template
   written {n}x{m}x{p} instead of with angle brackets, for the package checker); REPRODUCE.md is the original, and its
   paths refer to the claim folder. So their sha256 values in panel/claim.sha256 match REPRODUCE.md only.
-  `claim/TABLE_RECORD.md` is the-record-we-beat/TABLE_RECORD.md, unchanged (hash matches).
+  `claim/TABLE_RECORD.md` is the-record-we-beat/TABLE_RECORD.md with one edit (a run id removed), so its hash no
+  longer matches.
 - `claim/rebuild/` is how-we-built-it/code/ (scripts byte-identical; the five files sha256-listed in claim.sha256 can
   be compared). The LITA parent file 15x15x15_r1977.npz is third-party data and is not shipped: fetch it as
   how-we-built-it/COMMANDS.md says and compare its sha256 (94515288f3079546e2c9f552bd246742ac45b2bc62b5aa908a9f491c44102a33).
@@ -93,6 +106,14 @@ differently here:
   run's self-break session did (how-we-built-it/SELF_BREAK.md).
 - `self_break.md` (named in panel/gate.md) is summarised in how-we-built-it/SELF_BREAK.md; the full file is not shipped
   because it names the run's private working folders.
+- how-we-built-it/PREREG.md names files of the run folder that are not shipped: attempts/... (see its own note),
+  target.md and scout.md.
+- panel/gate.md names the run by its internal id and lane ("2026-10-25-0343, Track B"): that is the run that built
+  this claim.
+
+Other files revised after the gate: README.md, HOW_WE_FOUND_IT.md (method credit), RUN_IT_YOURSELF.md and a note in
+verify-it-yourself/RECEIPTS.md (expected output), and INDEX.csv (cell written `14x14x15`, numeric table value 1789;
+its sha256 is of the joined u.txt). The object, the What sentence and the panel verdicts did not change.
 
 ## Credits
 - Kirill Khoruzhii, Luzian Serafin, Patrick Gelss and Sebastian Pokutta, Local Improvements to Trilinear Aggregation
